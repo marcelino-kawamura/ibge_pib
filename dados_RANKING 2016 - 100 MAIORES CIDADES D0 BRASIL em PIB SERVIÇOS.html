@@ -1,0 +1,3440 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_9d77021902554eb78a1ad9c44a8a88f8 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+                <div style="position: fixed; 
+                            bottom: 50px; left: 50px; width: 180px; height: 140px; 
+                            border:2px solid grey; z-index:9999; font-size:12px;
+                            ">&nbsp; RANKING 2016 - 100 MAIORES CIDADES D0 BRASIL em PIB SERVIÇOS' <br> (x R$ 1.000)' <br>
+                              &nbsp; Acima  da mediana &nbsp; <i class="fa fa-arrow-circle-up fa-2x" style="color:blue"></i><br>
+                              &nbsp; Abaixo da mediana &nbsp; <i class="fa fa-arrow-circle-down fa-2x" style="color:red"></i>
+                </div>
+                
+    
+    <div class="folium-map" id="map_9d77021902554eb78a1ad9c44a8a88f8" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_9d77021902554eb78a1ad9c44a8a88f8 = L.map(
+        'map_9d77021902554eb78a1ad9c44a8a88f8', {
+        center: [-20.629881046326776, -46.54786194985689],
+        zoom: 4,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_a508fe9e03c6414f8af19e24f2d5090c = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+    
+        var marker_04bc43ab467b42208889910c26d09502 = L.marker(
+            [-23.5673865, -46.57038318211275],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_65a3df2531654e24b7d63cdbeb15e7eb = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_04bc43ab467b42208889910c26d09502.setIcon(icon_65a3df2531654e24b7d63cdbeb15e7eb);
+            
+    
+            var popup_97105e0b24a24eb090005f8e5ae73002 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f4b9fd872b3c48fe8c4d10f05644a378 = $(`<div id="html_f4b9fd872b3c48fe8c4d10f05644a378" style="width: 100.0%; height: 100.0%;">Ranking 1=São Paulo/SP PIB SERVIÇOS=464.656.988</div>`)[0];
+                popup_97105e0b24a24eb090005f8e5ae73002.setContent(html_f4b9fd872b3c48fe8c4d10f05644a378);
+            
+
+            marker_04bc43ab467b42208889910c26d09502.bindPopup(popup_97105e0b24a24eb090005f8e5ae73002)
+            ;
+
+            
+        
+    
+        var marker_67e530fe3b8c4b61a9582318d33a0ce2 = L.marker(
+            [-22.876652118186456, -43.22787512499519],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_b2ba6489dc2f49558a825988543ed9ef = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_67e530fe3b8c4b61a9582318d33a0ce2.setIcon(icon_b2ba6489dc2f49558a825988543ed9ef);
+            
+    
+            var popup_bf18d48f448e468bb5fa89b29c133a65 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_05e56950f9e84d91a539c725307f3890 = $(`<div id="html_05e56950f9e84d91a539c725307f3890" style="width: 100.0%; height: 100.0%;">Ranking 2=Rio de Janeiro/RJ PIB SERVIÇOS=177.361.095</div>`)[0];
+                popup_bf18d48f448e468bb5fa89b29c133a65.setContent(html_05e56950f9e84d91a539c725307f3890);
+            
+
+            marker_67e530fe3b8c4b61a9582318d33a0ce2.bindPopup(popup_bf18d48f448e468bb5fa89b29c133a65)
+            ;
+
+            
+        
+    
+        var marker_93690ddac87f43ba9744e7ccd7342e16 = L.marker(
+            [-15.794087361891002, -47.88790547803134],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_6e66776cf515405cb472487e921615b4 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_93690ddac87f43ba9744e7ccd7342e16.setIcon(icon_6e66776cf515405cb472487e921615b4);
+            
+    
+            var popup_2baf9cea4a554ed5a7582cfda381404c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a1f63482126d43cc870895f840cb5b33 = $(`<div id="html_a1f63482126d43cc870895f840cb5b33" style="width: 100.0%; height: 100.0%;">Ranking 3=Brasília/DF PIB SERVIÇOS=103.819.469</div>`)[0];
+                popup_2baf9cea4a554ed5a7582cfda381404c.setContent(html_a1f63482126d43cc870895f840cb5b33);
+            
+
+            marker_93690ddac87f43ba9744e7ccd7342e16.bindPopup(popup_2baf9cea4a554ed5a7582cfda381404c)
+            ;
+
+            
+        
+    
+        var marker_13e189b2e2f0497d9c9b75eea7adc02b = L.marker(
+            [-19.937524293775052, -43.926453173530454],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_92f5b86734c14311bfa0c7b4f693fb42 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_13e189b2e2f0497d9c9b75eea7adc02b.setIcon(icon_92f5b86734c14311bfa0c7b4f693fb42);
+            
+    
+            var popup_6a05c8b0926149d5a01d7ce689f83425 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_59a13b5779024252b8699b3a69f54af9 = $(`<div id="html_59a13b5779024252b8699b3a69f54af9" style="width: 100.0%; height: 100.0%;">Ranking 4=Belo Horizonte/MG PIB SERVIÇOS=53.213.121</div>`)[0];
+                popup_6a05c8b0926149d5a01d7ce689f83425.setContent(html_59a13b5779024252b8699b3a69f54af9);
+            
+
+            marker_13e189b2e2f0497d9c9b75eea7adc02b.bindPopup(popup_6a05c8b0926149d5a01d7ce689f83425)
+            ;
+
+            
+        
+    
+        var marker_2932793af39b48279e4aefc20e7eb170 = L.marker(
+            [-25.432956000000004, -49.27184788507742],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_60d0ad81ff3e48d39d8ada5376eb106e = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2932793af39b48279e4aefc20e7eb170.setIcon(icon_60d0ad81ff3e48d39d8ada5376eb106e);
+            
+    
+            var popup_f2247d9698b8439297259eb3976beb35 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_76d1521239c6441e983945a12076da50 = $(`<div id="html_76d1521239c6441e983945a12076da50" style="width: 100.0%; height: 100.0%;">Ranking 5=Curitiba/PR PIB SERVIÇOS=46.249.176</div>`)[0];
+                popup_f2247d9698b8439297259eb3976beb35.setContent(html_76d1521239c6441e983945a12076da50);
+            
+
+            marker_2932793af39b48279e4aefc20e7eb170.bindPopup(popup_f2247d9698b8439297259eb3976beb35)
+            ;
+
+            
+        
+    
+        var marker_01cb24e1379b4a6f90e648876be6272f = L.marker(
+            [-23.533612000000005, -46.78881014427142],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_5d8e4aca4e6c41f7929eaf33e3c55e69 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_01cb24e1379b4a6f90e648876be6272f.setIcon(icon_5d8e4aca4e6c41f7929eaf33e3c55e69);
+            
+    
+            var popup_f5f10d830334443a8a7baddecbf3e319 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_262601028f1045f6a8a6a68ddd6866f7 = $(`<div id="html_262601028f1045f6a8a6a68ddd6866f7" style="width: 100.0%; height: 100.0%;">Ranking 6=Osasco/SP PIB SERVIÇOS=53.111.430</div>`)[0];
+                popup_f5f10d830334443a8a7baddecbf3e319.setContent(html_262601028f1045f6a8a6a68ddd6866f7);
+            
+
+            marker_01cb24e1379b4a6f90e648876be6272f.bindPopup(popup_f5f10d830334443a8a7baddecbf3e319)
+            ;
+
+            
+        
+    
+        var marker_eed1a48166a8415b972edbde5aa35236 = L.marker(
+            [-30.0300367747664, -51.22866046370233],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_7c619958864d4edaa70d12fa974f4f96 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_eed1a48166a8415b972edbde5aa35236.setIcon(icon_7c619958864d4edaa70d12fa974f4f96);
+            
+    
+            var popup_4f83c4a951fb40de96e266fb888043be = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_80e1b7181f4747229e111c204a0408ab = $(`<div id="html_80e1b7181f4747229e111c204a0408ab" style="width: 100.0%; height: 100.0%;">Ranking 7=Porto Alegre/RS PIB SERVIÇOS=48.930.408</div>`)[0];
+                popup_4f83c4a951fb40de96e266fb888043be.setContent(html_80e1b7181f4747229e111c204a0408ab);
+            
+
+            marker_eed1a48166a8415b972edbde5aa35236.bindPopup(popup_4f83c4a951fb40de96e266fb888043be)
+            ;
+
+            
+        
+    
+        var marker_312bfbc6ea634d7ab794fd9fc41e1544 = L.marker(
+            [-3.134691491201946, -60.023335181061036],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_ab82ca333fd3497990d36a2b52680a1c = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_312bfbc6ea634d7ab794fd9fc41e1544.setIcon(icon_ab82ca333fd3497990d36a2b52680a1c);
+            
+    
+            var popup_4126463be1a3451085edfdb8cfa61778 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3a73e75c23d748f89cfc1c7e33dd3623 = $(`<div id="html_3a73e75c23d748f89cfc1c7e33dd3623" style="width: 100.0%; height: 100.0%;">Ranking 8=Manaus/AM PIB SERVIÇOS=24.632.348</div>`)[0];
+                popup_4126463be1a3451085edfdb8cfa61778.setContent(html_3a73e75c23d748f89cfc1c7e33dd3623);
+            
+
+            marker_312bfbc6ea634d7ab794fd9fc41e1544.bindPopup(popup_4126463be1a3451085edfdb8cfa61778)
+            ;
+
+            
+        
+    
+        var marker_529ed0f5bead4a94b0423f28ab4377c5 = L.marker(
+            [-13.014771911532753, -38.48806148400785],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_b2abf7507a8c4dd89614380f4c4ce008 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_529ed0f5bead4a94b0423f28ab4377c5.setIcon(icon_b2abf7507a8c4dd89614380f4c4ce008);
+            
+    
+            var popup_eeab030236e94e2a84a2b29d399c833b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ad51a812ed844007b95ca2f6650d6f9a = $(`<div id="html_ad51a812ed844007b95ca2f6650d6f9a" style="width: 100.0%; height: 100.0%;">Ranking 9=Salvador/BA PIB SERVIÇOS=37.381.011</div>`)[0];
+                popup_eeab030236e94e2a84a2b29d399c833b.setContent(html_ad51a812ed844007b95ca2f6650d6f9a);
+            
+
+            marker_529ed0f5bead4a94b0423f28ab4377c5.bindPopup(popup_eeab030236e94e2a84a2b29d399c833b)
+            ;
+
+            
+        
+    
+        var marker_fae91d9b773d46c8b881b64708d2587f = L.marker(
+            [-3.7238050350000007, -38.58992755504318],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_275dc0fc5ce149e5983241999c7d98e0 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fae91d9b773d46c8b881b64708d2587f.setIcon(icon_275dc0fc5ce149e5983241999c7d98e0);
+            
+    
+            var popup_29230a95450e4e04a8aca5d5b33dc1b8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_aa8627bd2585404987cdcdcf7338eac1 = $(`<div id="html_aa8627bd2585404987cdcdcf7338eac1" style="width: 100.0%; height: 100.0%;">Ranking 10=Fortaleza/CE PIB SERVIÇOS=35.008.332</div>`)[0];
+                popup_29230a95450e4e04a8aca5d5b33dc1b8.setContent(html_aa8627bd2585404987cdcdcf7338eac1);
+            
+
+            marker_fae91d9b773d46c8b881b64708d2587f.bindPopup(popup_29230a95450e4e04a8aca5d5b33dc1b8)
+            ;
+
+            
+        
+    
+        var marker_4cfc24274cce4b33a9c6d252865a012e = L.marker(
+            [-22.907342500000002, -47.06015627297316],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_171a0416a53c410aa0a7a5e0bc1be98d = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4cfc24274cce4b33a9c6d252865a012e.setIcon(icon_171a0416a53c410aa0a7a5e0bc1be98d);
+            
+    
+            var popup_e58501481f6444cc91d0859e9265e556 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8d72d088d88441afaf8f005960171e2a = $(`<div id="html_8d72d088d88441afaf8f005960171e2a" style="width: 100.0%; height: 100.0%;">Ranking 11=Campinas/SP PIB SERVIÇOS=33.909.184</div>`)[0];
+                popup_e58501481f6444cc91d0859e9265e556.setContent(html_8d72d088d88441afaf8f005960171e2a);
+            
+
+            marker_4cfc24274cce4b33a9c6d252865a012e.bindPopup(popup_e58501481f6444cc91d0859e9265e556)
+            ;
+
+            
+        
+    
+        var marker_93ea97da68124b0a96ae0038305a5439 = L.marker(
+            [-23.468506, -46.531084085661085],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_c0ed86443bec4defbd703316b65e6f82 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_93ea97da68124b0a96ae0038305a5439.setIcon(icon_c0ed86443bec4defbd703316b65e6f82);
+            
+    
+            var popup_53fddcf9af63454e974f76b1f9dbf22a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_66fd6d759b1f4a05974824da1187ff06 = $(`<div id="html_66fd6d759b1f4a05974824da1187ff06" style="width: 100.0%; height: 100.0%;">Ranking 12=Guarulhos/SP PIB SERVIÇOS=29.551.381</div>`)[0];
+                popup_53fddcf9af63454e974f76b1f9dbf22a.setContent(html_66fd6d759b1f4a05974824da1187ff06);
+            
+
+            marker_93ea97da68124b0a96ae0038305a5439.bindPopup(popup_53fddcf9af63454e974f76b1f9dbf22a)
+            ;
+
+            
+        
+    
+        var marker_beba073147b64fc7aed82cb00b2adf37 = L.marker(
+            [-8.062762483052408, -34.88894194457772],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_f6b5a071ae5940858121282d3a0831ab = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_beba073147b64fc7aed82cb00b2adf37.setIcon(icon_f6b5a071ae5940858121282d3a0831ab);
+            
+    
+            var popup_c736ab64ed4f4a6baa239290334dca28 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e7921a0bb71049ad91e1a2aee7ee98e1 = $(`<div id="html_e7921a0bb71049ad91e1a2aee7ee98e1" style="width: 100.0%; height: 100.0%;">Ranking 13=Recife/PE PIB SERVIÇOS=29.628.615</div>`)[0];
+                popup_c736ab64ed4f4a6baa239290334dca28.setContent(html_e7921a0bb71049ad91e1a2aee7ee98e1);
+            
+
+            marker_beba073147b64fc7aed82cb00b2adf37.bindPopup(popup_c736ab64ed4f4a6baa239290334dca28)
+            ;
+
+            
+        
+    
+        var marker_6aecd87bdb2c459885117e4cf0cb39c6 = L.marker(
+            [-23.508902000000003, -46.874652886530505],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_96132f69f8514592a9cf9198d9d97ce2 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6aecd87bdb2c459885117e4cf0cb39c6.setIcon(icon_96132f69f8514592a9cf9198d9d97ce2);
+            
+    
+            var popup_06d99f93be9a4d3bb74deba7b7d0682f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_24ede43a9e85411688feb43da86159dd = $(`<div id="html_24ede43a9e85411688feb43da86159dd" style="width: 100.0%; height: 100.0%;">Ranking 14=Barueri/SP PIB SERVIÇOS=28.113.200</div>`)[0];
+                popup_06d99f93be9a4d3bb74deba7b7d0682f.setContent(html_24ede43a9e85411688feb43da86159dd);
+            
+
+            marker_6aecd87bdb2c459885117e4cf0cb39c6.bindPopup(popup_06d99f93be9a4d3bb74deba7b7d0682f)
+            ;
+
+            
+        
+    
+        var marker_b999d92ee226482f82c240d292725fdd = L.marker(
+            [-16.673309773838948, -49.255814275815766],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_0ac7b38644bf46358646eecd7585382d = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b999d92ee226482f82c240d292725fdd.setIcon(icon_0ac7b38644bf46358646eecd7585382d);
+            
+    
+            var popup_dc7a29668c7c40628ecfb103453b3645 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_796011aa13a94caca73afbdcd3d02a47 = $(`<div id="html_796011aa13a94caca73afbdcd3d02a47" style="width: 100.0%; height: 100.0%;">Ranking 15=Goiânia/GO PIB SERVIÇOS=28.379.914</div>`)[0];
+                popup_dc7a29668c7c40628ecfb103453b3645.setContent(html_796011aa13a94caca73afbdcd3d02a47);
+            
+
+            marker_b999d92ee226482f82c240d292725fdd.bindPopup(popup_dc7a29668c7c40628ecfb103453b3645)
+            ;
+
+            
+        
+    
+        var marker_6b4cc6a3d9cd4e1ea727e24bddf33b8c = L.marker(
+            [-23.710304500000007, -46.55025724767833],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_9703c7bee80443179e4d8f5cc09d7254 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6b4cc6a3d9cd4e1ea727e24bddf33b8c.setIcon(icon_9703c7bee80443179e4d8f5cc09d7254);
+            
+    
+            var popup_2c4d996eadb7474e8fb4bda635198b92 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3bf0c72c88004142b989b009b0fa36b3 = $(`<div id="html_3bf0c72c88004142b989b009b0fa36b3" style="width: 100.0%; height: 100.0%;">Ranking 16=São Bernardo do Campo/SP PIB SERVIÇOS=23.806.948</div>`)[0];
+                popup_2c4d996eadb7474e8fb4bda635198b92.setContent(html_3bf0c72c88004142b989b009b0fa36b3);
+            
+
+            marker_6b4cc6a3d9cd4e1ea727e24bddf33b8c.bindPopup(popup_2c4d996eadb7474e8fb4bda635198b92)
+            ;
+
+            
+        
+    
+        var marker_64abe6d75c544e618f11bd3e7829b304 = L.marker(
+            [-22.785253249654154, -43.309888071722604],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_d80bb680d2e14b2589866e8f2618ccc2 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_64abe6d75c544e618f11bd3e7829b304.setIcon(icon_d80bb680d2e14b2589866e8f2618ccc2);
+            
+    
+            var popup_afc6daf06033448cb64b354d7176f9e6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_712857c49b12471e9b8188b07d828cd8 = $(`<div id="html_712857c49b12471e9b8188b07d828cd8" style="width: 100.0%; height: 100.0%;">Ranking 17=Duque de Caxias/RJ PIB SERVIÇOS=17.891.891</div>`)[0];
+                popup_afc6daf06033448cb64b354d7176f9e6.setContent(html_712857c49b12471e9b8188b07d828cd8);
+            
+
+            marker_64abe6d75c544e618f11bd3e7829b304.bindPopup(popup_afc6daf06033448cb64b354d7176f9e6)
+            ;
+
+            
+        
+    
+        var marker_3a139a971cf14d3a85f54ec4572ceeb6 = L.marker(
+            [-23.187668000000006, -46.88527396799674],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_821abda4d01f4d7994610b5973442d0c = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3a139a971cf14d3a85f54ec4572ceeb6.setIcon(icon_821abda4d01f4d7994610b5973442d0c);
+            
+    
+            var popup_3612a88eb66e4165859d173379a4b37e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0bbb32b2f30b4e2d84cdcc78c10aff6c = $(`<div id="html_0bbb32b2f30b4e2d84cdcc78c10aff6c" style="width: 100.0%; height: 100.0%;">Ranking 18=Jundiaí/SP PIB SERVIÇOS=23.110.009</div>`)[0];
+                popup_3612a88eb66e4165859d173379a4b37e.setContent(html_0bbb32b2f30b4e2d84cdcc78c10aff6c);
+            
+
+            marker_3a139a971cf14d3a85f54ec4572ceeb6.bindPopup(popup_3612a88eb66e4165859d173379a4b37e)
+            ;
+
+            
+        
+    
+        var marker_3487241c340d471ea21e4f337c69ac9f = L.marker(
+            [-23.184061500000002, -45.884175401459665],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_eb44f18ff593499d9df567d3f43c3a8b = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3487241c340d471ea21e4f337c69ac9f.setIcon(icon_eb44f18ff593499d9df567d3f43c3a8b);
+            
+    
+            var popup_08fb9df38c0a4fefad900104226ce618 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_957152ed4ae6494bbfab8506fc284a1b = $(`<div id="html_957152ed4ae6494bbfab8506fc284a1b" style="width: 100.0%; height: 100.0%;">Ranking 19=São José dos Campos/SP PIB SERVIÇOS=16.557.437</div>`)[0];
+                popup_08fb9df38c0a4fefad900104226ce618.setContent(html_957152ed4ae6494bbfab8506fc284a1b);
+            
+
+            marker_3487241c340d471ea21e4f337c69ac9f.bindPopup(popup_08fb9df38c0a4fefad900104226ce618)
+            ;
+
+            
+        
+    
+        var marker_f0723504961a46029e2d22e91ac23c25 = L.marker(
+            [-18.918998609305604, -48.27795018473447],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_b433ba8a5dba4b5bb6024a5f977d3956 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f0723504961a46029e2d22e91ac23c25.setIcon(icon_b433ba8a5dba4b5bb6024a5f977d3956);
+            
+    
+            var popup_726499f6497e46f380860f8f076f44c3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6fe93626e8ba4b21a2bf8c0284e6e599 = $(`<div id="html_6fe93626e8ba4b21a2bf8c0284e6e599" style="width: 100.0%; height: 100.0%;">Ranking 20=Uberlândia/MG PIB SERVIÇOS=15.005.186</div>`)[0];
+                popup_726499f6497e46f380860f8f076f44c3.setContent(html_6fe93626e8ba4b21a2bf8c0284e6e599);
+            
+
+            marker_f0723504961a46029e2d22e91ac23c25.bindPopup(popup_726499f6497e46f380860f8f076f44c3)
+            ;
+
+            
+        
+    
+        var marker_8473bd062649476f921ab8ff329cc683 = L.marker(
+            [-22.759921699999953, -47.15438580096949],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_d54a0f6fa96341d3965f498b3c872474 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8473bd062649476f921ab8ff329cc683.setIcon(icon_d54a0f6fa96341d3965f498b3c872474);
+            
+    
+            var popup_a4ba0e88e3944dc7beee24c4ebf073c7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5034545b31de421b8df456c24d4a5437 = $(`<div id="html_5034545b31de421b8df456c24d4a5437" style="width: 100.0%; height: 100.0%;">Ranking 21=Paulínia/SP PIB SERVIÇOS=10.894.053</div>`)[0];
+                popup_a4ba0e88e3944dc7beee24c4ebf073c7.setContent(html_5034545b31de421b8df456c24d4a5437);
+            
+
+            marker_8473bd062649476f921ab8ff329cc683.bindPopup(popup_a4ba0e88e3944dc7beee24c4ebf073c7)
+            ;
+
+            
+        
+    
+        var marker_6b37bdffeb674959a57844aacb832102 = L.marker(
+            [-23.499323, -47.45785325320404],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_f677da03fa974f6fa4d08e2ee6256320 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6b37bdffeb674959a57844aacb832102.setIcon(icon_f677da03fa974f6fa4d08e2ee6256320);
+            
+    
+            var popup_d8f661ab33d74771b79877230ec718af = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b9ca0850dcd04914b1b4a55cc30893e5 = $(`<div id="html_b9ca0850dcd04914b1b4a55cc30893e5" style="width: 100.0%; height: 100.0%;">Ranking 22=Sorocaba/SP PIB SERVIÇOS=15.065.172</div>`)[0];
+                popup_d8f661ab33d74771b79877230ec718af.setContent(html_b9ca0850dcd04914b1b4a55cc30893e5);
+            
+
+            marker_6b37bdffeb674959a57844aacb832102.bindPopup(popup_d8f661ab33d74771b79877230ec718af)
+            ;
+
+            
+        
+    
+        var marker_88561c7882bd4af78eaefdaf55f66ab5 = L.marker(
+            [-21.184834500000004, -47.80547591554153],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_4133c8f692cf4ca98ec73939770badbb = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_88561c7882bd4af78eaefdaf55f66ab5.setIcon(icon_4133c8f692cf4ca98ec73939770badbb);
+            
+    
+            var popup_1b2fc3e0da9b449b95e2c75defc5d0df = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b510515957614dc7b775602a53d79e4e = $(`<div id="html_b510515957614dc7b775602a53d79e4e" style="width: 100.0%; height: 100.0%;">Ranking 23=Ribeirão Preto/SP PIB SERVIÇOS=20.224.884</div>`)[0];
+                popup_1b2fc3e0da9b449b95e2c75defc5d0df.setContent(html_b510515957614dc7b775602a53d79e4e);
+            
+
+            marker_88561c7882bd4af78eaefdaf55f66ab5.bindPopup(popup_1b2fc3e0da9b449b95e2c75defc5d0df)
+            ;
+
+            
+        
+    
+        var marker_f4a19aa3abeb46148daa539846f7ca30 = L.marker(
+            [-1.4598450000000003, -48.48782568748756],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_e36792fdfb214949b246df18d1dc7539 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f4a19aa3abeb46148daa539846f7ca30.setIcon(icon_e36792fdfb214949b246df18d1dc7539);
+            
+    
+            var popup_d3ce156b7f8444f98bae6c8c4f09b322 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_13bc3bb5a9f246d5a803db07f333f3c3 = $(`<div id="html_13bc3bb5a9f246d5a803db07f333f3c3" style="width: 100.0%; height: 100.0%;">Ranking 24=Belém/PA PIB SERVIÇOS=16.639.290</div>`)[0];
+                popup_d3ce156b7f8444f98bae6c8c4f09b322.setContent(html_13bc3bb5a9f246d5a803db07f333f3c3);
+            
+
+            marker_f4a19aa3abeb46148daa539846f7ca30.bindPopup(popup_d3ce156b7f8444f98bae6c8c4f09b322)
+            ;
+
+            
+        
+    
+        var marker_419ca731799a42eb94aa1a21828d2ded = L.marker(
+            [-2.5318859850833904, -44.29791856424438],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_453232e8c86a4c49a46a29b055d8fc31 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_419ca731799a42eb94aa1a21828d2ded.setIcon(icon_453232e8c86a4c49a46a29b055d8fc31);
+            
+    
+            var popup_179a4002592d47d09a887e5ee983db38 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0034f9ff02a849c8820b4d81bc3b36a0 = $(`<div id="html_0034f9ff02a849c8820b4d81bc3b36a0" style="width: 100.0%; height: 100.0%;">Ranking 25=São Luís/MA PIB SERVIÇOS=14.332.676</div>`)[0];
+                popup_179a4002592d47d09a887e5ee983db38.setContent(html_0034f9ff02a849c8820b4d81bc3b36a0);
+            
+
+            marker_419ca731799a42eb94aa1a21828d2ded.bindPopup(popup_179a4002592d47d09a887e5ee983db38)
+            ;
+
+            
+        
+    
+        var marker_b30b9a0bce1b446c851f77bdd122738a = L.marker(
+            [-19.943445905663303, -44.06634464872388],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_49dc5b84aa8a4f2bb00b8460b40ab517 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b30b9a0bce1b446c851f77bdd122738a.setIcon(icon_49dc5b84aa8a4f2bb00b8460b40ab517);
+            
+    
+            var popup_0fa43ca751df464cb2b2b594e227633d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_80109a8f2f444a4eba6eee46b74c6525 = $(`<div id="html_80109a8f2f444a4eba6eee46b74c6525" style="width: 100.0%; height: 100.0%;">Ranking 26=Contagem/MG PIB SERVIÇOS=13.855.016</div>`)[0];
+                popup_0fa43ca751df464cb2b2b594e227633d.setContent(html_80109a8f2f444a4eba6eee46b74c6525);
+            
+
+            marker_b30b9a0bce1b446c851f77bdd122738a.bindPopup(popup_0fa43ca751df464cb2b2b594e227633d)
+            ;
+
+            
+        
+    
+        var marker_daba7b2cc22f480bb9e5c29d0f37e8f2 = L.marker(
+            [-23.657510000000002, -46.53087425762954],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_3e6ef6afd7b24ce4a08b3e34eae17d78 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_daba7b2cc22f480bb9e5c29d0f37e8f2.setIcon(icon_3e6ef6afd7b24ce4a08b3e34eae17d78);
+            
+    
+            var popup_f74f53205cf146e0af1ba9d3b580a05a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_54577e2e5b4743a88f3cfd428527b158 = $(`<div id="html_54577e2e5b4743a88f3cfd428527b158" style="width: 100.0%; height: 100.0%;">Ranking 27=Santo André/SP PIB SERVIÇOS=15.730.746</div>`)[0];
+                popup_f74f53205cf146e0af1ba9d3b580a05a.setContent(html_54577e2e5b4743a88f3cfd428527b158);
+            
+
+            marker_daba7b2cc22f480bb9e5c29d0f37e8f2.bindPopup(popup_f74f53205cf146e0af1ba9d3b580a05a)
+            ;
+
+            
+        
+    
+        var marker_ce15538c84334d8e843a45d0d36369a0 = L.marker(
+            [-20.458029987863902, -54.61574356645884],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_414fe312807d4929bf291571603c5abe = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ce15538c84334d8e843a45d0d36369a0.setIcon(icon_414fe312807d4929bf291571603c5abe);
+            
+    
+            var popup_1824643ec96f45f4b44abecd5ce0f60b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_961108ece237460bbd06b505f75aaf07 = $(`<div id="html_961108ece237460bbd06b505f75aaf07" style="width: 100.0%; height: 100.0%;">Ranking 28=Campo Grande/MS PIB SERVIÇOS=12.943.148</div>`)[0];
+                popup_1824643ec96f45f4b44abecd5ce0f60b.setContent(html_961108ece237460bbd06b505f75aaf07);
+            
+
+            marker_ce15538c84334d8e843a45d0d36369a0.bindPopup(popup_1824643ec96f45f4b44abecd5ce0f60b)
+            ;
+
+            
+        
+    
+        var marker_b897c910843c4766ba68bab87b83a55f = L.marker(
+            [-26.304517648654056, -48.84940914323797],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_213b16e4159b41f99ccb79a5b67e3b58 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b897c910843c4766ba68bab87b83a55f.setIcon(icon_213b16e4159b41f99ccb79a5b67e3b58);
+            
+    
+            var popup_fbcfdb11ff6c428a959b575d73d25f5a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_331606bee0ed4b87820e9cdbefab52c0 = $(`<div id="html_331606bee0ed4b87820e9cdbefab52c0" style="width: 100.0%; height: 100.0%;">Ranking 29=Joinville/SC PIB SERVIÇOS=10.871.191</div>`)[0];
+                popup_fbcfdb11ff6c428a959b575d73d25f5a.setContent(html_331606bee0ed4b87820e9cdbefab52c0);
+            
+
+            marker_b897c910843c4766ba68bab87b83a55f.bindPopup(popup_fbcfdb11ff6c428a959b575d73d25f5a)
+            ;
+
+            
+        
+    
+        var marker_34c9f4d90c574c30bfcb249ed2590b2c = L.marker(
+            [-19.965379240085102, -44.19755110326658],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_21f561afcf154b7ba4567a778a820490 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_34c9f4d90c574c30bfcb249ed2590b2c.setIcon(icon_21f561afcf154b7ba4567a778a820490);
+            
+    
+            var popup_683295b00b804cf980543fb5bc4e3780 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e32bc310e5c04900b90561d574a50158 = $(`<div id="html_e32bc310e5c04900b90561d574a50158" style="width: 100.0%; height: 100.0%;">Ranking 30=Betim/MG PIB SERVIÇOS=7.990.361</div>`)[0];
+                popup_683295b00b804cf980543fb5bc4e3780.setContent(html_e32bc310e5c04900b90561d574a50158);
+            
+
+            marker_34c9f4d90c574c30bfcb249ed2590b2c.bindPopup(popup_683295b00b804cf980543fb5bc4e3780)
+            ;
+
+            
+        
+    
+        var marker_dd0e5079843746b882a34f0c5fe34b53 = L.marker(
+            [-22.89645238512725, -43.07582316727347],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_2e0678ea102442b5880657f621b40b0a = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dd0e5079843746b882a34f0c5fe34b53.setIcon(icon_2e0678ea102442b5880657f621b40b0a);
+            
+    
+            var popup_94d1bbc3e46244789a7db88b6532e971 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bae40282fb774335936bb38f79fcb257 = $(`<div id="html_bae40282fb774335936bb38f79fcb257" style="width: 100.0%; height: 100.0%;">Ranking 31=Niterói/RJ PIB SERVIÇOS=12.624.595</div>`)[0];
+                popup_94d1bbc3e46244789a7db88b6532e971.setContent(html_bae40282fb774335936bb38f79fcb257);
+            
+
+            marker_dd0e5079843746b882a34f0c5fe34b53.bindPopup(popup_94d1bbc3e46244789a7db88b6532e971)
+            ;
+
+            
+        
+    
+        var marker_92dc594c0155462d8147479fdbc02a37 = L.marker(
+            [-15.569989013120601, -56.07325203819114],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_1a1c0318542740bb843e6032546c0a5c = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_92dc594c0155462d8147479fdbc02a37.setIcon(icon_1a1c0318542740bb843e6032546c0a5c);
+            
+    
+            var popup_f846ecde81304f37b1411069606d374b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4e40b251b3884111b7f43e1cb843643d = $(`<div id="html_4e40b251b3884111b7f43e1cb843643d" style="width: 100.0%; height: 100.0%;">Ranking 32=Cuiabá/MT PIB SERVIÇOS=12.366.233</div>`)[0];
+                popup_f846ecde81304f37b1411069606d374b.setContent(html_4e40b251b3884111b7f43e1cb843643d);
+            
+
+            marker_92dc594c0155462d8147479fdbc02a37.bindPopup(popup_f846ecde81304f37b1411069606d374b)
+            ;
+
+            
+        
+    
+        var marker_28cabd208e62437ea65e975dcdecdc80 = L.marker(
+            [-23.933737500000003, -46.331370849190684],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_61dfaab19c1f4e76b7022cddf5fccd29 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_28cabd208e62437ea65e975dcdecdc80.setIcon(icon_61dfaab19c1f4e76b7022cddf5fccd29);
+            
+    
+            var popup_2465df9f875a452c99fca56b81bc78ab = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_aeef71ec885c43a9a70a888fd7b5c3a8 = $(`<div id="html_aeef71ec885c43a9a70a888fd7b5c3a8" style="width: 100.0%; height: 100.0%;">Ranking 33=Santos/SP PIB SERVIÇOS=15.123.211</div>`)[0];
+                popup_2465df9f875a452c99fca56b81bc78ab.setContent(html_aeef71ec885c43a9a70a888fd7b5c3a8);
+            
+
+            marker_28cabd208e62437ea65e975dcdecdc80.bindPopup(popup_2465df9f875a452c99fca56b81bc78ab)
+            ;
+
+            
+        
+    
+        var marker_ee29dbb4b3c248aeb7caf9b63b5eb278 = L.marker(
+            [-12.698816760000003, -38.32574006206519],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_c8a51e747f47480a8ca76a29e5e71689 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ee29dbb4b3c248aeb7caf9b63b5eb278.setIcon(icon_c8a51e747f47480a8ca76a29e5e71689);
+            
+    
+            var popup_5b6aabfb99bd49789829ad5a63b2ea72 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ee98890edf3341afa5f8e2c294b7fda9 = $(`<div id="html_ee98890edf3341afa5f8e2c294b7fda9" style="width: 100.0%; height: 100.0%;">Ranking 34=Camaçari/BA PIB SERVIÇOS=5.764.513</div>`)[0];
+                popup_5b6aabfb99bd49789829ad5a63b2ea72.setContent(html_ee98890edf3341afa5f8e2c294b7fda9);
+            
+
+            marker_ee29dbb4b3c248aeb7caf9b63b5eb278.bindPopup(popup_5b6aabfb99bd49789829ad5a63b2ea72)
+            ;
+
+            
+        
+    
+        var marker_96dea564645b442ebc66f4a5fb0ab7b1 = L.marker(
+            [-5.750898537612061, -35.252254728054304],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_faf54c7929594a8098a11429e44a3323 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_96dea564645b442ebc66f4a5fb0ab7b1.setIcon(icon_faf54c7929594a8098a11429e44a3323);
+            
+    
+            var popup_7184bd30474845b4bc52a2255c6bf14c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3d435984e1804a9ebcd47f4ca1798426 = $(`<div id="html_3d435984e1804a9ebcd47f4ca1798426" style="width: 100.0%; height: 100.0%;">Ranking 35=Natal/RN PIB SERVIÇOS=12.122.912</div>`)[0];
+                popup_7184bd30474845b4bc52a2255c6bf14c.setContent(html_3d435984e1804a9ebcd47f4ca1798426);
+            
+
+            marker_96dea564645b442ebc66f4a5fb0ab7b1.bindPopup(popup_7184bd30474845b4bc52a2255c6bf14c)
+            ;
+
+            
+        
+    
+        var marker_9d995ab2edef4c35a87e4251d28f5350 = L.marker(
+            [-20.320153792853304, -40.32220872672663],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_66bdc4d201a348eca70f1c067c63ac6a = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9d995ab2edef4c35a87e4251d28f5350.setIcon(icon_66bdc4d201a348eca70f1c067c63ac6a);
+            
+    
+            var popup_ec1f7c6b05c84972b0ddcdedd983831b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_68c998f0c6c24b72bdcd2e9a766a5f7a = $(`<div id="html_68c998f0c6c24b72bdcd2e9a766a5f7a" style="width: 100.0%; height: 100.0%;">Ranking 36=Vitória/ES PIB SERVIÇOS=11.635.463</div>`)[0];
+                popup_ec1f7c6b05c84972b0ddcdedd983831b.setContent(html_68c998f0c6c24b72bdcd2e9a766a5f7a);
+            
+
+            marker_9d995ab2edef4c35a87e4251d28f5350.bindPopup(popup_ec1f7c6b05c84972b0ddcdedd983831b)
+            ;
+
+            
+        
+    
+        var marker_b4ba9e120af34576a0dc3494f226433f = L.marker(
+            [-22.723722000000002, -47.6468462361582],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_73781c1d70744ab6985a7cbdc0ae90e9 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b4ba9e120af34576a0dc3494f226433f.setIcon(icon_73781c1d70744ab6985a7cbdc0ae90e9);
+            
+    
+            var popup_bc96ddc9b46e4ec9bbda151ebae398de = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_72550670518b4e5789933c81a26d58a5 = $(`<div id="html_72550670518b4e5789933c81a26d58a5" style="width: 100.0%; height: 100.0%;">Ranking 37=Piracicaba/SP PIB SERVIÇOS=9.815.652</div>`)[0];
+                popup_bc96ddc9b46e4ec9bbda151ebae398de.setContent(html_72550670518b4e5789933c81a26d58a5);
+            
+
+            marker_b4ba9e120af34576a0dc3494f226433f.bindPopup(popup_bc96ddc9b46e4ec9bbda151ebae398de)
+            ;
+
+            
+        
+    
+        var marker_95c6c64a4c6c4579918dbd3d865a49ce = L.marker(
+            [-9.660822151631141, -35.70162991348949],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_4ba5acad29c54c268f543951d380752d = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_95c6c64a4c6c4579918dbd3d865a49ce.setIcon(icon_4ba5acad29c54c268f543951d380752d);
+            
+    
+            var popup_e7340d9e75994578a7c7de858d376c5d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7e8f76f6d0cc49a1b3a833f220694bfa = $(`<div id="html_7e8f76f6d0cc49a1b3a833f220694bfa" style="width: 100.0%; height: 100.0%;">Ranking 38=Maceió/AL PIB SERVIÇOS=12.006.071</div>`)[0];
+                popup_e7340d9e75994578a7c7de858d376c5d.setContent(html_7e8f76f6d0cc49a1b3a833f220694bfa);
+            
+
+            marker_95c6c64a4c6c4579918dbd3d865a49ce.bindPopup(popup_e7340d9e75994578a7c7de858d376c5d)
+            ;
+
+            
+        
+    
+        var marker_80f0041b3ac345b3b3a242d39157f688 = L.marker(
+            [-29.166899011062103, -51.17886020588302],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_5f8a45b36a5d4b8a9ba5ea2da1c9df8b = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_80f0041b3ac345b3b3a242d39157f688.setIcon(icon_5f8a45b36a5d4b8a9ba5ea2da1c9df8b);
+            
+    
+            var popup_1f7c93097418434e979be721d8b6ec4e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3a47b4961a4b4fce8865beb402f66552 = $(`<div id="html_3a47b4961a4b4fce8865beb402f66552" style="width: 100.0%; height: 100.0%;">Ranking 39=Caxias do Sul/RS PIB SERVIÇOS=9.878.071</div>`)[0];
+                popup_1f7c93097418434e979be721d8b6ec4e.setContent(html_3a47b4961a4b4fce8865beb402f66552);
+            
+
+            marker_80f0041b3ac345b3b3a242d39157f688.bindPopup(popup_1f7c93097418434e979be721d8b6ec4e)
+            ;
+
+            
+        
+    
+        var marker_837bfcf9be4948df8f5cfd966e131519 = L.marker(
+            [-25.537702000000007, -49.20008246566732],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_64b72ad1c6ed47168610d639d5d52108 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_837bfcf9be4948df8f5cfd966e131519.setIcon(icon_64b72ad1c6ed47168610d639d5d52108);
+            
+    
+            var popup_3651563e06dd489b8c0e916a3afb15fa = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b8c2c4201fba437291260b2c456036d3 = $(`<div id="html_b8c2c4201fba437291260b2c456036d3" style="width: 100.0%; height: 100.0%;">Ranking 40=São José dos Pinhais/PR PIB SERVIÇOS=8.037.980</div>`)[0];
+                popup_3651563e06dd489b8c0e916a3afb15fa.setContent(html_b8c2c4201fba437291260b2c456036d3);
+            
+
+            marker_837bfcf9be4948df8f5cfd966e131519.bindPopup(popup_3651563e06dd489b8c0e916a3afb15fa)
+            ;
+
+            
+        
+    
+        var marker_c4f4b14a651e4a509a7f44c71e1c25a3 = L.marker(
+            [-29.918696706490604, -51.181029780687645],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_833186c4e5134452acc5e049c4a0b452 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c4f4b14a651e4a509a7f44c71e1c25a3.setIcon(icon_833186c4e5134452acc5e049c4a0b452);
+            
+    
+            var popup_4efd645af1574ec6bd1a832f6f77cee4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e2528afe5c1c4aad828af2ea912cd375 = $(`<div id="html_e2528afe5c1c4aad828af2ea912cd375" style="width: 100.0%; height: 100.0%;">Ranking 41=Canoas/RS PIB SERVIÇOS=7.300.984</div>`)[0];
+                popup_4efd645af1574ec6bd1a832f6f77cee4.setContent(html_e2528afe5c1c4aad828af2ea912cd375);
+            
+
+            marker_c4f4b14a651e4a509a7f44c71e1c25a3.bindPopup(popup_4efd645af1574ec6bd1a832f6f77cee4)
+            ;
+
+            
+        
+    
+        var marker_84cd38b0c9734a8cb48a9ef351599a3e = L.marker(
+            [-26.907426239799456, -48.65702320834883],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_2273d6c51738430c80e2f50e549b8300 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_84cd38b0c9734a8cb48a9ef351599a3e.setIcon(icon_2273d6c51738430c80e2f50e549b8300);
+            
+    
+            var popup_370ffd36fd324f70b3fa9da18e59375c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c60cb6a8259e41319dedc100a300b596 = $(`<div id="html_c60cb6a8259e41319dedc100a300b596" style="width: 100.0%; height: 100.0%;">Ranking 42=Itajaí/SC PIB SERVIÇOS=9.079.536</div>`)[0];
+                popup_370ffd36fd324f70b3fa9da18e59375c.setContent(html_c60cb6a8259e41319dedc100a300b596);
+            
+
+            marker_84cd38b0c9734a8cb48a9ef351599a3e.bindPopup(popup_370ffd36fd324f70b3fa9da18e59375c)
+            ;
+
+            
+        
+    
+        var marker_d6f79fa62c6c49febeede3b04c11ec74 = L.marker(
+            [-5.086341952321701, -42.80527045822335],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_624981cfc10e489c9a2172ece7af8c90 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d6f79fa62c6c49febeede3b04c11ec74.setIcon(icon_624981cfc10e489c9a2172ece7af8c90);
+            
+    
+            var popup_a81860bbe4c94dc2af9f9896a9d64bad = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_54b712a3db89441b94332029a0ff2ae1 = $(`<div id="html_54b712a3db89441b94332029a0ff2ae1" style="width: 100.0%; height: 100.0%;">Ranking 43=Teresina/PI PIB SERVIÇOS=10.183.047</div>`)[0];
+                popup_a81860bbe4c94dc2af9f9896a9d64bad.setContent(html_54b712a3db89441b94332029a0ff2ae1);
+            
+
+            marker_d6f79fa62c6c49febeede3b04c11ec74.bindPopup(popup_a81860bbe4c94dc2af9f9896a9d64bad)
+            ;
+
+            
+        
+    
+        var marker_b6b09bc8731a41dc95f6922fe318d146 = L.marker(
+            [-7.149382020000002, -34.87338481353856],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_89696fb3513f451a83dc132bb1257781 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b6b09bc8731a41dc95f6922fe318d146.setIcon(icon_89696fb3513f451a83dc132bb1257781);
+            
+    
+            var popup_18fed54a07194b77b37a18eec207c648 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e4c155ab64a3463090ffff4b0fb2d9be = $(`<div id="html_e4c155ab64a3463090ffff4b0fb2d9be" style="width: 100.0%; height: 100.0%;">Ranking 44=João Pessoa/PB PIB SERVIÇOS=9.732.570</div>`)[0];
+                popup_18fed54a07194b77b37a18eec207c648.setContent(html_e4c155ab64a3463090ffff4b0fb2d9be);
+            
+
+            marker_b6b09bc8731a41dc95f6922fe318d146.bindPopup(popup_18fed54a07194b77b37a18eec207c648)
+            ;
+
+            
+        
+    
+        var marker_cf054af531ee4f41b8e4b5fbe79e0c80 = L.marker(
+            [-27.587795548549956, -48.547637378193336],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_fc0c049f6e2347b386603a8aaa740b1e = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cf054af531ee4f41b8e4b5fbe79e0c80.setIcon(icon_fc0c049f6e2347b386603a8aaa740b1e);
+            
+    
+            var popup_dfb9e136be0541a89465d8607f8aefc6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b5b9baa8e52b420cadf9bc271dfe7fc0 = $(`<div id="html_b5b9baa8e52b420cadf9bc271dfe7fc0" style="width: 100.0%; height: 100.0%;">Ranking 45=Florianópolis/SC PIB SERVIÇOS=11.358.504</div>`)[0];
+                popup_dfb9e136be0541a89465d8607f8aefc6.setContent(html_b5b9baa8e52b420cadf9bc271dfe7fc0);
+            
+
+            marker_cf054af531ee4f41b8e4b5fbe79e0c80.bindPopup(popup_dfb9e136be0541a89465d8607f8aefc6)
+            ;
+
+            
+        
+    
+        var marker_18875f8b769c428fa98e1d26246b63db = L.marker(
+            [-23.312156000000005, -51.16277342387809],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_d98412b457fa4300bd28e780ffe786e9 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_18875f8b769c428fa98e1d26246b63db.setIcon(icon_d98412b457fa4300bd28e780ffe786e9);
+            
+    
+            var popup_ea6d8aba536d41459ca9c708c1c9f104 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_11a70d5e2d1d4b11af519a108290db9d = $(`<div id="html_11a70d5e2d1d4b11af519a108290db9d" style="width: 100.0%; height: 100.0%;">Ranking 46=Londrina/PR PIB SERVIÇOS=10.685.369</div>`)[0];
+                popup_ea6d8aba536d41459ca9c708c1c9f104.setContent(html_11a70d5e2d1d4b11af519a108290db9d);
+            
+
+            marker_18875f8b769c428fa98e1d26246b63db.bindPopup(popup_ea6d8aba536d41459ca9c708c1c9f104)
+            ;
+
+            
+        
+    
+        var marker_2ca35f386eec4be3b2160e67890ffa03 = L.marker(
+            [-20.156769842431704, -40.27521703670849],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_27ca3bb87c174204b41971a303592a3e = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2ca35f386eec4be3b2160e67890ffa03.setIcon(icon_27ca3bb87c174204b41971a303592a3e);
+            
+    
+            var popup_875cbd807078414991e8b8708ba624f9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_fa3d8aa621744c6887d664dc66d77fbe = $(`<div id="html_fa3d8aa621744c6887d664dc66d77fbe" style="width: 100.0%; height: 100.0%;">Ranking 47=Serra/ES PIB SERVIÇOS=7.838.515</div>`)[0];
+                popup_875cbd807078414991e8b8708ba624f9.setContent(html_fa3d8aa621744c6887d664dc66d77fbe);
+            
+
+            marker_2ca35f386eec4be3b2160e67890ffa03.bindPopup(popup_875cbd807078414991e8b8708ba624f9)
+            ;
+
+            
+        
+    
+        var marker_8b7e90a97c894b8b87672be43c9232ac = L.marker(
+            [-23.883839000000005, -46.42003176827448],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_7cb5a2895dee48148df181978fd38e13 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8b7e90a97c894b8b87672be43c9232ac.setIcon(icon_7cb5a2895dee48148df181978fd38e13);
+            
+    
+            var popup_d1f004bf0ee84bdd855af12ff7d13518 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_49c09cab414846afa91b1c2453084174 = $(`<div id="html_49c09cab414846afa91b1c2453084174" style="width: 100.0%; height: 100.0%;">Ranking 48=Cubatão/SP PIB SERVIÇOS=4.752.510</div>`)[0];
+                popup_d1f004bf0ee84bdd855af12ff7d13518.setContent(html_49c09cab414846afa91b1c2453084174);
+            
+
+            marker_8b7e90a97c894b8b87672be43c9232ac.bindPopup(popup_d1f004bf0ee84bdd855af12ff7d13518)
+            ;
+
+            
+        
+    
+        var marker_06c4e45679764382b379f4c0d8645cd8 = L.marker(
+            [-22.368704974385, -41.775064285476],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_5e550b30aff948a4bec94b6cedd2138d = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_06c4e45679764382b379f4c0d8645cd8.setIcon(icon_5e550b30aff948a4bec94b6cedd2138d);
+            
+    
+            var popup_7d33697a3356445c9d9a51d077a37fb9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_37ebda53ff554a3f8aff205c636dc344 = $(`<div id="html_37ebda53ff554a3f8aff205c636dc344" style="width: 100.0%; height: 100.0%;">Ranking 49=Macaé/RJ PIB SERVIÇOS=7.232.381</div>`)[0];
+                popup_7d33697a3356445c9d9a51d077a37fb9.setContent(html_37ebda53ff554a3f8aff205c636dc344);
+            
+
+            marker_06c4e45679764382b379f4c0d8645cd8.bindPopup(popup_7d33697a3356445c9d9a51d077a37fb9)
+            ;
+
+            
+        
+    
+        var marker_54c53ba5a95145e7bb800409104d6b3c = L.marker(
+            [-21.75189863206405, -41.33047649186264],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_f4220fc4ff084846ab88f68595fb31f4 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_54c53ba5a95145e7bb800409104d6b3c.setIcon(icon_f4220fc4ff084846ab88f68595fb31f4);
+            
+    
+            var popup_492b3ca609444aa4a78c6b5477647c23 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8d6771d94f9c4dffa761722f03432b07 = $(`<div id="html_8d6771d94f9c4dffa761722f03432b07" style="width: 100.0%; height: 100.0%;">Ranking 50=Campos dos Goytacazes/RJ PIB SERVIÇOS=7.440.673</div>`)[0];
+                popup_492b3ca609444aa4a78c6b5477647c23.setContent(html_8d6771d94f9c4dffa761722f03432b07);
+            
+
+            marker_54c53ba5a95145e7bb800409104d6b3c.bindPopup(popup_492b3ca609444aa4a78c6b5477647c23)
+            ;
+
+            
+        
+    
+        var marker_3de26e1a1f5f491187ac28ab2f4145aa = L.marker(
+            [-25.591645000000003, -49.40193969670869],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_9570d063139a4ef0ad00e7c355d194dd = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3de26e1a1f5f491187ac28ab2f4145aa.setIcon(icon_9570d063139a4ef0ad00e7c355d194dd);
+            
+    
+            var popup_0bc7ce4311bf43878cc2c439bd2503ca = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b78ee1ddd82146d6bb1a0f2ef0d70b31 = $(`<div id="html_b78ee1ddd82146d6bb1a0f2ef0d70b31" style="width: 100.0%; height: 100.0%;">Ranking 51=Araucária/PR PIB SERVIÇOS=4.827.455</div>`)[0];
+                popup_0bc7ce4311bf43878cc2c439bd2503ca.setContent(html_b78ee1ddd82146d6bb1a0f2ef0d70b31);
+            
+
+            marker_3de26e1a1f5f491187ac28ab2f4145aa.bindPopup(popup_0bc7ce4311bf43878cc2c439bd2503ca)
+            ;
+
+            
+        
+    
+        var marker_a4ae19c957cf468aa6cc231f5d58d507 = L.marker(
+            [-22.8295473130261, -43.03233506196482],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_b961cce68b1e48bb9817d397b0273efc = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a4ae19c957cf468aa6cc231f5d58d507.setIcon(icon_b961cce68b1e48bb9817d397b0273efc);
+            
+    
+            var popup_c8e19763d8224501bbd855257ea41691 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_cd78f8f3c1f44644b7fe883dc14e47d9 = $(`<div id="html_cd78f8f3c1f44644b7fe883dc14e47d9" style="width: 100.0%; height: 100.0%;">Ranking 52=São Gonçalo/RJ PIB SERVIÇOS=7.679.302</div>`)[0];
+                popup_c8e19763d8224501bbd855257ea41691.setContent(html_cd78f8f3c1f44644b7fe883dc14e47d9);
+            
+
+            marker_a4ae19c957cf468aa6cc231f5d58d507.bindPopup(popup_c8e19763d8224501bbd855257ea41691)
+            ;
+
+            
+        
+    
+        var marker_ad32789a04de456aa52e96585113ce15 = L.marker(
+            [-10.9072157978835, -37.04821263951225],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_8aa0553596b3446ea0d922a4f3eeeef2 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ad32789a04de456aa52e96585113ce15.setIcon(icon_8aa0553596b3446ea0d922a4f3eeeef2);
+            
+    
+            var popup_f05b33339df7417a98cf35c0be6db0cb = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a5f9a45a55c64af2a5c0f2aadd919fd7 = $(`<div id="html_a5f9a45a55c64af2a5c0f2aadd919fd7" style="width: 100.0%; height: 100.0%;">Ranking 53=Aracaju/SE PIB SERVIÇOS=9.244.912</div>`)[0];
+                popup_f05b33339df7417a98cf35c0be6db0cb.setContent(html_a5f9a45a55c64af2a5c0f2aadd919fd7);
+            
+
+            marker_ad32789a04de456aa52e96585113ce15.bindPopup(popup_f05b33339df7417a98cf35c0be6db0cb)
+            ;
+
+            
+        
+    
+        var marker_ce2a5dc32588425397296143ef1a192f = L.marker(
+            [-22.75983482626475, -43.450345329919124],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_ae30e573b89a48a086ef3b335ea0e863 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ce2a5dc32588425397296143ef1a192f.setIcon(icon_ae30e573b89a48a086ef3b335ea0e863);
+            
+    
+            var popup_4566c6b15b5745bab6113bd33708cb8d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_726d2bb32695450a8e1bef7a76a5d0e2 = $(`<div id="html_726d2bb32695450a8e1bef7a76a5d0e2" style="width: 100.0%; height: 100.0%;">Ranking 54=Nova Iguaçu/RJ PIB SERVIÇOS=8.531.274</div>`)[0];
+                popup_4566c6b15b5745bab6113bd33708cb8d.setContent(html_726d2bb32695450a8e1bef7a76a5d0e2);
+            
+
+            marker_ce2a5dc32588425397296143ef1a192f.bindPopup(popup_4566c6b15b5745bab6113bd33708cb8d)
+            ;
+
+            
+        
+    
+        var marker_7c5c5a5656f040dda64f3a4efd5add6e = L.marker(
+            [-23.422280000000004, -51.939881870252066],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_a166f152a34a4a5dae42073334f0f8bd = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7c5c5a5656f040dda64f3a4efd5add6e.setIcon(icon_a166f152a34a4a5dae42073334f0f8bd);
+            
+    
+            var popup_e05f4d3d9d6541f99207eaf2d0230b0a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f2c217924c93408db33e768c3415da90 = $(`<div id="html_f2c217924c93408db33e768c3415da90" style="width: 100.0%; height: 100.0%;">Ranking 55=Maringá/PR PIB SERVIÇOS=9.369.541</div>`)[0];
+                popup_e05f4d3d9d6541f99207eaf2d0230b0a.setContent(html_f2c217924c93408db33e768c3415da90);
+            
+
+            marker_7c5c5a5656f040dda64f3a4efd5add6e.bindPopup(popup_e05f4d3d9d6541f99207eaf2d0230b0a)
+            ;
+
+            
+        
+    
+        var marker_878ae6e946e04a568ae0e91bb363abf4 = L.marker(
+            [-20.812636500000004, -49.381347685025794],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_439ec37be5f34efcb28ec4140fb25b25 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_878ae6e946e04a568ae0e91bb363abf4.setIcon(icon_439ec37be5f34efcb28ec4140fb25b25);
+            
+    
+            var popup_d4a5e76e86f343678b9dc703de26b1b7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4b1ee89c13464f1f98aad3c1ab867681 = $(`<div id="html_4b1ee89c13464f1f98aad3c1ab867681" style="width: 100.0%; height: 100.0%;">Ranking 56=São José do Rio Preto/SP PIB SERVIÇOS=10.842.903</div>`)[0];
+                popup_d4a5e76e86f343678b9dc703de26b1b7.setContent(html_4b1ee89c13464f1f98aad3c1ab867681);
+            
+
+            marker_878ae6e946e04a568ae0e91bb363abf4.bindPopup(popup_d4a5e76e86f343678b9dc703de26b1b7)
+            ;
+
+            
+        
+    
+        var marker_741ea77322fe4be9a36ab52a9223c1e7 = L.marker(
+            [-26.916107705306658, -49.05763088436116],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_b4702c55953a48aa930363744d7feab9 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_741ea77322fe4be9a36ab52a9223c1e7.setIcon(icon_b4702c55953a48aa930363744d7feab9);
+            
+    
+            var popup_f7690a6d9c2c48038d1ccfc8602d7d74 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2910396c7085444aa69b002b9699d89a = $(`<div id="html_2910396c7085444aa69b002b9699d89a" style="width: 100.0%; height: 100.0%;">Ranking 57=Blumenau/SC PIB SERVIÇOS=7.641.214</div>`)[0];
+                popup_f7690a6d9c2c48038d1ccfc8602d7d74.setContent(html_2910396c7085444aa69b002b9699d89a);
+            
+
+            marker_741ea77322fe4be9a36ab52a9223c1e7.bindPopup(popup_f7690a6d9c2c48038d1ccfc8602d7d74)
+            ;
+
+            
+        
+    
+        var marker_debf87ee46514e96969476544f277256 = L.marker(
+            [-8.768891790000003, -63.83144565436113],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_3bff3f69a96e49b7abf29c87d123a300 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_debf87ee46514e96969476544f277256.setIcon(icon_3bff3f69a96e49b7abf29c87d123a300);
+            
+    
+            var popup_37408bc9836742c29103f72a3a442e19 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e011552b62384cbe9d5040d961480cb8 = $(`<div id="html_e011552b62384cbe9d5040d961480cb8" style="width: 100.0%; height: 100.0%;">Ranking 58=Porto Velho/RO PIB SERVIÇOS=5.919.602</div>`)[0];
+                popup_37408bc9836742c29103f72a3a442e19.setContent(html_e011552b62384cbe9d5040d961480cb8);
+            
+
+            marker_debf87ee46514e96969476544f277256.bindPopup(popup_37408bc9836742c29103f72a3a442e19)
+            ;
+
+            
+        
+    
+        var marker_526178957b8b474f9d2633564092aad8 = L.marker(
+            [-21.7609243086743, -43.34881727247467],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_8a56c8e075754fb19c4f43ee5dfe4ed5 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_526178957b8b474f9d2633564092aad8.setIcon(icon_8a56c8e075754fb19c4f43ee5dfe4ed5);
+            
+    
+            var popup_ced64607be2145619401996d19fffa84 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e8039525f6a941738c79ba79cb42599c = $(`<div id="html_e8039525f6a941738c79ba79cb42599c" style="width: 100.0%; height: 100.0%;">Ranking 59=Juiz de Fora/MG PIB SERVIÇOS=7.897.885</div>`)[0];
+                popup_ced64607be2145619401996d19fffa84.setContent(html_e8039525f6a941738c79ba79cb42599c);
+            
+
+            marker_526178957b8b474f9d2633564092aad8.bindPopup(popup_ced64607be2145619401996d19fffa84)
+            ;
+
+            
+        
+    
+        var marker_09ca3d3199b04e439c225601148ad1ff = L.marker(
+            [-23.5227065, -46.19676008432656],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_996ad72b0b124244b1f46ac591b8d19e = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_09ca3d3199b04e439c225601148ad1ff.setIcon(icon_996ad72b0b124244b1f46ac591b8d19e);
+            
+    
+            var popup_f1c56d751d4c4033b890d09d2acfb414 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6f664ecf66d84ff0a51a81291e794f21 = $(`<div id="html_6f664ecf66d84ff0a51a81291e794f21" style="width: 100.0%; height: 100.0%;">Ranking 60=Mogi das Cruzes/SP PIB SERVIÇOS=7.718.188</div>`)[0];
+                popup_f1c56d751d4c4033b890d09d2acfb414.setContent(html_6f664ecf66d84ff0a51a81291e794f21);
+            
+
+            marker_09ca3d3199b04e439c225601148ad1ff.bindPopup(popup_f1c56d751d4c4033b890d09d2acfb414)
+            ;
+
+            
+        
+    
+        var marker_8d73c0bc638347e1a989698977457a67 = L.marker(
+            [-23.026555500000004, -45.55660869668744],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_5602ef18a95d4ebfb19ea00b350daa80 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8d73c0bc638347e1a989698977457a67.setIcon(icon_5602ef18a95d4ebfb19ea00b350daa80);
+            
+    
+            var popup_234391ab0e1247bf9076fea1cf1dda19 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_830bdb15d9a544cfad7709940a107383 = $(`<div id="html_830bdb15d9a544cfad7709940a107383" style="width: 100.0%; height: 100.0%;">Ranking 61=Taubaté/SP PIB SERVIÇOS=6.032.111</div>`)[0];
+                popup_234391ab0e1247bf9076fea1cf1dda19.setContent(html_830bdb15d9a544cfad7709940a107383);
+            
+
+            marker_8d73c0bc638347e1a989698977457a67.bindPopup(popup_234391ab0e1247bf9076fea1cf1dda19)
+            ;
+
+            
+        
+    
+        var marker_dd5d813bad854ae6954fb2f674825073 = L.marker(
+            [-23.6693345, -46.45826201216465],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_9f615c947a7f466189239e3ec0e12de1 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dd5d813bad854ae6954fb2f674825073.setIcon(icon_9f615c947a7f466189239e3ec0e12de1);
+            
+    
+            var popup_54f82783e8a24045b4df4b3106e65267 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_11bee037e53141bb803f8257fd462862 = $(`<div id="html_11bee037e53141bb803f8257fd462862" style="width: 100.0%; height: 100.0%;">Ranking 62=Mauá/SP PIB SERVIÇOS=6.294.256</div>`)[0];
+                popup_54f82783e8a24045b4df4b3106e65267.setContent(html_11bee037e53141bb803f8257fd462862);
+            
+
+            marker_dd5d813bad854ae6954fb2f674825073.bindPopup(popup_54f82783e8a24045b4df4b3106e65267)
+            ;
+
+            
+        
+    
+        var marker_55d7fdaf04fa47a6822fd0942b38fdc9 = L.marker(
+            [-8.16539146735745, -34.92117346726028],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_d5b912c0aeac426f885ea75026fb3af8 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_55d7fdaf04fa47a6822fd0942b38fdc9.setIcon(icon_d5b912c0aeac426f885ea75026fb3af8);
+            
+    
+            var popup_d714a5316a884484aff31fedeeff07d8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_984a8bbf6d434a0b9b342d3baaf69d78 = $(`<div id="html_984a8bbf6d434a0b9b342d3baaf69d78" style="width: 100.0%; height: 100.0%;">Ranking 63=Jaboatão dos Guararapes/PE PIB SERVIÇOS=6.717.881</div>`)[0];
+                popup_d714a5316a884484aff31fedeeff07d8.setContent(html_984a8bbf6d434a0b9b342d3baaf69d78);
+            
+
+            marker_55d7fdaf04fa47a6822fd0942b38fdc9.bindPopup(popup_d714a5316a884484aff31fedeeff07d8)
+            ;
+
+            
+        
+    
+        var marker_59d370f97ea7437db49a8187b1e0e9e4 = L.marker(
+            [-19.71353460710205, -47.983624895574245],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_0b94c0e2bd3843a5af4e78ca0221c2c3 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_59d370f97ea7437db49a8187b1e0e9e4.setIcon(icon_0b94c0e2bd3843a5af4e78ca0221c2c3);
+            
+    
+            var popup_25035f03fe2c49909c09d31b9378efbc = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_19a8a7fd4ae5428084189ab0db751f80 = $(`<div id="html_19a8a7fd4ae5428084189ab0db751f80" style="width: 100.0%; height: 100.0%;">Ranking 64=Uberaba/MG PIB SERVIÇOS=5.951.960</div>`)[0];
+                popup_25035f03fe2c49909c09d31b9378efbc.setContent(html_19a8a7fd4ae5428084189ab0db751f80);
+            
+
+            marker_59d370f97ea7437db49a8187b1e0e9e4.bindPopup(popup_25035f03fe2c49909c09d31b9378efbc)
+            ;
+
+            
+        
+    
+        var marker_661944db3f9849138331c450e17e5620 = L.marker(
+            [-25.542493279529253, -54.58710248860465],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_2e005d6becea47959c84703d0cc0e707 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_661944db3f9849138331c450e17e5620.setIcon(icon_2e005d6becea47959c84703d0cc0e707);
+            
+    
+            var popup_962fd23d1a254de2aa43bf5b1a9adf97 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_491a6f32e46347af8835cbe3b62379e7 = $(`<div id="html_491a6f32e46347af8835cbe3b62379e7" style="width: 100.0%; height: 100.0%;">Ranking 65=Foz do Iguaçu/PR PIB SERVIÇOS=4.338.743</div>`)[0];
+                popup_962fd23d1a254de2aa43bf5b1a9adf97.setContent(html_491a6f32e46347af8835cbe3b62379e7);
+            
+
+            marker_661944db3f9849138331c450e17e5620.bindPopup(popup_962fd23d1a254de2aa43bf5b1a9adf97)
+            ;
+
+            
+        
+    
+        var marker_7e77435100984b6abf11b4f83afdb0b6 = L.marker(
+            [-23.614705000000004, -46.571514608630615],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_3008dbac0bcc459fad948cebfd9e1ba5 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7e77435100984b6abf11b4f83afdb0b6.setIcon(icon_3008dbac0bcc459fad948cebfd9e1ba5);
+            
+    
+            var popup_49ce7e77d5f54191bcd8f62f16f1835e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_42afb580839046d58c2835ac569de4ee = $(`<div id="html_42afb580839046d58c2835ac569de4ee" style="width: 100.0%; height: 100.0%;">Ranking 66=São Caetano do Sul/SP PIB SERVIÇOS=6.765.713</div>`)[0];
+                popup_49ce7e77d5f54191bcd8f62f16f1835e.setContent(html_42afb580839046d58c2835ac569de4ee);
+            
+
+            marker_7e77435100984b6abf11b4f83afdb0b6.bindPopup(popup_49ce7e77d5f54191bcd8f62f16f1835e)
+            ;
+
+            
+        
+    
+        var marker_937bc03e9a1a422f816991ef639f687f = L.marker(
+            [-23.68929500000001, -46.62338139320302],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_02df21b486024280a208c3d83390c75b = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_937bc03e9a1a422f816991ef639f687f.setIcon(icon_02df21b486024280a208c3d83390c75b);
+            
+    
+            var popup_26375894f705435899e5919bac495ac8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2a4537b9d17a4dacaff6a86c7046d66c = $(`<div id="html_2a4537b9d17a4dacaff6a86c7046d66c" style="width: 100.0%; height: 100.0%;">Ranking 67=Diadema/SP PIB SERVIÇOS=5.907.985</div>`)[0];
+                popup_26375894f705435899e5919bac495ac8.setContent(html_2a4537b9d17a4dacaff6a86c7046d66c);
+            
+
+            marker_937bc03e9a1a422f816991ef639f687f.bindPopup(popup_26375894f705435899e5919bac495ac8)
+            ;
+
+            
+        
+    
+        var marker_00c219ba4f924214bec5b6e21fc12c4d = L.marker(
+            [-22.325122500000006, -49.08300086709036],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_3fcbc9076053451d908010883420c983 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_00c219ba4f924214bec5b6e21fc12c4d.setIcon(icon_3fcbc9076053451d908010883420c983);
+            
+    
+            var popup_43933591e3bb4008acb50576da7198ed = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_797165f8bb214a7aa6b369d65a05d8f0 = $(`<div id="html_797165f8bb214a7aa6b369d65a05d8f0" style="width: 100.0%; height: 100.0%;">Ranking 68=Bauru/SP PIB SERVIÇOS=8.212.767</div>`)[0];
+                popup_43933591e3bb4008acb50576da7198ed.setContent(html_797165f8bb214a7aa6b369d65a05d8f0);
+            
+
+            marker_00c219ba4f924214bec5b6e21fc12c4d.bindPopup(popup_43933591e3bb4008acb50576da7198ed)
+            ;
+
+            
+        
+    
+        var marker_bf730c52ae5c44be8635e73b517108a5 = L.marker(
+            [-16.328825744649155, -48.95721790263133],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_4414b173c24d4ad6a9215809925bce32 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bf730c52ae5c44be8635e73b517108a5.setIcon(icon_4414b173c24d4ad6a9215809925bce32);
+            
+    
+            var popup_b73d6b0c40d34490be0d247ea4fee435 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_42b220b65e6647ca89e1f1133abeca8a = $(`<div id="html_42b220b65e6647ca89e1f1133abeca8a" style="width: 100.0%; height: 100.0%;">Ranking 69=Anápolis/GO PIB SERVIÇOS=5.874.020</div>`)[0];
+                popup_b73d6b0c40d34490be0d247ea4fee435.setContent(html_42b220b65e6647ca89e1f1133abeca8a);
+            
+
+            marker_bf730c52ae5c44be8635e73b517108a5.bindPopup(popup_b73d6b0c40d34490be0d247ea4fee435)
+            ;
+
+            
+        
+    
+        var marker_f4b490de90e44621adc76e24996c67eb = L.marker(
+            [-12.229284252480051, -38.96003309632136],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_3569719b6ad943e4a97cc59dfc5aad64 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f4b490de90e44621adc76e24996c67eb.setIcon(icon_3569719b6ad943e4a97cc59dfc5aad64);
+            
+    
+            var popup_70d5215301f74bf4b28491cc68cf0e79 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_23612c97240946e0b231d07da70d178d = $(`<div id="html_23612c97240946e0b231d07da70d178d" style="width: 100.0%; height: 100.0%;">Ranking 70=Feira de Santana/BA PIB SERVIÇOS=7.070.540</div>`)[0];
+                popup_70d5215301f74bf4b28491cc68cf0e79.setContent(html_23612c97240946e0b231d07da70d178d);
+            
+
+            marker_f4b490de90e44621adc76e24996c67eb.bindPopup(popup_70d5215301f74bf4b28491cc68cf0e79)
+            ;
+
+            
+        
+    
+        var marker_cb7af3f56b98453c9192dcbc6a1bfbae = L.marker(
+            [-23.36097138472798, -46.882920146569546],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_a497ffd521764fc4ac87fb5b5b043e49 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cb7af3f56b98453c9192dcbc6a1bfbae.setIcon(icon_a497ffd521764fc4ac87fb5b5b043e49);
+            
+    
+            var popup_61d6771d29e54974a69924c0f8cb97c7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0569faeb94ee496ea857f6421d0a44f7 = $(`<div id="html_0569faeb94ee496ea857f6421d0a44f7" style="width: 100.0%; height: 100.0%;">Ranking 71=Cajamar/SP PIB SERVIÇOS=7.911.487</div>`)[0];
+                popup_61d6771d29e54974a69924c0f8cb97c7.setContent(html_0569faeb94ee496ea857f6421d0a44f7);
+            
+
+            marker_cb7af3f56b98453c9192dcbc6a1bfbae.bindPopup(popup_61d6771d29e54974a69924c0f8cb97c7)
+            ;
+
+            
+        
+    
+        var marker_110eedbbb1f14bde8925d28ceef5e0b1 = L.marker(
+            [-25.092547000000003, -50.16144205929418],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_a890c6bda3894207aacdf0489701ecc9 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_110eedbbb1f14bde8925d28ceef5e0b1.setIcon(icon_a890c6bda3894207aacdf0489701ecc9);
+            
+    
+            var popup_644198255ce34cf3a14aa4ce58faf75d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5cad49572cec408e95727d66f7e755bf = $(`<div id="html_5cad49572cec408e95727d66f7e755bf" style="width: 100.0%; height: 100.0%;">Ranking 72=Ponta Grossa/PR PIB SERVIÇOS=5.759.206</div>`)[0];
+                popup_644198255ce34cf3a14aa4ce58faf75d.setContent(html_5cad49572cec408e95727d66f7e755bf);
+            
+
+            marker_110eedbbb1f14bde8925d28ceef5e0b1.bindPopup(popup_644198255ce34cf3a14aa4ce58faf75d)
+            ;
+
+            
+        
+    
+        var marker_8be2f97b3b9d4c9e80ba7f6a65f44715 = L.marker(
+            [-22.510598611961804, -43.177336576674996],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_9af8ff70ca80417ab2fe76cf618ce268 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8be2f97b3b9d4c9e80ba7f6a65f44715.setIcon(icon_9af8ff70ca80417ab2fe76cf618ce268);
+            
+    
+            var popup_74492cc569f3412d87243c907c836e0a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_63aeea1592b9440094c7d4bc794ff698 = $(`<div id="html_63aeea1592b9440094c7d4bc794ff698" style="width: 100.0%; height: 100.0%;">Ranking 73=Petrópolis/RJ PIB SERVIÇOS=6.083.726</div>`)[0];
+                popup_74492cc569f3412d87243c907c836e0a.setContent(html_63aeea1592b9440094c7d4bc794ff698);
+            
+
+            marker_8be2f97b3b9d4c9e80ba7f6a65f44715.bindPopup(popup_74492cc569f3412d87243c907c836e0a)
+            ;
+
+            
+        
+    
+        var marker_e927931e629c41acafc240dba9eff7cb = L.marker(
+            [-23.546934000000004, -46.93337286348805],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_b176d6fb0da04162ac4d4ae5bc032d4b = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e927931e629c41acafc240dba9eff7cb.setIcon(icon_b176d6fb0da04162ac4d4ae5bc032d4b);
+            
+    
+            var popup_7500fc0efe174186ab773ce01a290150 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ec5857e3b8824891bd3ea5a0d9f5a815 = $(`<div id="html_ec5857e3b8824891bd3ea5a0d9f5a815" style="width: 100.0%; height: 100.0%;">Ranking 74=Itapevi/SP PIB SERVIÇOS=6.090.883</div>`)[0];
+                popup_7500fc0efe174186ab773ce01a290150.setContent(html_ec5857e3b8824891bd3ea5a0d9f5a815);
+            
+
+            marker_e927931e629c41acafc240dba9eff7cb.bindPopup(popup_7500fc0efe174186ab773ce01a290150)
+            ;
+
+            
+        
+    
+        var marker_37b75d9b32ea4766a4b19285831e9aa4 = L.marker(
+            [-22.822145000000003, -47.265802732090094],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_1bd63a13fba640548e5097a425ecc7b7 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_37b75d9b32ea4766a4b19285831e9aa4.setIcon(icon_1bd63a13fba640548e5097a425ecc7b7);
+            
+    
+            var popup_2695e1e40d6f4a529816b114720c7772 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ef825ad5e1d64b499c94d5f30518c621 = $(`<div id="html_ef825ad5e1d64b499c94d5f30518c621" style="width: 100.0%; height: 100.0%;">Ranking 75=Sumaré/SP PIB SERVIÇOS=4.955.402</div>`)[0];
+                popup_2695e1e40d6f4a529816b114720c7772.setContent(html_ef825ad5e1d64b499c94d5f30518c621);
+            
+
+            marker_37b75d9b32ea4766a4b19285831e9aa4.bindPopup(popup_2695e1e40d6f4a529816b114720c7772)
+            ;
+
+            
+        
+    
+        var marker_803d89d0497c4d8cbc67ff4461da5655 = L.marker(
+            [-16.822146500000002, -49.24332592770111],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_618edccb19824649ac9dfcd16fafa7ca = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_803d89d0497c4d8cbc67ff4461da5655.setIcon(icon_618edccb19824649ac9dfcd16fafa7ca);
+            
+    
+            var popup_3f293c4105c541e8aeb6ddcd9bbe5625 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8bfc7e0078ff4731870731e42c358b1e = $(`<div id="html_8bfc7e0078ff4731870731e42c358b1e" style="width: 100.0%; height: 100.0%;">Ranking 76=Aparecida de Goiânia/GO PIB SERVIÇOS=6.057.954</div>`)[0];
+                popup_3f293c4105c541e8aeb6ddcd9bbe5625.setContent(html_8bfc7e0078ff4731870731e42c358b1e);
+            
+
+            marker_803d89d0497c4d8cbc67ff4461da5655.bindPopup(popup_3f293c4105c541e8aeb6ddcd9bbe5625)
+            ;
+
+            
+        
+    
+        var marker_5df3bc0b059f41779a66afa7c13ae547 = L.marker(
+            [-23.081646000000003, -47.2123089402514],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_6983155792694d9fbfcda546287b1f6f = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5df3bc0b059f41779a66afa7c13ae547.setIcon(icon_6983155792694d9fbfcda546287b1f6f);
+            
+    
+            var popup_054d91fab63345bd8b069b803d08f1ef = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d9026003c0f24bb08987f1c9ca73272d = $(`<div id="html_d9026003c0f24bb08987f1c9ca73272d" style="width: 100.0%; height: 100.0%;">Ranking 77=Indaiatuba/SP PIB SERVIÇOS=5.110.123</div>`)[0];
+                popup_054d91fab63345bd8b069b803d08f1ef.setContent(html_d9026003c0f24bb08987f1c9ca73272d);
+            
+
+            marker_5df3bc0b059f41779a66afa7c13ae547.bindPopup(popup_054d91fab63345bd8b069b803d08f1ef)
+            ;
+
+            
+        
+    
+        var marker_63856a7fa017459286a343dd339df3b7 = L.marker(
+            [-22.858395000000005, -47.22109660975752],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_731d45ed66504651950ec587be2e1b7b = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_63856a7fa017459286a343dd339df3b7.setIcon(icon_731d45ed66504651950ec587be2e1b7b);
+            
+    
+            var popup_0e437b5a364d42708727cdbc8f0c51a2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_78d68f9a545b458db3a925d19eec0afa = $(`<div id="html_78d68f9a545b458db3a925d19eec0afa" style="width: 100.0%; height: 100.0%;">Ranking 78=Hortolândia/SP PIB SERVIÇOS=5.001.133</div>`)[0];
+                popup_0e437b5a364d42708727cdbc8f0c51a2.setContent(html_78d68f9a545b458db3a925d19eec0afa);
+            
+
+            marker_63856a7fa017459286a343dd339df3b7.bindPopup(popup_0e437b5a364d42708727cdbc8f0c51a2)
+            ;
+
+            
+        
+    
+        var marker_2aae0093fd3d406e934340f0d3d39608 = L.marker(
+            [-23.086778500000005, -46.946440218048735],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_f38b9fa488564fe185b221040501cd96 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2aae0093fd3d406e934340f0d3d39608.setIcon(icon_f38b9fa488564fe185b221040501cd96);
+            
+    
+            var popup_b16860145d904bf78ca708acf5807ba8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ea38686e712a42b5b2964e20dc4f4e23 = $(`<div id="html_ea38686e712a42b5b2964e20dc4f4e23" style="width: 100.0%; height: 100.0%;">Ranking 79=Louveira/SP PIB SERVIÇOS=6.140.216</div>`)[0];
+                popup_b16860145d904bf78ca708acf5807ba8.setContent(html_ea38686e712a42b5b2964e20dc4f4e23);
+            
+
+            marker_2aae0093fd3d406e934340f0d3d39608.bindPopup(popup_b16860145d904bf78ca708acf5807ba8)
+            ;
+
+            
+        
+    
+        var marker_d3e9090956214ed19c7d8cc4de252ed1 = L.marker(
+            [-22.562194000000005, -47.401939523310205],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_5158e1048dcc44c78d7cc4a70299212d = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d3e9090956214ed19c7d8cc4de252ed1.setIcon(icon_5158e1048dcc44c78d7cc4a70299212d);
+            
+    
+            var popup_29d4ba7016eb47f2b42f79eedf1e01b6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ac4f7f153d444c129fe42fd2578855d2 = $(`<div id="html_ac4f7f153d444c129fe42fd2578855d2" style="width: 100.0%; height: 100.0%;">Ranking 80=Limeira/SP PIB SERVIÇOS=5.554.349</div>`)[0];
+                popup_29d4ba7016eb47f2b42f79eedf1e01b6.setContent(html_ac4f7f153d444c129fe42fd2578855d2);
+            
+
+            marker_d3e9090956214ed19c7d8cc4de252ed1.bindPopup(popup_29d4ba7016eb47f2b42f79eedf1e01b6)
+            ;
+
+            
+        
+    
+        var marker_5a15713eefba461583e8028187ee2893 = L.marker(
+            [-20.33837410421385, -40.2939566369471],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_bf95bd225efa485695838484e3de8ce5 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5a15713eefba461583e8028187ee2893.setIcon(icon_bf95bd225efa485695838484e3de8ce5);
+            
+    
+            var popup_97ce0516f85f4e5296ff362f4c511178 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_76a1565f3eb84cdfb3c0e2be8b6c6b11 = $(`<div id="html_76a1565f3eb84cdfb3c0e2be8b6c6b11" style="width: 100.0%; height: 100.0%;">Ranking 81=Vila Velha/ES PIB SERVIÇOS=5.906.698</div>`)[0];
+                popup_97ce0516f85f4e5296ff362f4c511178.setContent(html_76a1565f3eb84cdfb3c0e2be8b6c6b11);
+            
+
+            marker_5a15713eefba461583e8028187ee2893.bindPopup(popup_97ce0516f85f4e5296ff362f4c511178)
+            ;
+
+            
+        
+    
+        var marker_ef7c5d1e19154ccf8a51297d7a9e9e4b = L.marker(
+            [-23.603514000000004, -46.931846327888586],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_2ff14c73f40e466fb7df8e73f747386a = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ef7c5d1e19154ccf8a51297d7a9e9e4b.setIcon(icon_2ff14c73f40e466fb7df8e73f747386a);
+            
+    
+            var popup_47e60694b1ff4b4784a87d170e1f26c2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1e09fc8c350a4763af576183c84f832c = $(`<div id="html_1e09fc8c350a4763af576183c84f832c" style="width: 100.0%; height: 100.0%;">Ranking 82=Cotia/SP PIB SERVIÇOS=5.308.453</div>`)[0];
+                popup_47e60694b1ff4b4784a87d170e1f26c2.setContent(html_1e09fc8c350a4763af576183c84f832c);
+            
+
+            marker_ef7c5d1e19154ccf8a51297d7a9e9e4b.bindPopup(popup_47e60694b1ff4b4784a87d170e1f26c2)
+            ;
+
+            
+        
+    
+        var marker_6e957ded60a641d7bb874ccace1b50db = L.marker(
+            [-24.953797500000007, -53.45972218198565],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_bf8155a145f3425580df1dbf49b22c90 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6e957ded60a641d7bb874ccace1b50db.setIcon(icon_bf8155a145f3425580df1dbf49b22c90);
+            
+    
+            var popup_506ade6574dd4902a0285f43823d845f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_37f2947f9ba3421694d50a4d7b2b0bd6 = $(`<div id="html_37f2947f9ba3421694d50a4d7b2b0bd6" style="width: 100.0%; height: 100.0%;">Ranking 83=Cascavel/PR PIB SERVIÇOS=6.046.288</div>`)[0];
+                popup_506ade6574dd4902a0285f43823d845f.setContent(html_37f2947f9ba3421694d50a4d7b2b0bd6);
+            
+
+            marker_6e957ded60a641d7bb874ccace1b50db.bindPopup(popup_506ade6574dd4902a0285f43823d845f)
+            ;
+
+            
+        
+    
+        var marker_0a1098b21def4c848e3348c6486723a8 = L.marker(
+            [-22.50996760079775, -44.09352188468709],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_b303f04ba7044c5e8d7394613d4d3421 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0a1098b21def4c848e3348c6486723a8.setIcon(icon_b303f04ba7044c5e8d7394613d4d3421);
+            
+    
+            var popup_e8069447ab2f4060a930b84412681fb3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c9386890e5e24365a481ddff6edc9272 = $(`<div id="html_c9386890e5e24365a481ddff6edc9272" style="width: 100.0%; height: 100.0%;">Ranking 84=Volta Redonda/RJ PIB SERVIÇOS=4.663.577</div>`)[0];
+                popup_e8069447ab2f4060a930b84412681fb3.setContent(html_c9386890e5e24365a481ddff6edc9272);
+            
+
+            marker_0a1098b21def4c848e3348c6486723a8.bindPopup(popup_e8069447ab2f4060a930b84412681fb3)
+            ;
+
+            
+        
+    
+        var marker_927d2ffa715248d987e4214683ae43e5 = L.marker(
+            [-22.740883500000006, -47.33036292638141],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_8c962f13b3704c9d9571827238d935a5 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_927d2ffa715248d987e4214683ae43e5.setIcon(icon_8c962f13b3704c9d9571827238d935a5);
+            
+    
+            var popup_b9b5923713574365b1195c18d718ccbb = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_89dea822021546299d0cfd392ef4e866 = $(`<div id="html_89dea822021546299d0cfd392ef4e866" style="width: 100.0%; height: 100.0%;">Ranking 85=Americana/SP PIB SERVIÇOS=5.466.271</div>`)[0];
+                popup_b9b5923713574365b1195c18d718ccbb.setContent(html_89dea822021546299d0cfd392ef4e866);
+            
+
+            marker_927d2ffa715248d987e4214683ae43e5.bindPopup(popup_b9b5923713574365b1195c18d718ccbb)
+            ;
+
+            
+        
+    
+        var marker_246e1a3ed0e04e61843a5a6411884a13 = L.marker(
+            [-22.015998500000002, -47.889237684691636],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_08126741c05e40f2bc49a3d930dde802 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_246e1a3ed0e04e61843a5a6411884a13.setIcon(icon_08126741c05e40f2bc49a3d930dde802);
+            
+    
+            var popup_e6934a6563bf42c9881eddaf6b9e436e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e1baf7eae3b843f2824ffeaa8292d451 = $(`<div id="html_e1baf7eae3b843f2824ffeaa8292d451" style="width: 100.0%; height: 100.0%;">Ranking 86=São Carlos/SP PIB SERVIÇOS=4.823.243</div>`)[0];
+                popup_e6934a6563bf42c9881eddaf6b9e436e.setContent(html_e1baf7eae3b843f2824ffeaa8292d451);
+            
+
+            marker_246e1a3ed0e04e61843a5a6411884a13.bindPopup(popup_e6934a6563bf42c9881eddaf6b9e436e)
+            ;
+
+            
+        
+    
+        var marker_10bae71aadd040b682fe4bcaadeeffe3 = L.marker(
+            [-23.647312500000005, -46.85085999367358],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_97e6dac3652d44628b41f7c0d562fbf7 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_10bae71aadd040b682fe4bcaadeeffe3.setIcon(icon_97e6dac3652d44628b41f7c0d562fbf7);
+            
+    
+            var popup_15aafb6fc6b740b785613a0df74bada5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a2ceed08c08742a9aea4003b9fb8a486 = $(`<div id="html_a2ceed08c08742a9aea4003b9fb8a486" style="width: 100.0%; height: 100.0%;">Ranking 87=Embu das Artes/SP PIB SERVIÇOS=5.720.780</div>`)[0];
+                popup_15aafb6fc6b740b785613a0df74bada5.setContent(html_a2ceed08c08742a9aea4003b9fb8a486);
+            
+
+            marker_10bae71aadd040b682fe4bcaadeeffe3.bindPopup(popup_15aafb6fc6b740b785613a0df74bada5)
+            ;
+
+            
+        
+    
+        var marker_eff07db45beb4a77adbbdb878259cff5 = L.marker(
+            [-27.5903120772487, -48.616022715866414],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_35a3afbc1f0e434693023df920644c8f = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_eff07db45beb4a77adbbdb878259cff5.setIcon(icon_35a3afbc1f0e434693023df920644c8f);
+            
+    
+            var popup_b6047fcc870e41249dcae67ac7e26e04 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_969c154295c348bc80043039cc07177b = $(`<div id="html_969c154295c348bc80043039cc07177b" style="width: 100.0%; height: 100.0%;">Ranking 88=São José/SC PIB SERVIÇOS=5.497.026</div>`)[0];
+                popup_b6047fcc870e41249dcae67ac7e26e04.setContent(html_969c154295c348bc80043039cc07177b);
+            
+
+            marker_eff07db45beb4a77adbbdb878259cff5.bindPopup(popup_b6047fcc870e41249dcae67ac7e26e04)
+            ;
+
+            
+        
+    
+        var marker_3db466a8abde4d50be89ab70ca9212fd = L.marker(
+            [-20.536097, -47.40233162567754],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_9a815985849b4c2cbc200bf323fb3ac3 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3db466a8abde4d50be89ab70ca9212fd.setIcon(icon_9a815985849b4c2cbc200bf323fb3ac3);
+            
+    
+            var popup_00fa13c410c84d8d9a9e541d323a3da8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_98672b7a7225450aa4c552c178bd7653 = $(`<div id="html_98672b7a7225450aa4c552c178bd7653" style="width: 100.0%; height: 100.0%;">Ranking 89=Franca/SP PIB SERVIÇOS=5.170.814</div>`)[0];
+                popup_00fa13c410c84d8d9a9e541d323a3da8.setContent(html_98672b7a7225450aa4c552c178bd7653);
+            
+
+            marker_3db466a8abde4d50be89ab70ca9212fd.bindPopup(popup_00fa13c410c84d8d9a9e541d323a3da8)
+            ;
+
+            
+        
+    
+        var marker_2744675f0d58431ebbf13184b738f987 = L.marker(
+            [-16.47016287349985, -54.63358704017838],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_559529badb184488b288d31efd90f794 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2744675f0d58431ebbf13184b738f987.setIcon(icon_559529badb184488b288d31efd90f794);
+            
+    
+            var popup_7ec489fe97074389aaaadb850c8167be = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e78a681c865a475799d5bb7a68dcb76e = $(`<div id="html_e78a681c865a475799d5bb7a68dcb76e" style="width: 100.0%; height: 100.0%;">Ranking 90=Rondonópolis/MT PIB SERVIÇOS=4.309.535</div>`)[0];
+                popup_7ec489fe97074389aaaadb850c8167be.setContent(html_e78a681c865a475799d5bb7a68dcb76e);
+            
+
+            marker_2744675f0d58431ebbf13184b738f987.bindPopup(popup_7ec489fe97074389aaaadb850c8167be)
+            ;
+
+            
+        
+    
+        var marker_5536a4c32dcd49e3afda1d28444f8c3d = L.marker(
+            [-22.80233080863395, -43.371884603039526],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_6929026432ff4071a58e57cf9f5d7abc = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5536a4c32dcd49e3afda1d28444f8c3d.setIcon(icon_6929026432ff4071a58e57cf9f5d7abc);
+            
+    
+            var popup_9d37f65d8cbe45e5adf778e58621bcd4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d91c886cf73542e882fbd5f28e0ce4b8 = $(`<div id="html_d91c886cf73542e882fbd5f28e0ce4b8" style="width: 100.0%; height: 100.0%;">Ranking 91=São João de Meriti/RJ PIB SERVIÇOS=5.341.929</div>`)[0];
+                popup_9d37f65d8cbe45e5adf778e58621bcd4.setContent(html_d91c886cf73542e882fbd5f28e0ce4b8);
+            
+
+            marker_5536a4c32dcd49e3afda1d28444f8c3d.bindPopup(popup_9d37f65d8cbe45e5adf778e58621bcd4)
+            ;
+
+            
+        
+    
+        var marker_24bf267f309d431e8bd9cdae02c6c279 = L.marker(
+            [-21.790359500000005, -48.174439937543745],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_0173eeb438ec44b0bf35e609dd55fceb = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_24bf267f309d431e8bd9cdae02c6c279.setIcon(icon_0173eeb438ec44b0bf35e609dd55fceb);
+            
+    
+            var popup_980af2b6f285494e91ca776d64085c31 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f03b701b569d4e03b670b1d0c3794f39 = $(`<div id="html_f03b701b569d4e03b670b1d0c3794f39" style="width: 100.0%; height: 100.0%;">Ranking 92=Araraquara/SP PIB SERVIÇOS=5.206.367</div>`)[0];
+                popup_980af2b6f285494e91ca776d64085c31.setContent(html_f03b701b569d4e03b670b1d0c3794f39);
+            
+
+            marker_24bf267f309d431e8bd9cdae02c6c279.bindPopup(popup_980af2b6f285494e91ca776d64085c31)
+            ;
+
+            
+        
+    
+        var marker_dae11a30cd0745c0b563d0116fd415e8 = L.marker(
+            [-16.722706639983752, -43.865422434383156],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_9284245ae5f848cba1ee55aa2b96e9a2 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dae11a30cd0745c0b563d0116fd415e8.setIcon(icon_9284245ae5f848cba1ee55aa2b96e9a2);
+            
+    
+            var popup_7a8ea1269a46496784701ab8082c7df4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_126ff8f29565430abf7ab731c5635142 = $(`<div id="html_126ff8f29565430abf7ab731c5635142" style="width: 100.0%; height: 100.0%;">Ranking 93=Montes Claros/MG PIB SERVIÇOS=4.622.804</div>`)[0];
+                popup_7a8ea1269a46496784701ab8082c7df4.setContent(html_126ff8f29565430abf7ab731c5635142);
+            
+
+            marker_dae11a30cd0745c0b563d0116fd415e8.bindPopup(popup_7a8ea1269a46496784701ab8082c7df4)
+            ;
+
+            
+        
+    
+        var marker_e9d9bfea13254e76896b32c220e5f5b1 = L.marker(
+            [-29.686326025177205, -51.12860527763186],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_ff12457e606e4377beb43f2f4206bf30 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e9d9bfea13254e76896b32c220e5f5b1.setIcon(icon_ff12457e606e4377beb43f2f4206bf30);
+            
+    
+            var popup_d81f5a95cb794a07a276946fc112d2bc = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_147aa701117c4a1caae9c28dd36334e5 = $(`<div id="html_147aa701117c4a1caae9c28dd36334e5" style="width: 100.0%; height: 100.0%;">Ranking 94=Novo Hamburgo/RS PIB SERVIÇOS=4.618.392</div>`)[0];
+                popup_d81f5a95cb794a07a276946fc112d2bc.setContent(html_147aa701117c4a1caae9c28dd36334e5);
+            
+
+            marker_e9d9bfea13254e76896b32c220e5f5b1.bindPopup(popup_d81f5a95cb794a07a276946fc112d2bc)
+            ;
+
+            
+        
+    
+        var marker_bd0e97f03499436eae7f7575ed78291b = L.marker(
+            [-23.449453000000005, -46.92209250564972],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_ebadc594e04945cb80e91eb0c92ff4a9 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bd0e97f03499436eae7f7575ed78291b.setIcon(icon_ebadc594e04945cb80e91eb0c92ff4a9);
+            
+    
+            var popup_00265423015e49f3a908d7c9984e71c1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d2a081b76ebb44d7a94d78c43fd9308f = $(`<div id="html_d2a081b76ebb44d7a94d78c43fd9308f" style="width: 100.0%; height: 100.0%;">Ranking 95=Santana de Parnaíba/SP PIB SERVIÇOS=4.593.733</div>`)[0];
+                popup_00265423015e49f3a908d7c9984e71c1.setContent(html_d2a081b76ebb44d7a94d78c43fd9308f);
+            
+
+            marker_bd0e97f03499436eae7f7575ed78291b.bindPopup(popup_00265423015e49f3a908d7c9984e71c1)
+            ;
+
+            
+        
+    
+        var marker_973876ead2a445fcb68691569dec7acb = L.marker(
+            [-28.261767127904854, -52.407095092617155],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_203221951bf04172acaece0aa24c8eda = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_973876ead2a445fcb68691569dec7acb.setIcon(icon_203221951bf04172acaece0aa24c8eda);
+            
+    
+            var popup_b775d5fc10a24360aacb0d96e33d16c0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_fcd4956231034aba8600b0a51129a339 = $(`<div id="html_fcd4956231034aba8600b0a51129a339" style="width: 100.0%; height: 100.0%;">Ranking 96=Passo Fundo/RS PIB SERVIÇOS=5.252.647</div>`)[0];
+                popup_b775d5fc10a24360aacb0d96e33d16c0.setContent(html_fcd4956231034aba8600b0a51129a339);
+            
+
+            marker_973876ead2a445fcb68691569dec7acb.bindPopup(popup_b775d5fc10a24360aacb0d96e33d16c0)
+            ;
+
+            
+        
+    
+        var marker_1d9160d602014ce8afbeecde41816418 = L.marker(
+            [-22.87125076842195, -43.77504063494181],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_283ea5e8c7e44a898fa9133557da174b = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1d9160d602014ce8afbeecde41816418.setIcon(icon_283ea5e8c7e44a898fa9133557da174b);
+            
+    
+            var popup_6f8b2a741261400caace2328ad81fb5c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c007684398b64583a54a76980833eb5c = $(`<div id="html_c007684398b64583a54a76980833eb5c" style="width: 100.0%; height: 100.0%;">Ranking 97=Itaguaí/RJ PIB SERVIÇOS=5.439.117</div>`)[0];
+                popup_6f8b2a741261400caace2328ad81fb5c.setContent(html_c007684398b64583a54a76980833eb5c);
+            
+
+            marker_1d9160d602014ce8afbeecde41816418.bindPopup(popup_6f8b2a741261400caace2328ad81fb5c)
+            ;
+
+            
+        
+    
+        var marker_fa800d09144e4411a8cde8ac8c2713a8 = L.marker(
+            [-31.719597880829156, -52.344320062991535],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_e95d609c4651460ba2645a7bf5a54ddd = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fa800d09144e4411a8cde8ac8c2713a8.setIcon(icon_e95d609c4651460ba2645a7bf5a54ddd);
+            
+    
+            var popup_1f9ee161f1ec4c32b8d5db07f038929b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b0c604bdcd7f43ecbf8452c7d86e0288 = $(`<div id="html_b0c604bdcd7f43ecbf8452c7d86e0288" style="width: 100.0%; height: 100.0%;">Ranking 98=Pelotas/RS PIB SERVIÇOS=4.540.788</div>`)[0];
+                popup_1f9ee161f1ec4c32b8d5db07f038929b.setContent(html_b0c604bdcd7f43ecbf8452c7d86e0288);
+            
+
+            marker_fa800d09144e4411a8cde8ac8c2713a8.bindPopup(popup_1f9ee161f1ec4c32b8d5db07f038929b)
+            ;
+
+            
+        
+    
+        var marker_391f66e656ec46d1827cfc3a79113322 = L.marker(
+            [-22.122743500000002, -51.38676558191249],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_9d77021902554eb78a1ad9c44a8a88f8);
+        
+    
+
+                var icon_7da32beba33f498cb5315936640934a2 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_391f66e656ec46d1827cfc3a79113322.setIcon(icon_7da32beba33f498cb5315936640934a2);
+            
+    
+            var popup_4138159b65224fc9985b48fdfe3174ce = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bf55d1898b5d4cc588dafe44b2d82757 = $(`<div id="html_bf55d1898b5d4cc588dafe44b2d82757" style="width: 100.0%; height: 100.0%;">Ranking 99=Presidente Prudente/SP PIB SERVIÇOS=4.843.335</div>`)[0];
+                popup_4138159b65224fc9985b48fdfe3174ce.setContent(html_bf55d1898b5d4cc588dafe44b2d82757);
+            
+
+            marker_391f66e656ec46d1827cfc3a79113322.bindPopup(popup_4138159b65224fc9985b48fdfe3174ce)
+            ;
+
+            
+        
+</script>
