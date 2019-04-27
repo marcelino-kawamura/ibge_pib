@@ -1,0 +1,3440 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_60239a60b5304aca86ae7544a0f64ec0 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+                <div style="position: fixed; 
+                            bottom: 50px; left: 50px; width: 250px; height: 140px; 
+                            border:2px solid grey; z-index:9999; font-size:12px;
+                            ">&nbsp; RANKING 2016-100 MAIORES CIDADES DO BRASIL em PIB AGRICOLA' <br> (x R$ 1.000)' <br>
+                              &nbsp; De a 1 a 50' &nbsp; <i class="fa fa-arrow-circle-up fa-2x" style="color:blue"></i><br>
+                              &nbsp; Acima de 50' &nbsp; <i class="fa fa-arrow-circle-down fa-2x" style="color:red"></i>
+                </div>
+                
+    
+    <div class="folium-map" id="map_60239a60b5304aca86ae7544a0f64ec0" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_60239a60b5304aca86ae7544a0f64ec0 = L.map(
+        'map_60239a60b5304aca86ae7544a0f64ec0', {
+        center: [-17.46113994986407, -51.008815497981644],
+        zoom: 4,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_0fc7523875e74adc99c216b441980c24 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+    
+        var marker_757c06b3aaf44ba085dfd921dcd62e71 = L.marker(
+            [-13.538195353471052, -58.812138014175474],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_73cd61cb77a64190b261acdd08856f9e = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_757c06b3aaf44ba085dfd921dcd62e71.setIcon(icon_73cd61cb77a64190b261acdd08856f9e);
+            
+    
+            var popup_ee46fc3c0a9a43a8a29a5caf16c60708 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_daaa2302780043b5a6a02e003a76cb7d = $(`<div id="html_daaa2302780043b5a6a02e003a76cb7d" style="width: 100.0%; height: 100.0%;">Ranking 1=Sapezal/MT PIB_AGRICOLA=1.402.282</div>`)[0];
+                popup_ee46fc3c0a9a43a8a29a5caf16c60708.setContent(html_daaa2302780043b5a6a02e003a76cb7d);
+            
+
+            marker_757c06b3aaf44ba085dfd921dcd62e71.bindPopup(popup_ee46fc3c0a9a43a8a29a5caf16c60708)
+            ;
+
+            
+        
+    
+        var marker_ad59971fbf96492c9202370fd028b7ad = L.marker(
+            [-12.55177670784548, -55.72591367509129],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_21f11ffe6dbe4144ae2ea13c2cf9a4e4 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ad59971fbf96492c9202370fd028b7ad.setIcon(icon_21f11ffe6dbe4144ae2ea13c2cf9a4e4);
+            
+    
+            var popup_3261b4f0024e4b6aa86d9376d5fae586 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a34355e678fe43f98923a4ad9c3c5d09 = $(`<div id="html_a34355e678fe43f98923a4ad9c3c5d09" style="width: 100.0%; height: 100.0%;">Ranking 2=Sorriso/MT PIB_AGRICOLA=1.361.551</div>`)[0];
+                popup_3261b4f0024e4b6aa86d9376d5fae586.setContent(html_a34355e678fe43f98923a4ad9c3c5d09);
+            
+
+            marker_ad59971fbf96492c9202370fd028b7ad.bindPopup(popup_3261b4f0024e4b6aa86d9376d5fae586)
+            ;
+
+            
+        
+    
+        var marker_b637fd08b4ab47cc87e51d844e3f6c3e = L.marker(
+            [-17.794543401905702, -50.92968093017321],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_f2d62808deac49c0b769522669d426f4 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b637fd08b4ab47cc87e51d844e3f6c3e.setIcon(icon_f2d62808deac49c0b769522669d426f4);
+            
+    
+            var popup_c1deded7b3aa4ac3a8293cdc66a50591 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9b41e5a6715f44cba14b6de69494907c = $(`<div id="html_9b41e5a6715f44cba14b6de69494907c" style="width: 100.0%; height: 100.0%;">Ranking 3=Rio Verde/GO PIB_AGRICOLA=1.294.402</div>`)[0];
+                popup_c1deded7b3aa4ac3a8293cdc66a50591.setContent(html_9b41e5a6715f44cba14b6de69494907c);
+            
+
+            marker_b637fd08b4ab47cc87e51d844e3f6c3e.bindPopup(popup_c1deded7b3aa4ac3a8293cdc66a50591)
+            ;
+
+            
+        
+    
+        var marker_9adfb722a6e746d3a636c71e253c939c = L.marker(
+            [-13.654733173202303, -57.88854647883716],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_88baa4402d2a4234a88ce78ae4254952 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9adfb722a6e746d3a636c71e253c939c.setIcon(icon_88baa4402d2a4234a88ce78ae4254952);
+            
+    
+            var popup_530e6244350a4a5c8a7d95d228ae0e2b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e5adac8af7834548b69f4de92134caa0 = $(`<div id="html_e5adac8af7834548b69f4de92134caa0" style="width: 100.0%; height: 100.0%;">Ranking 4=Campo Novo do Parecis/MT PIB_AGRICOLA=1.123.082</div>`)[0];
+                popup_530e6244350a4a5c8a7d95d228ae0e2b.setContent(html_e5adac8af7834548b69f4de92134caa0);
+            
+
+            marker_9adfb722a6e746d3a636c71e253c939c.bindPopup(popup_530e6244350a4a5c8a7d95d228ae0e2b)
+            ;
+
+            
+        
+    
+        var marker_588f04c7597a4d3ba56f8589cac139fc = L.marker(
+            [-14.401322962164901, -56.43356608151198],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_530f9207191a40b7933d941210a84fb4 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_588f04c7597a4d3ba56f8589cac139fc.setIcon(icon_530f9207191a40b7933d941210a84fb4);
+            
+    
+            var popup_5383732284e046618c767ac02104f1a7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f05809789efe48d5808233d9b232c9f1 = $(`<div id="html_f05809789efe48d5808233d9b232c9f1" style="width: 100.0%; height: 100.0%;">Ranking 5=Diamantino/MT PIB_AGRICOLA=1.107.527</div>`)[0];
+                popup_5383732284e046618c767ac02104f1a7.setContent(html_f05809789efe48d5808233d9b232c9f1);
+            
+
+            marker_588f04c7597a4d3ba56f8589cac139fc.bindPopup(popup_5383732284e046618c767ac02104f1a7)
+            ;
+
+            
+        
+    
+        var marker_1450723d50b04808b8e94c03ad203f10 = L.marker(
+            [-15.553704270314903, -55.17165541489567],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_c3ee303253184eb9a7e4388b09d10b9a = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1450723d50b04808b8e94c03ad203f10.setIcon(icon_c3ee303253184eb9a7e4388b09d10b9a);
+            
+    
+            var popup_cf80303db0e24d22abe1c030093bcfa0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0d7fd337e0524b7ba67faae1e6b196f1 = $(`<div id="html_0d7fd337e0524b7ba67faae1e6b196f1" style="width: 100.0%; height: 100.0%;">Ranking 6=Campo Verde/MT PIB_AGRICOLA=982.943</div>`)[0];
+                popup_cf80303db0e24d22abe1c030093bcfa0.setContent(html_0d7fd337e0524b7ba67faae1e6b196f1);
+            
+
+            marker_1450723d50b04808b8e94c03ad203f10.bindPopup(popup_cf80303db0e24d22abe1c030093bcfa0)
+            ;
+
+            
+        
+    
+        var marker_15106158f2dc4a5a889ec4d1e9409ea5 = L.marker(
+            [-17.886232333840404, -51.7208180375605],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_443776592b88433d90b5c9df000e2e86 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_15106158f2dc4a5a889ec4d1e9409ea5.setIcon(icon_443776592b88433d90b5c9df000e2e86);
+            
+    
+            var popup_b3eb510d94bb40cca757ff11276ec250 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ed84daad7db043d2846fafa7773e9946 = $(`<div id="html_ed84daad7db043d2846fafa7773e9946" style="width: 100.0%; height: 100.0%;">Ranking 7=Jataí/GO PIB_AGRICOLA=969.787</div>`)[0];
+                popup_b3eb510d94bb40cca757ff11276ec250.setContent(html_ed84daad7db043d2846fafa7773e9946);
+            
+
+            marker_15106158f2dc4a5a889ec4d1e9409ea5.bindPopup(popup_b3eb510d94bb40cca757ff11276ec250)
+            ;
+
+            
+        
+    
+        var marker_f9a151e6337b4370a88878daa6ad47e1 = L.marker(
+            [-16.769433663164204, -47.606817592232595],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_3980f4fb1ff84c928f6a8b9075be5a03 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f9a151e6337b4370a88878daa6ad47e1.setIcon(icon_3980f4fb1ff84c928f6a8b9075be5a03);
+            
+    
+            var popup_449497675c9b459e9022a3afcd571791 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4cd57f27c8294774903d060427ea8fd9 = $(`<div id="html_4cd57f27c8294774903d060427ea8fd9" style="width: 100.0%; height: 100.0%;">Ranking 8=Cristalina/GO PIB_AGRICOLA=894.719</div>`)[0];
+                popup_449497675c9b459e9022a3afcd571791.setContent(html_4cd57f27c8294774903d060427ea8fd9);
+            
+
+            marker_f9a151e6337b4370a88878daa6ad47e1.bindPopup(popup_449497675c9b459e9022a3afcd571791)
+            ;
+
+            
+        
+    
+        var marker_d8fbd2e468004784ad6f68b1753bba50 = L.marker(
+            [-13.832725692724004, -56.110005248097764],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_9665295ddc5d4bfeab4cd7095ecfce67 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d8fbd2e468004784ad6f68b1753bba50.setIcon(icon_9665295ddc5d4bfeab4cd7095ecfce67);
+            
+    
+            var popup_eb4f3ed93b84453d88de18656ec726ab = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9fbcfc40c246469995ca405451aab6ec = $(`<div id="html_9fbcfc40c246469995ca405451aab6ec" style="width: 100.0%; height: 100.0%;">Ranking 9=Nova Mutum/MT PIB_AGRICOLA=893.162</div>`)[0];
+                popup_eb4f3ed93b84453d88de18656ec726ab.setContent(html_9fbcfc40c246469995ca405451aab6ec);
+            
+
+            marker_d8fbd2e468004784ad6f68b1753bba50.bindPopup(popup_eb4f3ed93b84453d88de18656ec726ab)
+            ;
+
+            
+        
+    
+        var marker_7d1582e4052440b9a9a3beec828ee14d = L.marker(
+            [-21.8011952575732, -54.54224222246886],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_402e9b5b8c5648fcab5df5f82bdead08 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7d1582e4052440b9a9a3beec828ee14d.setIcon(icon_402e9b5b8c5648fcab5df5f82bdead08);
+            
+    
+            var popup_48f1eb733380458f991349d73a47a8b8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4db86646721c4a9a9f1ab3a1bc27a4a5 = $(`<div id="html_4db86646721c4a9a9f1ab3a1bc27a4a5" style="width: 100.0%; height: 100.0%;">Ranking 10=Rio Brilhante/MS PIB_AGRICOLA=857.551</div>`)[0];
+                popup_48f1eb733380458f991349d73a47a8b8.setContent(html_4db86646721c4a9a9f1ab3a1bc27a4a5);
+            
+
+            marker_7d1582e4052440b9a9a3beec828ee14d.bindPopup(popup_48f1eb733380458f991349d73a47a8b8)
+            ;
+
+            
+        
+    
+        var marker_d1e72bea51eb4d49a6de023418f63f3a = L.marker(
+            [-13.033827715955551, -55.273213318984],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_f76c857bb8a546d6b081e9b7a109a691 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d1e72bea51eb4d49a6de023418f63f3a.setIcon(icon_f76c857bb8a546d6b081e9b7a109a691);
+            
+    
+            var popup_031a9b6cf99e4e4f9d57b0336b8dea62 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e3f5b8d8a3484352a05d32ca98b1cde1 = $(`<div id="html_e3f5b8d8a3484352a05d32ca98b1cde1" style="width: 100.0%; height: 100.0%;">Ranking 11=Nova Ubiratã/MT PIB_AGRICOLA=841.104</div>`)[0];
+                popup_031a9b6cf99e4e4f9d57b0336b8dea62.setContent(html_e3f5b8d8a3484352a05d32ca98b1cde1);
+            
+
+            marker_d1e72bea51eb4d49a6de023418f63f3a.bindPopup(popup_031a9b6cf99e4e4f9d57b0336b8dea62)
+            ;
+
+            
+        
+    
+        var marker_0481b3f1f4b641d890ce679514c01f20 = L.marker(
+            [-15.794087361891002, -47.88790547803134],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_263fb26e5e7447ba8a1d1b78dd0fa6ab = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0481b3f1f4b641d890ce679514c01f20.setIcon(icon_263fb26e5e7447ba8a1d1b78dd0fa6ab);
+            
+    
+            var popup_8fcab1f1c779413abf61a5f1278e3d95 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f32d19e2a372447f8cc0b1d9f5bfa37e = $(`<div id="html_f32d19e2a372447f8cc0b1d9f5bfa37e" style="width: 100.0%; height: 100.0%;">Ranking 12=Brasília/DF PIB_AGRICOLA=820.754</div>`)[0];
+                popup_8fcab1f1c779413abf61a5f1278e3d95.setContent(html_f32d19e2a372447f8cc0b1d9f5bfa37e);
+            
+
+            marker_0481b3f1f4b641d890ce679514c01f20.bindPopup(popup_8fcab1f1c779413abf61a5f1278e3d95)
+            ;
+
+            
+        
+    
+        var marker_59f0a717943d48068afd76acc30d8a23 = L.marker(
+            [-16.3590084924977, -46.89995659528498],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_22a91b778f1c4ef6b5af595bfd770ce9 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_59f0a717943d48068afd76acc30d8a23.setIcon(icon_22a91b778f1c4ef6b5af595bfd770ce9);
+            
+    
+            var popup_65cbceca3e274966873e49319723244f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_81bfacae47be4dce88f53c6ffe81274d = $(`<div id="html_81bfacae47be4dce88f53c6ffe81274d" style="width: 100.0%; height: 100.0%;">Ranking 13=Unaí/MG PIB_AGRICOLA=819.193</div>`)[0];
+                popup_65cbceca3e274966873e49319723244f.setContent(html_81bfacae47be4dce88f53c6ffe81274d);
+            
+
+            marker_59f0a717943d48068afd76acc30d8a23.bindPopup(popup_65cbceca3e274966873e49319723244f)
+            ;
+
+            
+        
+    
+        var marker_298b10933194465e8a91e0852054fbce = L.marker(
+            [-12.360895490537704, -44.97409623962153],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_c85908cdfba942e5b5ff28a701b4c75c = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_298b10933194465e8a91e0852054fbce.setIcon(icon_c85908cdfba942e5b5ff28a701b4c75c);
+            
+    
+            var popup_863b6230637a4f13a7d2b2877e066ec2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3b78697593944785834c4608d0fed669 = $(`<div id="html_3b78697593944785834c4608d0fed669" style="width: 100.0%; height: 100.0%;">Ranking 14=São Desidério/BA PIB_AGRICOLA=814.476</div>`)[0];
+                popup_863b6230637a4f13a7d2b2877e066ec2.setContent(html_3b78697593944785834c4608d0fed669);
+            
+
+            marker_298b10933194465e8a91e0852054fbce.bindPopup(popup_863b6230637a4f13a7d2b2877e066ec2)
+            ;
+
+            
+        
+    
+        var marker_2f34d30492804b73a39d7b338c3d55c5 = L.marker(
+            [-3.7571930100000004, -47.503144754999155],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_da0e863e55464a199399406692532bb7 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2f34d30492804b73a39d7b338c3d55c5.setIcon(icon_da0e863e55464a199399406692532bb7);
+            
+    
+            var popup_9d74d174f5a748d68bd57d44c5f2b07d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8d722c4715f04def89412543ed97aa71 = $(`<div id="html_8d722c4715f04def89412543ed97aa71" style="width: 100.0%; height: 100.0%;">Ranking 15=Ulianópolis/PA PIB_AGRICOLA=800.105</div>`)[0];
+                popup_9d74d174f5a748d68bd57d44c5f2b07d.setContent(html_8d722c4715f04def89412543ed97aa71);
+            
+
+            marker_2f34d30492804b73a39d7b338c3d55c5.bindPopup(popup_9d74d174f5a748d68bd57d44c5f2b07d)
+            ;
+
+            
+        
+    
+        var marker_9cfd88ef791f46489da20c60ca2b8026 = L.marker(
+            [-9.397375515000002, -40.49999933465225],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_42b6140620e64bc9b69cffd2a455dec5 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9cfd88ef791f46489da20c60ca2b8026.setIcon(icon_42b6140620e64bc9b69cffd2a455dec5);
+            
+    
+            var popup_aca8fbc98ca74d86bb65ccd3ddb3c9e7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a98542488cfe4928a247cf37a6c870ad = $(`<div id="html_a98542488cfe4928a247cf37a6c870ad" style="width: 100.0%; height: 100.0%;">Ranking 16=Petrolina/PE PIB_AGRICOLA=770.732</div>`)[0];
+                popup_aca8fbc98ca74d86bb65ccd3ddb3c9e7.setContent(html_a98542488cfe4928a247cf37a6c870ad);
+            
+
+            marker_9cfd88ef791f46489da20c60ca2b8026.bindPopup(popup_aca8fbc98ca74d86bb65ccd3ddb3c9e7)
+            ;
+
+            
+        
+    
+        var marker_430fcdb9680a4e10a59f08be47647e21 = L.marker(
+            [-19.71353460710205, -47.983624895574245],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_2095010a10e341b98a4a1cb5c76ffea4 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_430fcdb9680a4e10a59f08be47647e21.setIcon(icon_2095010a10e341b98a4a1cb5c76ffea4);
+            
+    
+            var popup_5a001eb1f7e3433c8023d9378a6d9216 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_983038739eb3490d8fc217c55f5693a0 = $(`<div id="html_983038739eb3490d8fc217c55f5693a0" style="width: 100.0%; height: 100.0%;">Ranking 17=Uberaba/MG PIB_AGRICOLA=769.477</div>`)[0];
+                popup_5a001eb1f7e3433c8023d9378a6d9216.setContent(html_983038739eb3490d8fc217c55f5693a0);
+            
+
+            marker_430fcdb9680a4e10a59f08be47647e21.bindPopup(popup_5a001eb1f7e3433c8023d9378a6d9216)
+            ;
+
+            
+        
+    
+        var marker_206ddc24e2ec4206a7558bee22937ea2 = L.marker(
+            [-21.623610383816402, -55.15713956899562],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_166b9a361f2946abbf9a314d50445c7b = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_206ddc24e2ec4206a7558bee22937ea2.setIcon(icon_166b9a361f2946abbf9a314d50445c7b);
+            
+    
+            var popup_1d3122cdaa1b4851a704869950755b41 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_cac190a9874c4b9aac9dbf69300b4c7d = $(`<div id="html_cac190a9874c4b9aac9dbf69300b4c7d" style="width: 100.0%; height: 100.0%;">Ranking 18=Maracaju/MS PIB_AGRICOLA=726.916</div>`)[0];
+                popup_1d3122cdaa1b4851a704869950755b41.setContent(html_cac190a9874c4b9aac9dbf69300b4c7d);
+            
+
+            marker_206ddc24e2ec4206a7558bee22937ea2.bindPopup(popup_1d3122cdaa1b4851a704869950755b41)
+            ;
+
+            
+        
+    
+        var marker_126d6e4db427431cb07c98faff15e15d = L.marker(
+            [-15.552293593114062, -54.30005325912268],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_26b0010f6bd24201bc9cd2b990297ae6 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_126d6e4db427431cb07c98faff15e15d.setIcon(icon_26b0010f6bd24201bc9cd2b990297ae6);
+            
+    
+            var popup_ab06ae01c95b4bfaa2a90fa0bbefb944 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7b0cfbf509554e8c96fa880ad8c2a408 = $(`<div id="html_7b0cfbf509554e8c96fa880ad8c2a408" style="width: 100.0%; height: 100.0%;">Ranking 19=Primavera do Leste/MT PIB_AGRICOLA=706.671</div>`)[0];
+                popup_ab06ae01c95b4bfaa2a90fa0bbefb944.setContent(html_7b0cfbf509554e8c96fa880ad8c2a408);
+            
+
+            marker_126d6e4db427431cb07c98faff15e15d.bindPopup(popup_ab06ae01c95b4bfaa2a90fa0bbefb944)
+            ;
+
+            
+        
+    
+        var marker_b7ae1e6680cc49a2a1958d31cdacb96b = L.marker(
+            [-22.486187078760256, -55.71085017786375],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_1465d57367614ae6bb21790d31a35aac = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b7ae1e6680cc49a2a1958d31cdacb96b.setIcon(icon_1465d57367614ae6bb21790d31a35aac);
+            
+    
+            var popup_6b8d75c28efb43f6a7db08f5b9bd7324 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_dc97ba9c7f2b496c80204f3a87017945 = $(`<div id="html_dc97ba9c7f2b496c80204f3a87017945" style="width: 100.0%; height: 100.0%;">Ranking 20=Ponta Porã/MS PIB_AGRICOLA=701.332</div>`)[0];
+                popup_6b8d75c28efb43f6a7db08f5b9bd7324.setContent(html_dc97ba9c7f2b496c80204f3a87017945);
+            
+
+            marker_b7ae1e6680cc49a2a1958d31cdacb96b.bindPopup(popup_6b8d75c28efb43f6a7db08f5b9bd7324)
+            ;
+
+            
+        
+    
+        var marker_aa3609e63fea4a96a935d6111aaec405 = L.marker(
+            [-23.98343799929865, -48.87738915906535],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_38de6f30d0c34abf9ebe8c4c0ef3a8b1 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_aa3609e63fea4a96a935d6111aaec405.setIcon(icon_38de6f30d0c34abf9ebe8c4c0ef3a8b1);
+            
+    
+            var popup_3d28dc027519437996f1bcbc52b55310 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f81690e446bb4feb9f33134acd6fa54d = $(`<div id="html_f81690e446bb4feb9f33134acd6fa54d" style="width: 100.0%; height: 100.0%;">Ranking 21=Itapeva/SP PIB_AGRICOLA=671.576</div>`)[0];
+                popup_3d28dc027519437996f1bcbc52b55310.setContent(html_f81690e446bb4feb9f33134acd6fa54d);
+            
+
+            marker_aa3609e63fea4a96a935d6111aaec405.bindPopup(popup_3d28dc027519437996f1bcbc52b55310)
+            ;
+
+            
+        
+    
+        var marker_51832d85944d4933bff1a2e476c20c74 = L.marker(
+            [-20.788679161391403, -51.71000062879423],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_be6a9b7721ff4f188075bb4ebb42e2b7 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_51832d85944d4933bff1a2e476c20c74.setIcon(icon_be6a9b7721ff4f188075bb4ebb42e2b7);
+            
+    
+            var popup_f180593d7064424da198bc28d341f0ae = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f267b7cdd1b7429d928fe32883963833 = $(`<div id="html_f267b7cdd1b7429d928fe32883963833" style="width: 100.0%; height: 100.0%;">Ranking 22=Três Lagoas/MS PIB_AGRICOLA=655.597</div>`)[0];
+                popup_f180593d7064424da198bc28d341f0ae.setContent(html_f267b7cdd1b7429d928fe32883963833);
+            
+
+            marker_51832d85944d4933bff1a2e476c20c74.bindPopup(popup_f180593d7064424da198bc28d341f0ae)
+            ;
+
+            
+        
+    
+        var marker_10166f7c25454d75a77640024c01e7a0 = L.marker(
+            [-9.165033220762236, -36.22523411704247],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_fab7b21f684e48d998b0ba4a2b9d7f19 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_10166f7c25454d75a77640024c01e7a0.setIcon(icon_fab7b21f684e48d998b0ba4a2b9d7f19);
+            
+    
+            var popup_3b8492276cb84c1b8175918472469271 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3796dfa57db143fd88257e1fdce3b36b = $(`<div id="html_3796dfa57db143fd88257e1fdce3b36b" style="width: 100.0%; height: 100.0%;">Ranking 23=Santana do Mundaú/AL PIB_AGRICOLA=655.505</div>`)[0];
+                popup_3b8492276cb84c1b8175918472469271.setContent(html_3796dfa57db143fd88257e1fdce3b36b);
+            
+
+            marker_10166f7c25454d75a77640024c01e7a0.bindPopup(popup_3b8492276cb84c1b8175918472469271)
+            ;
+
+            
+        
+    
+        var marker_0705e728ae0a4080bffd1ebb06cb2921 = L.marker(
+            [-6.642483278340782, -51.99378252396435],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_dc947ca79e714e3aa2f6b1776e4d3412 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0705e728ae0a4080bffd1ebb06cb2921.setIcon(icon_dc947ca79e714e3aa2f6b1776e4d3412);
+            
+    
+            var popup_d75a2d94952d4d8ab64b022219e13ee6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7817edc35a8545baa2727ff015a84731 = $(`<div id="html_7817edc35a8545baa2727ff015a84731" style="width: 100.0%; height: 100.0%;">Ranking 24=São Félix do Xingu/PA PIB_AGRICOLA=646.493</div>`)[0];
+                popup_d75a2d94952d4d8ab64b022219e13ee6.setContent(html_7817edc35a8545baa2727ff015a84731);
+            
+
+            marker_0705e728ae0a4080bffd1ebb06cb2921.bindPopup(popup_d75a2d94952d4d8ab64b022219e13ee6)
+            ;
+
+            
+        
+    
+        var marker_29817123fd754750879456df92ddcf4d = L.marker(
+            [-13.070464950899904, -55.92177070911168],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_8d84e5f48a684c449adb194f94423b5b = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_29817123fd754750879456df92ddcf4d.setIcon(icon_8d84e5f48a684c449adb194f94423b5b);
+            
+    
+            var popup_0a438b98f2764593aa3198b4f347835c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_65e46fd1e46a4b92bf24900da3e3dc7b = $(`<div id="html_65e46fd1e46a4b92bf24900da3e3dc7b" style="width: 100.0%; height: 100.0%;">Ranking 25=Lucas do Rio Verde/MT PIB_AGRICOLA=646.419</div>`)[0];
+                popup_0a438b98f2764593aa3198b4f347835c.setContent(html_65e46fd1e46a4b92bf24900da3e3dc7b);
+            
+
+            marker_29817123fd754750879456df92ddcf4d.bindPopup(popup_0a438b98f2764593aa3198b4f347835c)
+            ;
+
+            
+        
+    
+        var marker_32205899b67945b7a5190a2ce0297011 = L.marker(
+            [-23.004852999320605, -46.83755785294118],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_9e12008a40b540a986f105dc52257ade = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_32205899b67945b7a5190a2ce0297011.setIcon(icon_9e12008a40b540a986f105dc52257ade);
+            
+    
+            var popup_8762af954b9147cc92b44252176b3b2e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_af963696c0b0407d8256d2955c22b3bf = $(`<div id="html_af963696c0b0407d8256d2955c22b3bf" style="width: 100.0%; height: 100.0%;">Ranking 26=Itatiba/SP PIB_AGRICOLA=630.079</div>`)[0];
+                popup_8762af954b9147cc92b44252176b3b2e.setContent(html_af963696c0b0407d8256d2955c22b3bf);
+            
+
+            marker_32205899b67945b7a5190a2ce0297011.bindPopup(popup_8762af954b9147cc92b44252176b3b2e)
+            ;
+
+            
+        
+    
+        var marker_d4a8be516f2a45ed86f0c83523b5391e = L.marker(
+            [-10.12654725037485, -36.17607831051184],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_fe03e35610844aafb64c065445f40490 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d4a8be516f2a45ed86f0c83523b5391e.setIcon(icon_fe03e35610844aafb64c065445f40490);
+            
+    
+            var popup_4ac1e91884ee4d0ca9a110467f666598 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d209c7379d644bb39656da2803552a76 = $(`<div id="html_d209c7379d644bb39656da2803552a76" style="width: 100.0%; height: 100.0%;">Ranking 27=Coruripe/AL PIB_AGRICOLA=621.561</div>`)[0];
+                popup_4ac1e91884ee4d0ca9a110467f666598.setContent(html_d209c7379d644bb39656da2803552a76);
+            
+
+            marker_d4a8be516f2a45ed86f0c83523b5391e.bindPopup(popup_4ac1e91884ee4d0ca9a110467f666598)
+            ;
+
+            
+        
+    
+        var marker_dbb689cf8a5548279de84e1f82d0d724 = L.marker(
+            [-18.543548388410503, -53.13304690487414],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_066fd8df168d44a7afb07ccf0a6a8e81 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dbb689cf8a5548279de84e1f82d0d724.setIcon(icon_066fd8df168d44a7afb07ccf0a6a8e81);
+            
+    
+            var popup_a55bb3e938d945e587d6de0aa3180b51 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_16374e058d58487d92f75afd0e0c3aa6 = $(`<div id="html_16374e058d58487d92f75afd0e0c3aa6" style="width: 100.0%; height: 100.0%;">Ranking 28=Costa Rica/MS PIB_AGRICOLA=620.851</div>`)[0];
+                popup_a55bb3e938d945e587d6de0aa3180b51.setContent(html_16374e058d58487d92f75afd0e0c3aa6);
+            
+
+            marker_dbb689cf8a5548279de84e1f82d0d724.bindPopup(popup_a55bb3e938d945e587d6de0aa3180b51)
+            ;
+
+            
+        
+    
+        var marker_153945e0890a44c4b9d49df1aea01d91 = L.marker(
+            [-3.140378803916345, -58.44017543675714],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_5dc67af049e841fa8fa32ec55332ff06 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_153945e0890a44c4b9d49df1aea01d91.setIcon(icon_5dc67af049e841fa8fa32ec55332ff06);
+            
+    
+            var popup_c47aae13ce3f4ab8bfad13499b27495f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3f9467ba771a411daa4c5c609fcbc141 = $(`<div id="html_3f9467ba771a411daa4c5c609fcbc141" style="width: 100.0%; height: 100.0%;">Ranking 29=Itacoatiara/AM PIB_AGRICOLA=620.768</div>`)[0];
+                popup_c47aae13ce3f4ab8bfad13499b27495f.setContent(html_3f9467ba771a411daa4c5c609fcbc141);
+            
+
+            marker_153945e0890a44c4b9d49df1aea01d91.bindPopup(popup_c47aae13ce3f4ab8bfad13499b27495f)
+            ;
+
+            
+        
+    
+        var marker_365877bf79ab4ba2b0562f36c1a630cd = L.marker(
+            [-2.4362133299999607, -54.71857016727106],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_6301c6e8c9a24625b7d345482cd049c5 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_365877bf79ab4ba2b0562f36c1a630cd.setIcon(icon_6301c6e8c9a24625b7d345482cd049c5);
+            
+    
+            var popup_96cfccea96e84e398197f777cc0e8378 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6a5f930f4f754f3480cb0dd2bec4e26f = $(`<div id="html_6a5f930f4f754f3480cb0dd2bec4e26f" style="width: 100.0%; height: 100.0%;">Ranking 30=Santarém/PA PIB_AGRICOLA=610.775</div>`)[0];
+                popup_96cfccea96e84e398197f777cc0e8378.setContent(html_6a5f930f4f754f3480cb0dd2bec4e26f);
+            
+
+            marker_365877bf79ab4ba2b0562f36c1a630cd.bindPopup(popup_96cfccea96e84e398197f777cc0e8378)
+            ;
+
+            
+        
+    
+        var marker_d8f09354f6eb4bccb8a6983148574e2b = L.marker(
+            [-22.22723553689885, -54.8112891228926],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_20bc6ea67a9747b0917cca516e2a7d80 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d8f09354f6eb4bccb8a6983148574e2b.setIcon(icon_20bc6ea67a9747b0917cca516e2a7d80);
+            
+    
+            var popup_c82b0961186a47009271523144f6a1bf = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ebc96df4a11f4a87aab23adf6c819561 = $(`<div id="html_ebc96df4a11f4a87aab23adf6c819561" style="width: 100.0%; height: 100.0%;">Ranking 31=Dourados/MS PIB_AGRICOLA=603.632</div>`)[0];
+                popup_c82b0961186a47009271523144f6a1bf.setContent(html_ebc96df4a11f4a87aab23adf6c819561);
+            
+
+            marker_d8f09354f6eb4bccb8a6983148574e2b.bindPopup(popup_c82b0961186a47009271523144f6a1bf)
+            ;
+
+            
+        
+    
+        var marker_ab76675a2aa34eeab058628f24f6b61e = L.marker(
+            [-24.953797500000007, -53.45972218198565],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_4a2bd06314894aa69804466a1b044afd = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ab76675a2aa34eeab058628f24f6b61e.setIcon(icon_4a2bd06314894aa69804466a1b044afd);
+            
+    
+            var popup_de340cc3783f4e03b04d107a21d33184 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0ddfe97618d04be9af125d0c26504814 = $(`<div id="html_0ddfe97618d04be9af125d0c26504814" style="width: 100.0%; height: 100.0%;">Ranking 32=Cascavel/PR PIB_AGRICOLA=586.679</div>`)[0];
+                popup_de340cc3783f4e03b04d107a21d33184.setContent(html_0ddfe97618d04be9af125d0c26504814);
+            
+
+            marker_ab76675a2aa34eeab058628f24f6b61e.bindPopup(popup_de340cc3783f4e03b04d107a21d33184)
+            ;
+
+            
+        
+    
+        var marker_6433b2e4d8e4490a80fd9738b68c8eba = L.marker(
+            [-21.46663425251475, -54.382803600082504],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_81c9432b9f9b48ce81f7cf7a6b647560 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6433b2e4d8e4490a80fd9738b68c8eba.setIcon(icon_81c9432b9f9b48ce81f7cf7a6b647560);
+            
+    
+            var popup_6bbdb7b0b0e5430ca49a2c897148bc9d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_64a4787faae4469d9e6e317173eea810 = $(`<div id="html_64a4787faae4469d9e6e317173eea810" style="width: 100.0%; height: 100.0%;">Ranking 33=Nova Alvorada do Sul/MS PIB_AGRICOLA=562.623</div>`)[0];
+                popup_6bbdb7b0b0e5430ca49a2c897148bc9d.setContent(html_64a4787faae4469d9e6e317173eea810);
+            
+
+            marker_6433b2e4d8e4490a80fd9738b68c8eba.bindPopup(popup_6bbdb7b0b0e5430ca49a2c897148bc9d)
+            ;
+
+            
+        
+    
+        var marker_8e4b5dce23a443f1bf826e243e320eb0 = L.marker(
+            [-18.918998609305604, -48.27795018473447],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_9cef582ab5ef49eea37d103f568d7dbb = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8e4b5dce23a443f1bf826e243e320eb0.setIcon(icon_9cef582ab5ef49eea37d103f568d7dbb);
+            
+    
+            var popup_47c8cd29badb44ff8fafed515b4070a7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_adbea5e592e74d758ea04da4012c7b0b = $(`<div id="html_adbea5e592e74d758ea04da4012c7b0b" style="width: 100.0%; height: 100.0%;">Ranking 34=Uberlândia/MG PIB_AGRICOLA=556.693</div>`)[0];
+                popup_47c8cd29badb44ff8fafed515b4070a7.setContent(html_adbea5e592e74d758ea04da4012c7b0b);
+            
+
+            marker_8e4b5dce23a443f1bf826e243e320eb0.bindPopup(popup_47c8cd29badb44ff8fafed515b4070a7)
+            ;
+
+            
+        
+    
+        var marker_d960bd4a789a42559fe7d2e0cdfab2a1 = L.marker(
+            [-8.519867520583473, -36.4462983615963],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_59d80459eb2349db8793eaac3c05a912 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d960bd4a789a42559fe7d2e0cdfab2a1.setIcon(icon_59d80459eb2349db8793eaac3c05a912);
+            
+    
+            var popup_323915dc87b6421da8dac66d989f1c2f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_57db8d0ec41e42c2a410209e2e226a1c = $(`<div id="html_57db8d0ec41e42c2a410209e2e226a1c" style="width: 100.0%; height: 100.0%;">Ranking 35=São Bento do Una/PE PIB_AGRICOLA=551.051</div>`)[0];
+                popup_323915dc87b6421da8dac66d989f1c2f.setContent(html_57db8d0ec41e42c2a410209e2e226a1c);
+            
+
+            marker_d960bd4a789a42559fe7d2e0cdfab2a1.bindPopup(popup_323915dc87b6421da8dac66d989f1c2f)
+            ;
+
+            
+        
+    
+        var marker_f953937acdfe4defa1a4fbacae563a19 = L.marker(
+            [-24.795417500000003, -50.00281112776109],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_28cfd992f262449498ebb897d54b529a = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f953937acdfe4defa1a4fbacae563a19.setIcon(icon_28cfd992f262449498ebb897d54b529a);
+            
+    
+            var popup_32e02d3a0327487bbb1901f979003199 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_08b45ec646644f7d831f07e6b7370c79 = $(`<div id="html_08b45ec646644f7d831f07e6b7370c79" style="width: 100.0%; height: 100.0%;">Ranking 36=Castro/PR PIB_AGRICOLA=548.318</div>`)[0];
+                popup_32e02d3a0327487bbb1901f979003199.setContent(html_08b45ec646644f7d831f07e6b7370c79);
+            
+
+            marker_f953937acdfe4defa1a4fbacae563a19.bindPopup(popup_32e02d3a0327487bbb1901f979003199)
+            ;
+
+            
+        
+    
+        var marker_8aeea2ec23474e7587b0d2dd9aa42dec = L.marker(
+            [-8.768891790000003, -63.83144565436113],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_446e7a890cd345999a93e569363eda27 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8aeea2ec23474e7587b0d2dd9aa42dec.setIcon(icon_446e7a890cd345999a93e569363eda27);
+            
+    
+            var popup_d1d7fefd6d3048659ee6460d88166a9e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0cd6cd59fb48400f90ca65645faf953f = $(`<div id="html_0cd6cd59fb48400f90ca65645faf953f" style="width: 100.0%; height: 100.0%;">Ranking 37=Porto Velho/RO PIB_AGRICOLA=542.219</div>`)[0];
+                popup_d1d7fefd6d3048659ee6460d88166a9e.setContent(html_0cd6cd59fb48400f90ca65645faf953f);
+            
+
+            marker_8aeea2ec23474e7587b0d2dd9aa42dec.bindPopup(popup_d1d7fefd6d3048659ee6460d88166a9e)
+            ;
+
+            
+        
+    
+        var marker_c4ddb85a4df74c368262617d726f08ee = L.marker(
+            [-24.732077000000004, -53.741411491156775],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_9911ea6f17894e3982e66e43b17ecc70 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c4ddb85a4df74c368262617d726f08ee.setIcon(icon_9911ea6f17894e3982e66e43b17ecc70);
+            
+    
+            var popup_c466a96de48143c5b3a1f93c8db13b3b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_65ec6d1f0396497a889952cd28f1a85d = $(`<div id="html_65ec6d1f0396497a889952cd28f1a85d" style="width: 100.0%; height: 100.0%;">Ranking 38=Toledo/PR PIB_AGRICOLA=536.460</div>`)[0];
+                popup_c466a96de48143c5b3a1f93c8db13b3b.setContent(html_65ec6d1f0396497a889952cd28f1a85d);
+            
+
+            marker_c4ddb85a4df74c368262617d726f08ee.bindPopup(popup_c466a96de48143c5b3a1f93c8db13b3b)
+            ;
+
+            
+        
+    
+        var marker_86e53f535f3545d09152ef608406c803 = L.marker(
+            [-13.719923045640453, -59.263408520586225],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_4b0cb0df27d9463e962a7f2792889af4 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_86e53f535f3545d09152ef608406c803.setIcon(icon_4b0cb0df27d9463e962a7f2792889af4);
+            
+    
+            var popup_1b064f832e6f4d03b2c558d12550f3db = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1c1e1e0997dc4f82a2b46545a72b56b0 = $(`<div id="html_1c1e1e0997dc4f82a2b46545a72b56b0" style="width: 100.0%; height: 100.0%;">Ranking 39=Campos de Júlio/MT PIB_AGRICOLA=535.413</div>`)[0];
+                popup_1b064f832e6f4d03b2c558d12550f3db.setContent(html_1c1e1e0997dc4f82a2b46545a72b56b0);
+            
+
+            marker_86e53f535f3545d09152ef608406c803.bindPopup(popup_1b064f832e6f4d03b2c558d12550f3db)
+            ;
+
+            
+        
+    
+        var marker_4f55a0d568f24e49aa0301be1af32c2c = L.marker(
+            [-18.940812961349657, -46.997438240164534],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_d49fbdb1981d44589f211ce9f7346621 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4f55a0d568f24e49aa0301be1af32c2c.setIcon(icon_d49fbdb1981d44589f211ce9f7346621);
+            
+    
+            var popup_1df355c808b3490d90781ac8f074d876 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_af38931bc0c54d6f9ceba6f51f8b1285 = $(`<div id="html_af38931bc0c54d6f9ceba6f51f8b1285" style="width: 100.0%; height: 100.0%;">Ranking 40=Patrocínio/MG PIB_AGRICOLA=533.550</div>`)[0];
+                popup_1df355c808b3490d90781ac8f074d876.setContent(html_af38931bc0c54d6f9ceba6f51f8b1285);
+            
+
+            marker_4f55a0d568f24e49aa0301be1af32c2c.bindPopup(popup_1df355c808b3490d90781ac8f074d876)
+            ;
+
+            
+        
+    
+        var marker_9f3414ed68d24c9f89d5305be99eac6b = L.marker(
+            [-30.045819979727405, -52.893412558482],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_5fe82e5215564b45b1a2a47fb61c97a8 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9f3414ed68d24c9f89d5305be99eac6b.setIcon(icon_5fe82e5215564b45b1a2a47fb61c97a8);
+            
+    
+            var popup_2cbdbc6dc3bd4317b97bfc09d7f90f9a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bdcd8a3ded8f4fabae1bd4da6959c43d = $(`<div id="html_bdcd8a3ded8f4fabae1bd4da6959c43d" style="width: 100.0%; height: 100.0%;">Ranking 41=Cachoeira do Sul/RS PIB_AGRICOLA=532.499</div>`)[0];
+                popup_2cbdbc6dc3bd4317b97bfc09d7f90f9a.setContent(html_bdcd8a3ded8f4fabae1bd4da6959c43d);
+            
+
+            marker_9f3414ed68d24c9f89d5305be99eac6b.bindPopup(popup_2cbdbc6dc3bd4317b97bfc09d7f90f9a)
+            ;
+
+            
+        
+    
+        var marker_921598364fa64163b3ae7b2e50fa8910 = L.marker(
+            [-17.219741910187, -46.87541889095643],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_deb502df19f44a1ba740387fb535c7bb = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_921598364fa64163b3ae7b2e50fa8910.setIcon(icon_deb502df19f44a1ba740387fb535c7bb);
+            
+    
+            var popup_bbc23f32aba2437ba5dd66f0f36d567c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_99d042808c20422cb7c7ad073caae76c = $(`<div id="html_99d042808c20422cb7c7ad073caae76c" style="width: 100.0%; height: 100.0%;">Ranking 42=Paracatu/MG PIB_AGRICOLA=531.110</div>`)[0];
+                popup_bbc23f32aba2437ba5dd66f0f36d567c.setContent(html_99d042808c20422cb7c7ad073caae76c);
+            
+
+            marker_921598364fa64163b3ae7b2e50fa8910.bindPopup(popup_bbc23f32aba2437ba5dd66f0f36d567c)
+            ;
+
+            
+        
+    
+        var marker_eed571243ba647349281cbf9116699a6 = L.marker(
+            [-11.047032490667902, -45.19099090972896],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_0825661056de4c9faca04806f6df61a1 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_eed571243ba647349281cbf9116699a6.setIcon(icon_0825661056de4c9faca04806f6df61a1);
+            
+    
+            var popup_5ec3b4efc5aa4096b5fe3c3df43a8b8d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_be0220ee19bb403492a317a0c503d66a = $(`<div id="html_be0220ee19bb403492a317a0c503d66a" style="width: 100.0%; height: 100.0%;">Ranking 43=Formosa do Rio Preto/BA PIB_AGRICOLA=530.220</div>`)[0];
+                popup_5ec3b4efc5aa4096b5fe3c3df43a8b8d.setContent(html_be0220ee19bb403492a317a0c503d66a);
+            
+
+            marker_eed571243ba647349281cbf9116699a6.bindPopup(popup_5ec3b4efc5aa4096b5fe3c3df43a8b8d)
+            ;
+
+            
+        
+    
+        var marker_90bc36764e6d434ab2e49aebd61ffe6d = L.marker(
+            [-20.44367552558611, -53.761677624322004],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_08b0ff0af58f46208296935677507c9a = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_90bc36764e6d434ab2e49aebd61ffe6d.setIcon(icon_08b0ff0af58f46208296935677507c9a);
+            
+    
+            var popup_95b99da4bc4847fdadc234439653191f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_344b6ffa0ca345d3a31d33f194b65291 = $(`<div id="html_344b6ffa0ca345d3a31d33f194b65291" style="width: 100.0%; height: 100.0%;">Ranking 44=Ribas do Rio Pardo/MS PIB_AGRICOLA=529.264</div>`)[0];
+                popup_95b99da4bc4847fdadc234439653191f.setContent(html_344b6ffa0ca345d3a31d33f194b65291);
+            
+
+            marker_90bc36764e6d434ab2e49aebd61ffe6d.bindPopup(popup_95b99da4bc4847fdadc234439653191f)
+            ;
+
+            
+        
+    
+        var marker_bb9207d751574e0f96dbed7ab5398924 = L.marker(
+            [-3.29827803546755, -60.62058944587062],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_4a1dfc849a5e4342981a93d6801f7d69 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bb9207d751574e0f96dbed7ab5398924.setIcon(icon_4a1dfc849a5e4342981a93d6801f7d69);
+            
+    
+            var popup_8fb79f1c47964c5c9dcd22b01c274029 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_13c9e5800b7d422e89b97edd8413d82f = $(`<div id="html_13c9e5800b7d422e89b97edd8413d82f" style="width: 100.0%; height: 100.0%;">Ranking 45=Manacapuru/AM PIB_AGRICOLA=514.826</div>`)[0];
+                popup_8fb79f1c47964c5c9dcd22b01c274029.setContent(html_13c9e5800b7d422e89b97edd8413d82f);
+            
+
+            marker_bb9207d751574e0f96dbed7ab5398924.bindPopup(popup_8fb79f1c47964c5c9dcd22b01c274029)
+            ;
+
+            
+        
+    
+        var marker_5ec031ad5d7040a88c4dc5c3f209d566 = L.marker(
+            [-3.8430459327389204, -62.06342966048829],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_d594cb4239f94aec8a149ee41aeec075 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5ec031ad5d7040a88c4dc5c3f209d566.setIcon(icon_d594cb4239f94aec8a149ee41aeec075);
+            
+    
+            var popup_1273c3d028d745fea762ebb8727e0b0c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2938dafcd45c4034b01a2e8030fa4dee = $(`<div id="html_2938dafcd45c4034b01a2e8030fa4dee" style="width: 100.0%; height: 100.0%;">Ranking 46=Codajás/AM PIB_AGRICOLA=499.899</div>`)[0];
+                popup_1273c3d028d745fea762ebb8727e0b0c.setContent(html_2938dafcd45c4034b01a2e8030fa4dee);
+            
+
+            marker_5ec031ad5d7040a88c4dc5c3f209d566.bindPopup(popup_1273c3d028d745fea762ebb8727e0b0c)
+            ;
+
+            
+        
+    
+        var marker_1679c417044745bfb0fd161cf9a55cf0 = L.marker(
+            [-20.9310544595365, -54.96603013650641],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_6dc55095cc674562a359f5aca77658b8 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1679c417044745bfb0fd161cf9a55cf0.setIcon(icon_6dc55095cc674562a359f5aca77658b8);
+            
+    
+            var popup_f9449f0c899c423ab00dc6b7f2e3d19d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d1baf98593d3444ebea1cb37bde7859e = $(`<div id="html_d1baf98593d3444ebea1cb37bde7859e" style="width: 100.0%; height: 100.0%;">Ranking 47=Sidrolândia/MS PIB_AGRICOLA=498.819</div>`)[0];
+                popup_f9449f0c899c423ab00dc6b7f2e3d19d.setContent(html_d1baf98593d3444ebea1cb37bde7859e);
+            
+
+            marker_1679c417044745bfb0fd161cf9a55cf0.bindPopup(popup_f9449f0c899c423ab00dc6b7f2e3d19d)
+            ;
+
+            
+        
+    
+        var marker_451b3c85937145c99c198e94217e41d1 = L.marker(
+            [-17.206825055365652, -54.144300896000416],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_ba3db250d511437886410cf51f5e70a4 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_451b3c85937145c99c198e94217e41d1.setIcon(icon_ba3db250d511437886410cf51f5e70a4);
+            
+    
+            var popup_14a9f2c8a46a4bd7bb92bd992c52d1d4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2ff0b6f5e0ef48c9acc2212dbbc4c558 = $(`<div id="html_2ff0b6f5e0ef48c9acc2212dbbc4c558" style="width: 100.0%; height: 100.0%;">Ranking 48=Itiquira/MT PIB_AGRICOLA=491.283</div>`)[0];
+                popup_14a9f2c8a46a4bd7bb92bd992c52d1d4.setContent(html_2ff0b6f5e0ef48c9acc2212dbbc4c558);
+            
+
+            marker_451b3c85937145c99c198e94217e41d1.bindPopup(popup_14a9f2c8a46a4bd7bb92bd992c52d1d4)
+            ;
+
+            
+        
+    
+        var marker_bf72f1381b3d48ee8126ff563dadfbe6 = L.marker(
+            [-11.484935425430251, -37.93357777514362],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_1869a772e0624fcd92fcc02dfd10a0b4 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bf72f1381b3d48ee8126ff563dadfbe6.setIcon(icon_1869a772e0624fcd92fcc02dfd10a0b4);
+            
+    
+            var popup_14d7dc891ae84335a0c326bbe72267f7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8ada7871d2da4b28a75c99a7b93ebcc8 = $(`<div id="html_8ada7871d2da4b28a75c99a7b93ebcc8" style="width: 100.0%; height: 100.0%;">Ranking 49=Rio Real/BA PIB_AGRICOLA=487.898</div>`)[0];
+                popup_14d7dc891ae84335a0c326bbe72267f7.setContent(html_8ada7871d2da4b28a75c99a7b93ebcc8);
+            
+
+            marker_bf72f1381b3d48ee8126ff563dadfbe6.bindPopup(popup_14d7dc891ae84335a0c326bbe72267f7)
+            ;
+
+            
+        
+    
+        var marker_0729a3c0089e4baca6f83831e7430400 = L.marker(
+            [-29.077479730048005, -53.84063005534637],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_99e5a358abf6494ab1c87e90af121ef7 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0729a3c0089e4baca6f83831e7430400.setIcon(icon_99e5a358abf6494ab1c87e90af121ef7);
+            
+    
+            var popup_21419a6ede5b498aa161662c11228df1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ea02b9169af4470086e235a0646d4afd = $(`<div id="html_ea02b9169af4470086e235a0646d4afd" style="width: 100.0%; height: 100.0%;">Ranking 50=Tupanciretã/RS PIB_AGRICOLA=485.210</div>`)[0];
+                popup_21419a6ede5b498aa161662c11228df1.setContent(html_ea02b9169af4470086e235a0646d4afd);
+            
+
+            marker_0729a3c0089e4baca6f83831e7430400.bindPopup(popup_21419a6ede5b498aa161662c11228df1)
+            ;
+
+            
+        
+    
+        var marker_330e5bdbb89a47839470edd93e7c564b = L.marker(
+            [-17.5661675714878, -52.554667187934925],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_c0e088e79ec54e25a73e574f0428809b = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_330e5bdbb89a47839470edd93e7c564b.setIcon(icon_c0e088e79ec54e25a73e574f0428809b);
+            
+    
+            var popup_1861eb35688841399d8b9abfe80c388b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7991250ea5824d85b91bcc19dfade539 = $(`<div id="html_7991250ea5824d85b91bcc19dfade539" style="width: 100.0%; height: 100.0%;">Ranking 51=Mineiros/GO PIB_AGRICOLA=477.335</div>`)[0];
+                popup_1861eb35688841399d8b9abfe80c388b.setContent(html_7991250ea5824d85b91bcc19dfade539);
+            
+
+            marker_330e5bdbb89a47839470edd93e7c564b.bindPopup(popup_1861eb35688841399d8b9abfe80c388b)
+            ;
+
+            
+        
+    
+        var marker_550666ae06e641848106c88bc0d123a4 = L.marker(
+            [-13.341771821210504, -44.64108670121104],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_799a4220deb748edae9c68d4c264a407 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_550666ae06e641848106c88bc0d123a4.setIcon(icon_799a4220deb748edae9c68d4c264a407);
+            
+    
+            var popup_01dbf339784c4ea9a85c7432ad5d1254 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_766f99d0a8884b0a9617cad25c8ee60f = $(`<div id="html_766f99d0a8884b0a9617cad25c8ee60f" style="width: 100.0%; height: 100.0%;">Ranking 52=Correntina/BA PIB_AGRICOLA=476.877</div>`)[0];
+                popup_01dbf339784c4ea9a85c7432ad5d1254.setContent(html_766f99d0a8884b0a9617cad25c8ee60f);
+            
+
+            marker_550666ae06e641848106c88bc0d123a4.bindPopup(popup_01dbf339784c4ea9a85c7432ad5d1254)
+            ;
+
+            
+        
+    
+        var marker_371c7e28a4da44cc91621268bf1828bb = L.marker(
+            [-24.513288067849455, -50.41147012283247],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_c656c83b45af43f5942f6ccce29a613b = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_371c7e28a4da44cc91621268bf1828bb.setIcon(icon_c656c83b45af43f5942f6ccce29a613b);
+            
+    
+            var popup_ec9198e3e6554d8ebfbcffcb58263787 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6fce8e3118c14d0ea688eaad0d5d1766 = $(`<div id="html_6fce8e3118c14d0ea688eaad0d5d1766" style="width: 100.0%; height: 100.0%;">Ranking 53=Tibagi/PR PIB_AGRICOLA=476.702</div>`)[0];
+                popup_ec9198e3e6554d8ebfbcffcb58263787.setContent(html_6fce8e3118c14d0ea688eaad0d5d1766);
+            
+
+            marker_371c7e28a4da44cc91621268bf1828bb.bindPopup(popup_ec9198e3e6554d8ebfbcffcb58263787)
+            ;
+
+            
+        
+    
+        var marker_07e099904ea3466dbdb3c28e2103625c = L.marker(
+            [-28.50235439518636, -50.93659916412113],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_9061c75f679846c194b02f3f20175ab2 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_07e099904ea3466dbdb3c28e2103625c.setIcon(icon_9061c75f679846c194b02f3f20175ab2);
+            
+    
+            var popup_5e8acfe65a0942d585b8e77e6a86ecf7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_72d9c4968489438c9990ae63592f36ab = $(`<div id="html_72d9c4968489438c9990ae63592f36ab" style="width: 100.0%; height: 100.0%;">Ranking 54=Vacaria/RS PIB_AGRICOLA=455.198</div>`)[0];
+                popup_5e8acfe65a0942d585b8e77e6a86ecf7.setContent(html_72d9c4968489438c9990ae63592f36ab);
+            
+
+            marker_07e099904ea3466dbdb3c28e2103625c.bindPopup(popup_5e8acfe65a0942d585b8e77e6a86ecf7)
+            ;
+
+            
+        
+    
+        var marker_2010539d6aff49548c4dd2a8c0bb12a4 = L.marker(
+            [-17.8347436507218, -53.28199312227411],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_cd6bdda196e84d379afb61c7f3f63f3d = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2010539d6aff49548c4dd2a8c0bb12a4.setIcon(icon_cd6bdda196e84d379afb61c7f3f63f3d);
+            
+    
+            var popup_b2b1de61deed410e97d3ecd4ea4eef2f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_56d31f7ff8384047bff3d8d70f43b75c = $(`<div id="html_56d31f7ff8384047bff3d8d70f43b75c" style="width: 100.0%; height: 100.0%;">Ranking 55=Alto Taquari/MT PIB_AGRICOLA=454.830</div>`)[0];
+                popup_b2b1de61deed410e97d3ecd4ea4eef2f.setContent(html_56d31f7ff8384047bff3d8d70f43b75c);
+            
+
+            marker_2010539d6aff49548c4dd2a8c0bb12a4.bindPopup(popup_b2b1de61deed410e97d3ecd4ea4eef2f)
+            ;
+
+            
+        
+    
+        var marker_185c6c9fc9a34e9b95e20dd0bcc34c9a = L.marker(
+            [-1.8094234196669303, -49.79152284708538],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_9c311fea7c7f4e9f9f5f241b7bd3f079 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_185c6c9fc9a34e9b95e20dd0bcc34c9a.setIcon(icon_9c311fea7c7f4e9f9f5f241b7bd3f079);
+            
+    
+            var popup_259735ae599e41efa44cb399aaed9cf0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_cffc6c8aac7e4f76ad316fd70ba03afc = $(`<div id="html_cffc6c8aac7e4f76ad316fd70ba03afc" style="width: 100.0%; height: 100.0%;">Ranking 56=Curralinho/PA PIB_AGRICOLA=448.271</div>`)[0];
+                popup_259735ae599e41efa44cb399aaed9cf0.setContent(html_cffc6c8aac7e4f76ad316fd70ba03afc);
+            
+
+            marker_185c6c9fc9a34e9b95e20dd0bcc34c9a.bindPopup(popup_259735ae599e41efa44cb399aaed9cf0)
+            ;
+
+            
+        
+    
+        var marker_4ccc651458d345ddb71bc69716382b32 = L.marker(
+            [-12.144924888390602, -45.004168437028525],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_5be0cf26d3a141d2b350fb996f7377f9 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4ccc651458d345ddb71bc69716382b32.setIcon(icon_5be0cf26d3a141d2b350fb996f7377f9);
+            
+    
+            var popup_c585d12b88ad4548a2e6206d2cef3b1e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a73ae397b2f4444f8720245a71340faa = $(`<div id="html_a73ae397b2f4444f8720245a71340faa" style="width: 100.0%; height: 100.0%;">Ranking 57=Barreiras/BA PIB_AGRICOLA=447.003</div>`)[0];
+                popup_c585d12b88ad4548a2e6206d2cef3b1e.setContent(html_a73ae397b2f4444f8720245a71340faa);
+            
+
+            marker_4ccc651458d345ddb71bc69716382b32.bindPopup(popup_c585d12b88ad4548a2e6206d2cef3b1e)
+            ;
+
+            
+        
+    
+        var marker_51bb31396005466fa5e7a756744737b0 = L.marker(
+            [-1.9634365000000003, -48.20045643175013],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_5517b99710024f36a78dba37b09ce263 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_51bb31396005466fa5e7a756744737b0.setIcon(icon_5517b99710024f36a78dba37b09ce263);
+            
+    
+            var popup_4e2e2302d46b47d680b50f7686023e4f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d553f292a74a4de8b803be9935cae9a7 = $(`<div id="html_d553f292a74a4de8b803be9935cae9a7" style="width: 100.0%; height: 100.0%;">Ranking 58=Acará/PA PIB_AGRICOLA=441.281</div>`)[0];
+                popup_4e2e2302d46b47d680b50f7686023e4f.setContent(html_d553f292a74a4de8b803be9935cae9a7);
+            
+
+            marker_51bb31396005466fa5e7a756744737b0.bindPopup(popup_4e2e2302d46b47d680b50f7686023e4f)
+            ;
+
+            
+        
+    
+        var marker_c76e17264a4a49db9bfce3b7bc7f2326 = L.marker(
+            [-27.90062087543185, -53.31495391055137],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_c19980dc811e4364ba578543cd0f3032 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c76e17264a4a49db9bfce3b7bc7f2326.setIcon(icon_c19980dc811e4364ba578543cd0f3032);
+            
+    
+            var popup_b738520185b1448ab9ff2488ebc5f8e8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f0bd44ef8f254b9ca2ebbf4f19192d28 = $(`<div id="html_f0bd44ef8f254b9ca2ebbf4f19192d28" style="width: 100.0%; height: 100.0%;">Ranking 59=Palmeira das Missões/RS PIB_AGRICOLA=437.013</div>`)[0];
+                popup_b738520185b1448ab9ff2488ebc5f8e8.setContent(html_f0bd44ef8f254b9ca2ebbf4f19192d28);
+            
+
+            marker_c76e17264a4a49db9bfce3b7bc7f2326.bindPopup(popup_b738520185b1448ab9ff2488ebc5f8e8)
+            ;
+
+            
+        
+    
+        var marker_b6133627d25d4f9aa9f91f81ef1de671 = L.marker(
+            [-18.7977731220362, -52.62635570699869],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_cd13601db3aa44f4839d74a4686b9e71 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b6133627d25d4f9aa9f91f81ef1de671.setIcon(icon_cd13601db3aa44f4839d74a4686b9e71);
+            
+    
+            var popup_9c03449472f14ab7b70b88b2226bda56 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_43271ff2248b4d6ca658b9eaa00b7c2b = $(`<div id="html_43271ff2248b4d6ca658b9eaa00b7c2b" style="width: 100.0%; height: 100.0%;">Ranking 60=Chapadão do Sul/MS PIB_AGRICOLA=420.599</div>`)[0];
+                popup_9c03449472f14ab7b70b88b2226bda56.setContent(html_43271ff2248b4d6ca658b9eaa00b7c2b);
+            
+
+            marker_b6133627d25d4f9aa9f91f81ef1de671.bindPopup(popup_9c03449472f14ab7b70b88b2226bda56)
+            ;
+
+            
+        
+    
+        var marker_cae050e0c3d24d79918f777abf18b523 = L.marker(
+            [-25.537702000000007, -49.20008246566732],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_96f7d3270f444c1998f6dc0f2b5bcf85 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cae050e0c3d24d79918f777abf18b523.setIcon(icon_96f7d3270f444c1998f6dc0f2b5bcf85);
+            
+    
+            var popup_6b88396381824acb8afc26ba5d899d42 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c9af42d7ec514bdb89f0f3d4eb425f56 = $(`<div id="html_c9af42d7ec514bdb89f0f3d4eb425f56" style="width: 100.0%; height: 100.0%;">Ranking 61=São José dos Pinhais/PR PIB_AGRICOLA=420.174</div>`)[0];
+                popup_6b88396381824acb8afc26ba5d899d42.setContent(html_c9af42d7ec514bdb89f0f3d4eb425f56);
+            
+
+            marker_cae050e0c3d24d79918f777abf18b523.bindPopup(popup_6b88396381824acb8afc26ba5d899d42)
+            ;
+
+            
+        
+    
+        var marker_0510ce9f0c644161853e677bc5a64e96 = L.marker(
+            [-20.44885076232455, -52.87511755145388],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_909924c0103c44f586fc80ddff23814b = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0510ce9f0c644161853e677bc5a64e96.setIcon(icon_909924c0103c44f586fc80ddff23814b);
+            
+    
+            var popup_830e6bcd697548929a4927fe073d4024 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_fa962246477d4e86be781652003e829e = $(`<div id="html_fa962246477d4e86be781652003e829e" style="width: 100.0%; height: 100.0%;">Ranking 62=Água Clara/MS PIB_AGRICOLA=413.726</div>`)[0];
+                popup_830e6bcd697548929a4927fe073d4024.setContent(html_fa962246477d4e86be781652003e829e);
+            
+
+            marker_0510ce9f0c644161853e677bc5a64e96.bindPopup(popup_830e6bcd697548929a4927fe073d4024)
+            ;
+
+            
+        
+    
+        var marker_5f7c9f90abca442b9f69be8141852ccf = L.marker(
+            [-12.732068631315652, -56.5194858964735],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_54f8f23371eb4bc6815139206426e660 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5f7c9f90abca442b9f69be8141852ccf.setIcon(icon_54f8f23371eb4bc6815139206426e660);
+            
+    
+            var popup_3bbd19cee5ce4dfaa48bee888b8d4632 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4dc58eb58bd540ac9e7d9b8dd49d3b65 = $(`<div id="html_4dc58eb58bd540ac9e7d9b8dd49d3b65" style="width: 100.0%; height: 100.0%;">Ranking 63=Tapurah/MT PIB_AGRICOLA=412.673</div>`)[0];
+                popup_3bbd19cee5ce4dfaa48bee888b8d4632.setContent(html_4dc58eb58bd540ac9e7d9b8dd49d3b65);
+            
+
+            marker_5f7c9f90abca442b9f69be8141852ccf.bindPopup(popup_3bbd19cee5ce4dfaa48bee888b8d4632)
+            ;
+
+            
+        
+    
+        var marker_fec29dae82f54cb09bb7c5deb92ff233 = L.marker(
+            [-18.01063324035665, -49.366643469563485],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_50f51416f8454e09b60815c6920d3d25 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fec29dae82f54cb09bb7c5deb92ff233.setIcon(icon_50f51416f8454e09b60815c6920d3d25);
+            
+    
+            var popup_56e3677094a14c19b47fed33bfe09092 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_06373ffdb54247908dc3a236d6ff08bf = $(`<div id="html_06373ffdb54247908dc3a236d6ff08bf" style="width: 100.0%; height: 100.0%;">Ranking 64=Goiatuba/GO PIB_AGRICOLA=410.216</div>`)[0];
+                popup_56e3677094a14c19b47fed33bfe09092.setContent(html_06373ffdb54247908dc3a236d6ff08bf);
+            
+
+            marker_fec29dae82f54cb09bb7c5deb92ff233.bindPopup(popup_56e3677094a14c19b47fed33bfe09092)
+            ;
+
+            
+        
+    
+        var marker_7c2e375079b343498add143460306a7f = L.marker(
+            [-29.759823172014407, -57.081824909022906],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_94f4ddb4335b4cf8983ef41b61c00934 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7c2e375079b343498add143460306a7f.setIcon(icon_94f4ddb4335b4cf8983ef41b61c00934);
+            
+    
+            var popup_1a65da00efdf4fb8bab636644bf4735e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f6e5ecfa676645338a1c8254bdc4bcc9 = $(`<div id="html_f6e5ecfa676645338a1c8254bdc4bcc9" style="width: 100.0%; height: 100.0%;">Ranking 65=Uruguaiana/RS PIB_AGRICOLA=407.435</div>`)[0];
+                popup_1a65da00efdf4fb8bab636644bf4735e.setContent(html_f6e5ecfa676645338a1c8254bdc4bcc9);
+            
+
+            marker_7c2e375079b343498add143460306a7f.bindPopup(popup_1a65da00efdf4fb8bab636644bf4735e)
+            ;
+
+            
+        
+    
+        var marker_b4f2c355c411483493cca32492638842 = L.marker(
+            [-21.921037470000005, -50.734870861895374],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_5cce18d694dc47ec8cc0b44334a2f22f = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b4f2c355c411483493cca32492638842.setIcon(icon_5cce18d694dc47ec8cc0b44334a2f22f);
+            
+    
+            var popup_ca1e938d054848928c0ca0f48c175ae3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9a68436bcf3d498f92e9eeee78b4304e = $(`<div id="html_9a68436bcf3d498f92e9eeee78b4304e" style="width: 100.0%; height: 100.0%;">Ranking 66=Bastos/SP PIB_AGRICOLA=404.647</div>`)[0];
+                popup_ca1e938d054848928c0ca0f48c175ae3.setContent(html_9a68436bcf3d498f92e9eeee78b4304e);
+            
+
+            marker_b4f2c355c411483493cca32492638842.bindPopup(popup_ca1e938d054848928c0ca0f48c175ae3)
+            ;
+
+            
+        
+    
+        var marker_d06c8b2f937840859ee68682bd8ff57e = L.marker(
+            [-20.028814058188352, -40.74161780064969],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_92f40eeb0eeb443981c5e9e726f97d07 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d06c8b2f937840859ee68682bd8ff57e.setIcon(icon_92f40eeb0eeb443981c5e9e726f97d07);
+            
+    
+            var popup_5e5d9e7f12d44165a9714d3965f7f6bc = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f02079a1e0ac42ae9de9e55279f9b17a = $(`<div id="html_f02079a1e0ac42ae9de9e55279f9b17a" style="width: 100.0%; height: 100.0%;">Ranking 67=Santa Maria de Jetibá/ES PIB_AGRICOLA=397.345</div>`)[0];
+                popup_5e5d9e7f12d44165a9714d3965f7f6bc.setContent(html_f02079a1e0ac42ae9de9e55279f9b17a);
+            
+
+            marker_d06c8b2f937840859ee68682bd8ff57e.bindPopup(popup_5e5d9e7f12d44165a9714d3965f7f6bc)
+            ;
+
+            
+        
+    
+        var marker_64e58603b90e491ea18ebbeddc47ee4e = L.marker(
+            [-16.9466970092766, -50.4576405930576],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_657f880680144ea3b23589bea68d813b = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_64e58603b90e491ea18ebbeddc47ee4e.setIcon(icon_657f880680144ea3b23589bea68d813b);
+            
+    
+            var popup_3d8dc96e2d7e4cd58a23c11692a2721f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5886f1d14c9c410ea5bf4637a12650e8 = $(`<div id="html_5886f1d14c9c410ea5bf4637a12650e8" style="width: 100.0%; height: 100.0%;">Ranking 68=Paraúna/GO PIB_AGRICOLA=396.467</div>`)[0];
+                popup_3d8dc96e2d7e4cd58a23c11692a2721f.setContent(html_5886f1d14c9c410ea5bf4637a12650e8);
+            
+
+            marker_64e58603b90e491ea18ebbeddc47ee4e.bindPopup(popup_3d8dc96e2d7e4cd58a23c11692a2721f)
+            ;
+
+            
+        
+    
+        var marker_dd98e8c5c0b949409952e9540f86b43f = L.marker(
+            [-22.301603562708458, -53.82697014706026],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_b85f476216344aa28a0bf86f83d28728 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dd98e8c5c0b949409952e9540f86b43f.setIcon(icon_b85f476216344aa28a0bf86f83d28728);
+            
+    
+            var popup_9c1002350ce44e17bae6d73ffc6117ca = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_da6286b1e0e74b899c9157d915497f91 = $(`<div id="html_da6286b1e0e74b899c9157d915497f91" style="width: 100.0%; height: 100.0%;">Ranking 69=Ivinhema/MS PIB_AGRICOLA=394.573</div>`)[0];
+                popup_9c1002350ce44e17bae6d73ffc6117ca.setContent(html_da6286b1e0e74b899c9157d915497f91);
+            
+
+            marker_dd98e8c5c0b949409952e9540f86b43f.bindPopup(popup_9c1002350ce44e17bae6d73ffc6117ca)
+            ;
+
+            
+        
+    
+        var marker_32a8f4b6803f4735880cc71c48554ca1 = L.marker(
+            [-23.5227065, -46.19676008432656],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_128320349d2b428a88d3d2ac3d785970 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_32a8f4b6803f4735880cc71c48554ca1.setIcon(icon_128320349d2b428a88d3d2ac3d785970);
+            
+    
+            var popup_6caac54486ad4491864f84006c671dc3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_711587bea98e498ea76b75bbc58bca80 = $(`<div id="html_711587bea98e498ea76b75bbc58bca80" style="width: 100.0%; height: 100.0%;">Ranking 70=Mogi das Cruzes/SP PIB_AGRICOLA=392.067</div>`)[0];
+                popup_6caac54486ad4491864f84006c671dc3.setContent(html_711587bea98e498ea76b75bbc58bca80);
+            
+
+            marker_32a8f4b6803f4735880cc71c48554ca1.bindPopup(popup_6caac54486ad4491864f84006c671dc3)
+            ;
+
+            
+        
+    
+        var marker_5807f1a2405e40b895a48796d3f9b26d = L.marker(
+            [-7.531169990245516, -46.03899267334052],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_270c5611463449eea5cabd1e75cfa06e = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5807f1a2405e40b895a48796d3f9b26d.setIcon(icon_270c5611463449eea5cabd1e75cfa06e);
+            
+    
+            var popup_d1689c03e6ba40c6b4f6625c2129ffdb = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_edee76548df947aea68732ed2f9d41f8 = $(`<div id="html_edee76548df947aea68732ed2f9d41f8" style="width: 100.0%; height: 100.0%;">Ranking 71=Balsas/MA PIB_AGRICOLA=391.791</div>`)[0];
+                popup_d1689c03e6ba40c6b4f6625c2129ffdb.setContent(html_edee76548df947aea68732ed2f9d41f8);
+            
+
+            marker_5807f1a2405e40b895a48796d3f9b26d.bindPopup(popup_d1689c03e6ba40c6b4f6625c2129ffdb)
+            ;
+
+            
+        
+    
+        var marker_a889893fb83b442e9be451f23a2687d2 = L.marker(
+            [-17.444462001721778, -51.17514459848747],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_a29ff9a55586474d9245e9506d1dc558 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a889893fb83b442e9be451f23a2687d2.setIcon(icon_a29ff9a55586474d9245e9506d1dc558);
+            
+    
+            var popup_8c331c0453164551a95d77cb507cabb3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4269cd82ad9a46369880cc4df72bc5ab = $(`<div id="html_4269cd82ad9a46369880cc4df72bc5ab" style="width: 100.0%; height: 100.0%;">Ranking 72=Montividiu/GO PIB_AGRICOLA=391.682</div>`)[0];
+                popup_8c331c0453164551a95d77cb507cabb3.setContent(html_4269cd82ad9a46369880cc4df72bc5ab);
+            
+
+            marker_a889893fb83b442e9be451f23a2687d2.bindPopup(popup_8c331c0453164551a95d77cb507cabb3)
+            ;
+
+            
+        
+    
+        var marker_af39f51a177042a3bbb494956dfe851c = L.marker(
+            [-29.782043209124456, -55.79587014533309],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_63205260d02544fb8bbe91932e3273ae = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_af39f51a177042a3bbb494956dfe851c.setIcon(icon_63205260d02544fb8bbe91932e3273ae);
+            
+    
+            var popup_6989668e66a64f51ad97d2b96219a0e7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_33b1f4727921416f869ae1518d0986c1 = $(`<div id="html_33b1f4727921416f869ae1518d0986c1" style="width: 100.0%; height: 100.0%;">Ranking 73=Alegrete/RS PIB_AGRICOLA=389.201</div>`)[0];
+                popup_6989668e66a64f51ad97d2b96219a0e7.setContent(html_33b1f4727921416f869ae1518d0986c1);
+            
+
+            marker_af39f51a177042a3bbb494956dfe851c.bindPopup(popup_6989668e66a64f51ad97d2b96219a0e7)
+            ;
+
+            
+        
+    
+        var marker_641649d7a61e4a2e8c33bf596d6c058f = L.marker(
+            [-15.066257940343409, -57.186408686842825],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_43890f3e83ea4324b38ba31eafa6c247 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_641649d7a61e4a2e8c33bf596d6c058f.setIcon(icon_43890f3e83ea4324b38ba31eafa6c247);
+            
+    
+            var popup_b13ef5849bcc48ad9d56cc8cde7bb10d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_606ab9213d2c471dac2202989e7a515a = $(`<div id="html_606ab9213d2c471dac2202989e7a515a" style="width: 100.0%; height: 100.0%;">Ranking 74=Barra do Bugres/MT PIB_AGRICOLA=384.076</div>`)[0];
+                popup_b13ef5849bcc48ad9d56cc8cde7bb10d.setContent(html_606ab9213d2c471dac2202989e7a515a);
+            
+
+            marker_641649d7a61e4a2e8c33bf596d6c058f.bindPopup(popup_b13ef5849bcc48ad9d56cc8cde7bb10d)
+            ;
+
+            
+        
+    
+        var marker_f510e24d8e384ae2bf4592dec9360c02 = L.marker(
+            [-28.318912801480554, -51.18460234489573],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_59899dc773dd46fd9560ba989e68ec7f = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f510e24d8e384ae2bf4592dec9360c02.setIcon(icon_59899dc773dd46fd9560ba989e68ec7f);
+            
+    
+            var popup_8530a767e3d94444b2712b76c5e3d992 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_806644e077694ee396464b1b3b05cf87 = $(`<div id="html_806644e077694ee396464b1b3b05cf87" style="width: 100.0%; height: 100.0%;">Ranking 75=Muitos Capões/RS PIB_AGRICOLA=380.967</div>`)[0];
+                popup_8530a767e3d94444b2712b76c5e3d992.setContent(html_806644e077694ee396464b1b3b05cf87);
+            
+
+            marker_f510e24d8e384ae2bf4592dec9360c02.bindPopup(popup_8530a767e3d94444b2712b76c5e3d992)
+            ;
+
+            
+        
+    
+        var marker_23e58241980947c2baf97b59f0cf0fb8 = L.marker(
+            [-23.714202222999905, -47.41801515093099],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_183120fe196548ab880406944ca565e6 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_23e58241980947c2baf97b59f0cf0fb8.setIcon(icon_183120fe196548ab880406944ca565e6);
+            
+    
+            var popup_70b42d8d650f449d91cbfa211ab11162 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0108b054f49f42abbd7e49c0c2630f83 = $(`<div id="html_0108b054f49f42abbd7e49c0c2630f83" style="width: 100.0%; height: 100.0%;">Ranking 76=Piedade/SP PIB_AGRICOLA=377.424</div>`)[0];
+                popup_70b42d8d650f449d91cbfa211ab11162.setContent(html_0108b054f49f42abbd7e49c0c2630f83);
+            
+
+            marker_23e58241980947c2baf97b59f0cf0fb8.bindPopup(popup_70b42d8d650f449d91cbfa211ab11162)
+            ;
+
+            
+        
+    
+        var marker_425f6eec6afe439c9bfbb17e04630fe0 = L.marker(
+            [-18.394032202715604, -52.6708005984179],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_935bc4a5cd614e66bf8974611084b623 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_425f6eec6afe439c9bfbb17e04630fe0.setIcon(icon_935bc4a5cd614e66bf8974611084b623);
+            
+    
+            var popup_7d99299d8be3482a8a256ff8c387a37f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c5ba667ef8204cd5b389edf1ea0dafa0 = $(`<div id="html_c5ba667ef8204cd5b389edf1ea0dafa0" style="width: 100.0%; height: 100.0%;">Ranking 77=Chapadão do Céu/GO PIB_AGRICOLA=375.756</div>`)[0];
+                popup_7d99299d8be3482a8a256ff8c387a37f.setContent(html_c5ba667ef8204cd5b389edf1ea0dafa0);
+            
+
+            marker_425f6eec6afe439c9bfbb17e04630fe0.bindPopup(popup_7d99299d8be3482a8a256ff8c387a37f)
+            ;
+
+            
+        
+    
+        var marker_5f1fe750adba4db9bde68abf3396e8d4 = L.marker(
+            [-30.336760054851453, -54.320477858107616],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_c4fb124363a34cfbbde7c2f7eba8d482 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5f1fe750adba4db9bde68abf3396e8d4.setIcon(icon_c4fb124363a34cfbbde7c2f7eba8d482);
+            
+    
+            var popup_509855050c6c4d4cbfa9c43140f6f64e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_daceae9d171b438192047c622bc25db8 = $(`<div id="html_daceae9d171b438192047c622bc25db8" style="width: 100.0%; height: 100.0%;">Ranking 78=São Gabriel/RS PIB_AGRICOLA=373.579</div>`)[0];
+                popup_509855050c6c4d4cbfa9c43140f6f64e.setContent(html_daceae9d171b438192047c622bc25db8);
+            
+
+            marker_5f1fe750adba4db9bde68abf3396e8d4.bindPopup(popup_509855050c6c4d4cbfa9c43140f6f64e)
+            ;
+
+            
+        
+    
+        var marker_21e8d6e4b5884f8a9af51fe5af264078 = L.marker(
+            [-18.473850597588704, -47.20154772820971],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_145307eee0dd44729955d4d59b7bbd32 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_21e8d6e4b5884f8a9af51fe5af264078.setIcon(icon_145307eee0dd44729955d4d59b7bbd32);
+            
+    
+            var popup_7ec36118da7245e8b655cbd2bff120d0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bd7fc24a1888466ca8f1e2915cbc3724 = $(`<div id="html_bd7fc24a1888466ca8f1e2915cbc3724" style="width: 100.0%; height: 100.0%;">Ranking 79=Coromandel/MG PIB_AGRICOLA=372.085</div>`)[0];
+                popup_7ec36118da7245e8b655cbd2bff120d0.setContent(html_bd7fc24a1888466ca8f1e2915cbc3724);
+            
+
+            marker_21e8d6e4b5884f8a9af51fe5af264078.bindPopup(popup_7ec36118da7245e8b655cbd2bff120d0)
+            ;
+
+            
+        
+    
+        var marker_f5604cfb308141478b336ae9a350b270 = L.marker(
+            [-2.9941905, -47.35696156105186],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_e39e3e3cdd9a45908f77303032347291 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f5604cfb308141478b336ae9a350b270.setIcon(icon_e39e3e3cdd9a45908f77303032347291);
+            
+    
+            var popup_461601dff24048eface611f9d78c269f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d7c49cee112d4d5e8a0fba09958331b1 = $(`<div id="html_d7c49cee112d4d5e8a0fba09958331b1" style="width: 100.0%; height: 100.0%;">Ranking 80=Paragominas/PA PIB_AGRICOLA=371.755</div>`)[0];
+                popup_461601dff24048eface611f9d78c269f.setContent(html_d7c49cee112d4d5e8a0fba09958331b1);
+            
+
+            marker_f5604cfb308141478b336ae9a350b270.bindPopup(popup_461601dff24048eface611f9d78c269f)
+            ;
+
+            
+        
+    
+        var marker_2e459957ae894cfdafa47185d5f648d3 = L.marker(
+            [-30.981267056751104, -54.67413018382365],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_96bb028e35b8494ca7e50b725b537a64 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2e459957ae894cfdafa47185d5f648d3.setIcon(icon_96bb028e35b8494ca7e50b725b537a64);
+            
+    
+            var popup_d06bc4cedc12429c995fc8bfee7a85b6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_def343a78f4b43138d407eaa7ba8666b = $(`<div id="html_def343a78f4b43138d407eaa7ba8666b" style="width: 100.0%; height: 100.0%;">Ranking 81=Dom Pedrito/RS PIB_AGRICOLA=370.936</div>`)[0];
+                popup_d06bc4cedc12429c995fc8bfee7a85b6.setContent(html_def343a78f4b43138d407eaa7ba8666b);
+            
+
+            marker_2e459957ae894cfdafa47185d5f648d3.bindPopup(popup_d06bc4cedc12429c995fc8bfee7a85b6)
+            ;
+
+            
+        
+    
+        var marker_b625b5c2db1c41a0bf9b6e4f0cbfa132 = L.marker(
+            [-9.755907010704702, -36.65729650628719],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_78ca3c16e7544ee3906a51993c525ee7 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b625b5c2db1c41a0bf9b6e4f0cbfa132.setIcon(icon_78ca3c16e7544ee3906a51993c525ee7);
+            
+    
+            var popup_52e50d8bc1194b0ebe738886f6f2b7a2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d047d5d693d044899aebefd666e3fc91 = $(`<div id="html_d047d5d693d044899aebefd666e3fc91" style="width: 100.0%; height: 100.0%;">Ranking 82=Arapiraca/AL PIB_AGRICOLA=370.476</div>`)[0];
+                popup_52e50d8bc1194b0ebe738886f6f2b7a2.setContent(html_d047d5d693d044899aebefd666e3fc91);
+            
+
+            marker_b625b5c2db1c41a0bf9b6e4f0cbfa132.bindPopup(popup_52e50d8bc1194b0ebe738886f6f2b7a2)
+            ;
+
+            
+        
+    
+        var marker_2798b95d88b84dcc9497abcf1aa01da8 = L.marker(
+            [-22.248759312753354, -53.35157381486881],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_2d479c79cc0642e39d12c4b6d8a4bdde = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2798b95d88b84dcc9497abcf1aa01da8.setIcon(icon_2d479c79cc0642e39d12c4b6d8a4bdde);
+            
+    
+            var popup_1d0d59a4668549d3ae1ec5bafd274d13 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2bf9199a739446d7a411909520d7f0f3 = $(`<div id="html_2bf9199a739446d7a411909520d7f0f3" style="width: 100.0%; height: 100.0%;">Ranking 83=Nova Andradina/MS PIB_AGRICOLA=369.008</div>`)[0];
+                popup_1d0d59a4668549d3ae1ec5bafd274d13.setContent(html_2bf9199a739446d7a411909520d7f0f3);
+            
+
+            marker_2798b95d88b84dcc9497abcf1aa01da8.bindPopup(popup_1d0d59a4668549d3ae1ec5bafd274d13)
+            ;
+
+            
+        
+    
+        var marker_ad955a7fd7794695a36e1b1fbc1528bd = L.marker(
+            [-28.642446608489106, -53.60524076211964],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_7aab73b7f22a4f518b1c9acb882b5dd4 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ad955a7fd7794695a36e1b1fbc1528bd.setIcon(icon_7aab73b7f22a4f518b1c9acb882b5dd4);
+            
+    
+            var popup_9ec4131dd6c240e09fc8f29ddcf23aad = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bac5fe53d75847f9b70a50ede3958e97 = $(`<div id="html_bac5fe53d75847f9b70a50ede3958e97" style="width: 100.0%; height: 100.0%;">Ranking 84=Cruz Alta/RS PIB_AGRICOLA=368.883</div>`)[0];
+                popup_9ec4131dd6c240e09fc8f29ddcf23aad.setContent(html_bac5fe53d75847f9b70a50ede3958e97);
+            
+
+            marker_ad955a7fd7794695a36e1b1fbc1528bd.bindPopup(popup_9ec4131dd6c240e09fc8f29ddcf23aad)
+            ;
+
+            
+        
+    
+        var marker_69de2ac9e1e0478eb4a29dbd0f083ee8 = L.marker(
+            [-17.722176812153354, -48.158667678256116],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_ace62773117c4c1bab96515791bf7675 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_69de2ac9e1e0478eb4a29dbd0f083ee8.setIcon(icon_ace62773117c4c1bab96515791bf7675);
+            
+    
+            var popup_0f77033f595a488f9261f81ead2ebac5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e562f5a141874b96bd5967f86a65ae3b = $(`<div id="html_e562f5a141874b96bd5967f86a65ae3b" style="width: 100.0%; height: 100.0%;">Ranking 85=Ipameri/GO PIB_AGRICOLA=368.647</div>`)[0];
+                popup_0f77033f595a488f9261f81ead2ebac5.setContent(html_e562f5a141874b96bd5967f86a65ae3b);
+            
+
+            marker_69de2ac9e1e0478eb4a29dbd0f083ee8.bindPopup(popup_0f77033f595a488f9261f81ead2ebac5)
+            ;
+
+            
+        
+    
+        var marker_69824795ebf34af6877a16bb07f12bf9 = L.marker(
+            [-12.124938139880303, -58.002673627787196],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_75e58d66acef40a689236edda189c972 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_69824795ebf34af6877a16bb07f12bf9.setIcon(icon_75e58d66acef40a689236edda189c972);
+            
+    
+            var popup_b6315b1878ae4903949b2e4f3a57a425 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f83f6e15ef024ec6abf64b158d3fa5de = $(`<div id="html_f83f6e15ef024ec6abf64b158d3fa5de" style="width: 100.0%; height: 100.0%;">Ranking 86=Brasnorte/MT PIB_AGRICOLA=368.294</div>`)[0];
+                popup_b6315b1878ae4903949b2e4f3a57a425.setContent(html_f83f6e15ef024ec6abf64b158d3fa5de);
+            
+
+            marker_69824795ebf34af6877a16bb07f12bf9.bindPopup(popup_b6315b1878ae4903949b2e4f3a57a425)
+            ;
+
+            
+        
+    
+        var marker_519340987aa343b1bb12a31ab409b4dc = L.marker(
+            [-18.169573363417904, -47.947703217215796],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_80c0dbc9a8ed4c0a8e10e25fda5805dc = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_519340987aa343b1bb12a31ab409b4dc.setIcon(icon_80c0dbc9a8ed4c0a8e10e25fda5805dc);
+            
+    
+            var popup_e4d4716c9f9a40feb6ea01d9e4e55c36 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d33eed8bbae34fdc842cc11172c1c288 = $(`<div id="html_d33eed8bbae34fdc842cc11172c1c288" style="width: 100.0%; height: 100.0%;">Ranking 87=Catalão/GO PIB_AGRICOLA=368.114</div>`)[0];
+                popup_e4d4716c9f9a40feb6ea01d9e4e55c36.setContent(html_d33eed8bbae34fdc842cc11172c1c288);
+            
+
+            marker_519340987aa343b1bb12a31ab409b4dc.bindPopup(popup_e4d4716c9f9a40feb6ea01d9e4e55c36)
+            ;
+
+            
+        
+    
+        var marker_8f84aa50dfb54b1a9494534d3b2afb94 = L.marker(
+            [-23.571033387499956, -46.04121222481458],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_99486dec83304c1db88f963c01ba49a7 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8f84aa50dfb54b1a9494534d3b2afb94.setIcon(icon_99486dec83304c1db88f963c01ba49a7);
+            
+    
+            var popup_0aaa7430e9ae49dfa53fc987154adfc0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f567d2730d7447338fc6991b21c28ee2 = $(`<div id="html_f567d2730d7447338fc6991b21c28ee2" style="width: 100.0%; height: 100.0%;">Ranking 88=Biritiba Mirim/SP PIB_AGRICOLA=366.046</div>`)[0];
+                popup_0aaa7430e9ae49dfa53fc987154adfc0.setContent(html_f567d2730d7447338fc6991b21c28ee2);
+            
+
+            marker_8f84aa50dfb54b1a9494534d3b2afb94.bindPopup(popup_0aaa7430e9ae49dfa53fc987154adfc0)
+            ;
+
+            
+        
+    
+        var marker_d5b5aae252a7461ca32e15d8fdd813f1 = L.marker(
+            [-28.294712499211954, -49.93674176054424],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_f3570384666e4cdd9a825d9e32cac77e = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d5b5aae252a7461ca32e15d8fdd813f1.setIcon(icon_f3570384666e4cdd9a825d9e32cac77e);
+            
+    
+            var popup_923be0c60c7f494f8fd2c73e95beefd7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_da32014513d943a39fed12b129b7dcb2 = $(`<div id="html_da32014513d943a39fed12b129b7dcb2" style="width: 100.0%; height: 100.0%;">Ranking 89=São Joaquim/SC PIB_AGRICOLA=363.065</div>`)[0];
+                popup_923be0c60c7f494f8fd2c73e95beefd7.setContent(html_da32014513d943a39fed12b129b7dcb2);
+            
+
+            marker_d5b5aae252a7461ca32e15d8fdd813f1.bindPopup(popup_923be0c60c7f494f8fd2c73e95beefd7)
+            ;
+
+            
+        
+    
+        var marker_072ee9a6c4e54441b23a36069107fd29 = L.marker(
+            [-16.953457670365655, -51.80947977713144],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_b5032f2bf7f049588ed364f4707abe6b = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_072ee9a6c4e54441b23a36069107fd29.setIcon(icon_b5032f2bf7f049588ed364f4707abe6b);
+            
+    
+            var popup_e9f00e7c376d4c048fe84698ef2f47fc = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6bf0f40764534acab198df534e001d4d = $(`<div id="html_6bf0f40764534acab198df534e001d4d" style="width: 100.0%; height: 100.0%;">Ranking 90=Caiapônia/GO PIB_AGRICOLA=362.029</div>`)[0];
+                popup_e9f00e7c376d4c048fe84698ef2f47fc.setContent(html_6bf0f40764534acab198df534e001d4d);
+            
+
+            marker_072ee9a6c4e54441b23a36069107fd29.bindPopup(popup_e9f00e7c376d4c048fe84698ef2f47fc)
+            ;
+
+            
+        
+    
+        var marker_9b9ff86af14149faa32cd9c38c989da5 = L.marker(
+            [-2.2468384800000005, -49.49783016899698],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_b3726a5735844b01a57f59f6d01fc7e9 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9b9ff86af14149faa32cd9c38c989da5.setIcon(icon_b3726a5735844b01a57f59f6d01fc7e9);
+            
+    
+            var popup_1f278b86b25a4697b85c6010da93d660 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a6c283ac80664bd3b55f05452a065cc3 = $(`<div id="html_a6c283ac80664bd3b55f05452a065cc3" style="width: 100.0%; height: 100.0%;">Ranking 91=Cametá/PA PIB_AGRICOLA=361.261</div>`)[0];
+                popup_1f278b86b25a4697b85c6010da93d660.setContent(html_a6c283ac80664bd3b55f05452a065cc3);
+            
+
+            marker_9b9ff86af14149faa32cd9c38c989da5.bindPopup(popup_1f278b86b25a4697b85c6010da93d660)
+            ;
+
+            
+        
+    
+        var marker_75ee3f8fb9904e328812d1db9ddaba44 = L.marker(
+            [-12.592299626304401, -52.209891915594156],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_687124d897194e57844285bba7820146 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_75ee3f8fb9904e328812d1db9ddaba44.setIcon(icon_687124d897194e57844285bba7820146);
+            
+    
+            var popup_1e4a3298db0546919cc9679dab029404 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_db76a56b848c4c579b25b409ddf7e055 = $(`<div id="html_db76a56b848c4c579b25b409ddf7e055" style="width: 100.0%; height: 100.0%;">Ranking 92=Querência/MT PIB_AGRICOLA=357.992</div>`)[0];
+                popup_1e4a3298db0546919cc9679dab029404.setContent(html_db76a56b848c4c579b25b409ddf7e055);
+            
+
+            marker_75ee3f8fb9904e328812d1db9ddaba44.bindPopup(popup_1e4a3298db0546919cc9679dab029404)
+            ;
+
+            
+        
+    
+        var marker_2b4e3febe54549deb32aa67c89dd4725 = L.marker(
+            [-31.3938595243163, -52.67628583207235],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_48241aa6e1b9434b9ffdabb457a4dc02 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2b4e3febe54549deb32aa67c89dd4725.setIcon(icon_48241aa6e1b9434b9ffdabb457a4dc02);
+            
+    
+            var popup_3429978e2da049d7989b74b2457ddd6a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_aa74beba745f402ea678e53fcef75fdc = $(`<div id="html_aa74beba745f402ea678e53fcef75fdc" style="width: 100.0%; height: 100.0%;">Ranking 93=Canguçu/RS PIB_AGRICOLA=356.162</div>`)[0];
+                popup_3429978e2da049d7989b74b2457ddd6a.setContent(html_aa74beba745f402ea678e53fcef75fdc);
+            
+
+            marker_2b4e3febe54549deb32aa67c89dd4725.bindPopup(popup_3429978e2da049d7989b74b2457ddd6a)
+            ;
+
+            
+        
+    
+        var marker_7e32cfecd50142b88d88bb4e819e753b = L.marker(
+            [-19.006374654645803, -57.64898545734013],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_d9e63f1bba534be5a2f3df96062291d4 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7e32cfecd50142b88d88bb4e819e753b.setIcon(icon_d9e63f1bba534be5a2f3df96062291d4);
+            
+    
+            var popup_bb7e907c55c64149a23d6ada2b7aa537 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_92ec9d79e208429c835342d1917699be = $(`<div id="html_92ec9d79e208429c835342d1917699be" style="width: 100.0%; height: 100.0%;">Ranking 94=Corumbá/MS PIB_AGRICOLA=352.844</div>`)[0];
+                popup_bb7e907c55c64149a23d6ada2b7aa537.setContent(html_92ec9d79e208429c835342d1917699be);
+            
+
+            marker_7e32cfecd50142b88d88bb4e819e753b.bindPopup(popup_bb7e907c55c64149a23d6ada2b7aa537)
+            ;
+
+            
+        
+    
+        var marker_e1f5c9e5edc244af9c51eb0a5bead641 = L.marker(
+            [-19.338657524886603, -47.29200844708115],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_53418537979e4a73ab49762126ce45da = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e1f5c9e5edc244af9c51eb0a5bead641.setIcon(icon_53418537979e4a73ab49762126ce45da);
+            
+    
+            var popup_eb7b51b00fd84a6cacd8be817b657d0a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_71751ed02f154b01ad626063c6f29adf = $(`<div id="html_71751ed02f154b01ad626063c6f29adf" style="width: 100.0%; height: 100.0%;">Ranking 95=Perdizes/MG PIB_AGRICOLA=352.128</div>`)[0];
+                popup_eb7b51b00fd84a6cacd8be817b657d0a.setContent(html_71751ed02f154b01ad626063c6f29adf);
+            
+
+            marker_e1f5c9e5edc244af9c51eb0a5bead641.bindPopup(popup_eb7b51b00fd84a6cacd8be817b657d0a)
+            ;
+
+            
+        
+    
+        var marker_b2655e7fe1fe4d5c9a28b285340621c1 = L.marker(
+            [-18.648269526813802, -48.19160537902918],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_067c00b66b3445bc9673fee223cd67c5 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b2655e7fe1fe4d5c9a28b285340621c1.setIcon(icon_067c00b66b3445bc9673fee223cd67c5);
+            
+    
+            var popup_fa139670fb4f4b4ea1101da7c18e03cc = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f1514b35ddca47ab89454d29bb8f8348 = $(`<div id="html_f1514b35ddca47ab89454d29bb8f8348" style="width: 100.0%; height: 100.0%;">Ranking 96=Araguari/MG PIB_AGRICOLA=348.862</div>`)[0];
+                popup_fa139670fb4f4b4ea1101da7c18e03cc.setContent(html_f1514b35ddca47ab89454d29bb8f8348);
+            
+
+            marker_b2655e7fe1fe4d5c9a28b285340621c1.bindPopup(popup_fa139670fb4f4b4ea1101da7c18e03cc)
+            ;
+
+            
+        
+    
+        var marker_84d6b28b225b4ac28a8ccbfaf01fc890 = L.marker(
+            [-20.1771292325793, -48.02933418271452],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_001c1a1013be4820838df354ead485e1 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_84d6b28b225b4ac28a8ccbfaf01fc890.setIcon(icon_001c1a1013be4820838df354ead485e1);
+            
+    
+            var popup_36820fd41c6f4cf8b86032d790f6a6c3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3f0d797724444f92b1ed2873c3a87c68 = $(`<div id="html_3f0d797724444f92b1ed2873c3a87c68" style="width: 100.0%; height: 100.0%;">Ranking 97=Miguelópolis/SP PIB_AGRICOLA=346.747</div>`)[0];
+                popup_36820fd41c6f4cf8b86032d790f6a6c3.setContent(html_3f0d797724444f92b1ed2873c3a87c68);
+            
+
+            marker_84d6b28b225b4ac28a8ccbfaf01fc890.bindPopup(popup_36820fd41c6f4cf8b86032d790f6a6c3)
+            ;
+
+            
+        
+    
+        var marker_1332ff4209c04c0ba7d03fe692c09fcd = L.marker(
+            [-25.393591980000004, -51.463431077674635],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_52f849c252ff47e8a900524575ab15fa = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1332ff4209c04c0ba7d03fe692c09fcd.setIcon(icon_52f849c252ff47e8a900524575ab15fa);
+            
+    
+            var popup_b7c23bc0abc64f6a815fb5acbf96c3c1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4a69855a7dea4089b56385a510e507eb = $(`<div id="html_4a69855a7dea4089b56385a510e507eb" style="width: 100.0%; height: 100.0%;">Ranking 98=Guarapuava/PR PIB_AGRICOLA=346.126</div>`)[0];
+                popup_b7c23bc0abc64f6a815fb5acbf96c3c1.setContent(html_4a69855a7dea4089b56385a510e507eb);
+            
+
+            marker_1332ff4209c04c0ba7d03fe692c09fcd.bindPopup(popup_b7c23bc0abc64f6a815fb5acbf96c3c1)
+            ;
+
+            
+        
+    
+        var marker_2d6efe83af6a44fa9e3f9613e2c68afb = L.marker(
+            [-19.19123830181295, -46.24275309162746],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_60239a60b5304aca86ae7544a0f64ec0);
+        
+    
+
+                var icon_0202c377aaca4c4b98226700f258760a = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2d6efe83af6a44fa9e3f9613e2c68afb.setIcon(icon_0202c377aaca4c4b98226700f258760a);
+            
+    
+            var popup_5d7e2573937a43b7a6c080ad81f8765a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8783b85d0ec3493c929eb13c4beee4ef = $(`<div id="html_8783b85d0ec3493c929eb13c4beee4ef" style="width: 100.0%; height: 100.0%;">Ranking 99=Rio Paranaíba/MG PIB_AGRICOLA=345.669</div>`)[0];
+                popup_5d7e2573937a43b7a6c080ad81f8765a.setContent(html_8783b85d0ec3493c929eb13c4beee4ef);
+            
+
+            marker_2d6efe83af6a44fa9e3f9613e2c68afb.bindPopup(popup_5d7e2573937a43b7a6c080ad81f8765a)
+            ;
+
+            
+        
+</script>

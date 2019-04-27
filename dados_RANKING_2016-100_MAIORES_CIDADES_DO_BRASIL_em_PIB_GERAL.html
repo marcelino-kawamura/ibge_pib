@@ -1,0 +1,3440 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_b353f0a9871d4fd98c5d5070cd5c5e6d {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+                <div style="position: fixed; 
+                            bottom: 50px; left: 50px; width: 250px; height: 140px; 
+                            border:2px solid grey; z-index:9999; font-size:12px;
+                            ">&nbsp; RANKING 2016-100 MAIORES CIDADES DO BRASIL em PIB GERAL' <br> (x R$ 1.000)' <br>
+                              &nbsp; De a 1 a 50' &nbsp; <i class="fa fa-arrow-circle-up fa-2x" style="color:blue"></i><br>
+                              &nbsp; Acima de 50' &nbsp; <i class="fa fa-arrow-circle-down fa-2x" style="color:red"></i>
+                </div>
+                
+    
+    <div class="folium-map" id="map_b353f0a9871d4fd98c5d5070cd5c5e6d" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_b353f0a9871d4fd98c5d5070cd5c5e6d = L.map(
+        'map_b353f0a9871d4fd98c5d5070cd5c5e6d', {
+        center: [-19.917947373817135, -46.288260484350104],
+        zoom: 4,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_5022445affe644da8dd9a5bfcacc2d42 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+    
+        var marker_2d7e3c6e16a84cebb3c07d8e8db6e821 = L.marker(
+            [-23.5673865, -46.57038318211275],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_a1a0c1bdf29e434b8284b1558ccbcf18 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2d7e3c6e16a84cebb3c07d8e8db6e821.setIcon(icon_a1a0c1bdf29e434b8284b1558ccbcf18);
+            
+    
+            var popup_a208636eb92d4236b81b6c4a7401a7fa = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0f73a98d172740cd8f4aba98433a5532 = $(`<div id="html_0f73a98d172740cd8f4aba98433a5532" style="width: 100.0%; height: 100.0%;">Ranking 1=São Paulo/SP PIB_GERAL=687.035.889</div>`)[0];
+                popup_a208636eb92d4236b81b6c4a7401a7fa.setContent(html_0f73a98d172740cd8f4aba98433a5532);
+            
+
+            marker_2d7e3c6e16a84cebb3c07d8e8db6e821.bindPopup(popup_a208636eb92d4236b81b6c4a7401a7fa)
+            ;
+
+            
+        
+    
+        var marker_207fc257c1e94c8cb7abcb6641e46741 = L.marker(
+            [-22.876652118186456, -43.22787512499519],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_c23d4f65988c4fcf9209d954b5a84d94 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_207fc257c1e94c8cb7abcb6641e46741.setIcon(icon_c23d4f65988c4fcf9209d954b5a84d94);
+            
+    
+            var popup_0bbdcfe9f84e40bc96e859b95900f559 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c3fb0c3747144bdbbbdcde630c963a39 = $(`<div id="html_c3fb0c3747144bdbbbdcde630c963a39" style="width: 100.0%; height: 100.0%;">Ranking 2=Rio de Janeiro/RJ PIB_GERAL=329.431.359</div>`)[0];
+                popup_0bbdcfe9f84e40bc96e859b95900f559.setContent(html_c3fb0c3747144bdbbbdcde630c963a39);
+            
+
+            marker_207fc257c1e94c8cb7abcb6641e46741.bindPopup(popup_0bbdcfe9f84e40bc96e859b95900f559)
+            ;
+
+            
+        
+    
+        var marker_69ff449c921d4599878f270e1db75035 = L.marker(
+            [-15.794087361891002, -47.88790547803134],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_6956850ca7f846a1abb834c285f6aeff = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_69ff449c921d4599878f270e1db75035.setIcon(icon_6956850ca7f846a1abb834c285f6aeff);
+            
+    
+            var popup_f95e11cf4dde4889bc24707c91948f7c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b02e5f9c541d4e7fbfa49135b42cb55d = $(`<div id="html_b02e5f9c541d4e7fbfa49135b42cb55d" style="width: 100.0%; height: 100.0%;">Ranking 3=Brasília/DF PIB_GERAL=235.497.106</div>`)[0];
+                popup_f95e11cf4dde4889bc24707c91948f7c.setContent(html_b02e5f9c541d4e7fbfa49135b42cb55d);
+            
+
+            marker_69ff449c921d4599878f270e1db75035.bindPopup(popup_f95e11cf4dde4889bc24707c91948f7c)
+            ;
+
+            
+        
+    
+        var marker_8930cfb02db540db91943870cd73fa4e = L.marker(
+            [-19.937524293775052, -43.926453173530454],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_e458432bc66940cca31f0027ad735008 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8930cfb02db540db91943870cd73fa4e.setIcon(icon_e458432bc66940cca31f0027ad735008);
+            
+    
+            var popup_595ed771cad945d2be0765dd702e9f69 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_59b1cbde0e664e9dbbb90329288e1fd1 = $(`<div id="html_59b1cbde0e664e9dbbb90329288e1fd1" style="width: 100.0%; height: 100.0%;">Ranking 4=Belo Horizonte/MG PIB_GERAL=88.277.462</div>`)[0];
+                popup_595ed771cad945d2be0765dd702e9f69.setContent(html_59b1cbde0e664e9dbbb90329288e1fd1);
+            
+
+            marker_8930cfb02db540db91943870cd73fa4e.bindPopup(popup_595ed771cad945d2be0765dd702e9f69)
+            ;
+
+            
+        
+    
+        var marker_0161a41069c74f598a219247126bec6c = L.marker(
+            [-25.432956000000004, -49.27184788507742],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_e2b22375e9f04da4ba773601dc142ba2 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0161a41069c74f598a219247126bec6c.setIcon(icon_e2b22375e9f04da4ba773601dc142ba2);
+            
+    
+            var popup_6e6b9ea966454443a754bb605b94df2f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_62e3c0bf131844838a741b04c07262f1 = $(`<div id="html_62e3c0bf131844838a741b04c07262f1" style="width: 100.0%; height: 100.0%;">Ranking 5=Curitiba/PR PIB_GERAL=83.788.904</div>`)[0];
+                popup_6e6b9ea966454443a754bb605b94df2f.setContent(html_62e3c0bf131844838a741b04c07262f1);
+            
+
+            marker_0161a41069c74f598a219247126bec6c.bindPopup(popup_6e6b9ea966454443a754bb605b94df2f)
+            ;
+
+            
+        
+    
+        var marker_a924dfefee254172a0e7b19ed008fd98 = L.marker(
+            [-23.533612000000005, -46.78881014427142],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_fd38f78cb16a4e6a81827c5b7780eafe = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a924dfefee254172a0e7b19ed008fd98.setIcon(icon_fd38f78cb16a4e6a81827c5b7780eafe);
+            
+    
+            var popup_65bd785a6fb74f0a9f5d1f890f73df3d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9e3fc3ce9ad641868af66cf3311b80e2 = $(`<div id="html_9e3fc3ce9ad641868af66cf3311b80e2" style="width: 100.0%; height: 100.0%;">Ranking 6=Osasco/SP PIB_GERAL=74.402.691</div>`)[0];
+                popup_65bd785a6fb74f0a9f5d1f890f73df3d.setContent(html_9e3fc3ce9ad641868af66cf3311b80e2);
+            
+
+            marker_a924dfefee254172a0e7b19ed008fd98.bindPopup(popup_65bd785a6fb74f0a9f5d1f890f73df3d)
+            ;
+
+            
+        
+    
+        var marker_11c453898c9e453b929c64303c6a10ae = L.marker(
+            [-30.0300367747664, -51.22866046370233],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_387a5301b45b4cdfb981c68e4bff9a5e = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_11c453898c9e453b929c64303c6a10ae.setIcon(icon_387a5301b45b4cdfb981c68e4bff9a5e);
+            
+    
+            var popup_846110ef8bb14ef3a8739009e8c98e19 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5e689049bd614215ab9eb4112f5f139e = $(`<div id="html_5e689049bd614215ab9eb4112f5f139e" style="width: 100.0%; height: 100.0%;">Ranking 7=Porto Alegre/RS PIB_GERAL=73.425.264</div>`)[0];
+                popup_846110ef8bb14ef3a8739009e8c98e19.setContent(html_5e689049bd614215ab9eb4112f5f139e);
+            
+
+            marker_11c453898c9e453b929c64303c6a10ae.bindPopup(popup_846110ef8bb14ef3a8739009e8c98e19)
+            ;
+
+            
+        
+    
+        var marker_8d32c9ae28f54bc89b5a82ab554ef629 = L.marker(
+            [-3.134691491201946, -60.023335181061036],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_daeac9dee8784750a43fae209a15c628 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8d32c9ae28f54bc89b5a82ab554ef629.setIcon(icon_daeac9dee8784750a43fae209a15c628);
+            
+    
+            var popup_8e0f263e194e4d53be576f7ddbb2df37 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_dcdd5e61800c40558ad9675baadda68e = $(`<div id="html_dcdd5e61800c40558ad9675baadda68e" style="width: 100.0%; height: 100.0%;">Ranking 8=Manaus/AM PIB_GERAL=70.296.364</div>`)[0];
+                popup_8e0f263e194e4d53be576f7ddbb2df37.setContent(html_dcdd5e61800c40558ad9675baadda68e);
+            
+
+            marker_8d32c9ae28f54bc89b5a82ab554ef629.bindPopup(popup_8e0f263e194e4d53be576f7ddbb2df37)
+            ;
+
+            
+        
+    
+        var marker_785d290af2ec4c79ac5b7ce675d5e00c = L.marker(
+            [-13.014771911532753, -38.48806148400785],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_f0acdba01ba64414abda94e62b196d36 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_785d290af2ec4c79ac5b7ce675d5e00c.setIcon(icon_f0acdba01ba64414abda94e62b196d36);
+            
+    
+            var popup_8b8c9e09ad90497d893ca399d748b0af = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_54771e144fd94590ab9b7461bc0d93ba = $(`<div id="html_54771e144fd94590ab9b7461bc0d93ba" style="width: 100.0%; height: 100.0%;">Ranking 9=Salvador/BA PIB_GERAL=61.102.372</div>`)[0];
+                popup_8b8c9e09ad90497d893ca399d748b0af.setContent(html_54771e144fd94590ab9b7461bc0d93ba);
+            
+
+            marker_785d290af2ec4c79ac5b7ce675d5e00c.bindPopup(popup_8b8c9e09ad90497d893ca399d748b0af)
+            ;
+
+            
+        
+    
+        var marker_d24107ff59b54014a53be4da536f0bf5 = L.marker(
+            [-3.7238050350000007, -38.58992755504318],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_ce994aa1682f444e88bbf1d5daa4fed1 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d24107ff59b54014a53be4da536f0bf5.setIcon(icon_ce994aa1682f444e88bbf1d5daa4fed1);
+            
+    
+            var popup_cbc9292fc36e412e964a462a8e617f80 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7473634085e148a4aa9c00769333459d = $(`<div id="html_7473634085e148a4aa9c00769333459d" style="width: 100.0%; height: 100.0%;">Ranking 10=Fortaleza/CE PIB_GERAL=60.141.145</div>`)[0];
+                popup_cbc9292fc36e412e964a462a8e617f80.setContent(html_7473634085e148a4aa9c00769333459d);
+            
+
+            marker_d24107ff59b54014a53be4da536f0bf5.bindPopup(popup_cbc9292fc36e412e964a462a8e617f80)
+            ;
+
+            
+        
+    
+        var marker_69517c7f43ce4d689e137dbdd694aed9 = L.marker(
+            [-22.907342500000002, -47.06015627297316],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_6bfdd8fb8dcc49c39b7279c02f77dc2a = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_69517c7f43ce4d689e137dbdd694aed9.setIcon(icon_6bfdd8fb8dcc49c39b7279c02f77dc2a);
+            
+    
+            var popup_710a41c617d74b1c8821571bc4cd0014 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7f7cc05c870346baa00aed3fed066490 = $(`<div id="html_7f7cc05c870346baa00aed3fed066490" style="width: 100.0%; height: 100.0%;">Ranking 11=Campinas/SP PIB_GERAL=58.523.732</div>`)[0];
+                popup_710a41c617d74b1c8821571bc4cd0014.setContent(html_7f7cc05c870346baa00aed3fed066490);
+            
+
+            marker_69517c7f43ce4d689e137dbdd694aed9.bindPopup(popup_710a41c617d74b1c8821571bc4cd0014)
+            ;
+
+            
+        
+    
+        var marker_799467a40fcb419b9ad3a99ca7dd0b3a = L.marker(
+            [-23.468506, -46.531084085661085],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_0cf5b525e36e4e07936f34128188f48f = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_799467a40fcb419b9ad3a99ca7dd0b3a.setIcon(icon_0cf5b525e36e4e07936f34128188f48f);
+            
+    
+            var popup_721def0a620a4d7dbbf74d03fa3dcd39 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b307f9dc69f14de28783045275f99585 = $(`<div id="html_b307f9dc69f14de28783045275f99585" style="width: 100.0%; height: 100.0%;">Ranking 12=Guarulhos/SP PIB_GERAL=53.974.918</div>`)[0];
+                popup_721def0a620a4d7dbbf74d03fa3dcd39.setContent(html_b307f9dc69f14de28783045275f99585);
+            
+
+            marker_799467a40fcb419b9ad3a99ca7dd0b3a.bindPopup(popup_721def0a620a4d7dbbf74d03fa3dcd39)
+            ;
+
+            
+        
+    
+        var marker_ebaa3b05e6cf489ca96ad1c38059af5a = L.marker(
+            [-8.062762483052408, -34.88894194457772],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_086670b7b8fb42ff8d93f03d009c8966 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ebaa3b05e6cf489ca96ad1c38059af5a.setIcon(icon_086670b7b8fb42ff8d93f03d009c8966);
+            
+    
+            var popup_fbe1c4a930f140bdbf5b0cf3187768bb = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c0c0b955961c4028b307deecfd6c017a = $(`<div id="html_c0c0b955961c4028b307deecfd6c017a" style="width: 100.0%; height: 100.0%;">Ranking 13=Recife/PE PIB_GERAL=49.544.087</div>`)[0];
+                popup_fbe1c4a930f140bdbf5b0cf3187768bb.setContent(html_c0c0b955961c4028b307deecfd6c017a);
+            
+
+            marker_ebaa3b05e6cf489ca96ad1c38059af5a.bindPopup(popup_fbe1c4a930f140bdbf5b0cf3187768bb)
+            ;
+
+            
+        
+    
+        var marker_ce8ea42d78d04911a4939c4daf02dfbc = L.marker(
+            [-23.508902000000003, -46.874652886530505],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_80d3057a03f045f5ba3c6221d7ca2fd6 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ce8ea42d78d04911a4939c4daf02dfbc.setIcon(icon_80d3057a03f045f5ba3c6221d7ca2fd6);
+            
+    
+            var popup_9c25cfd73bc6496e99ffbbdd824947e3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d0a715a1e06541e790d261505cc58a36 = $(`<div id="html_d0a715a1e06541e790d261505cc58a36" style="width: 100.0%; height: 100.0%;">Ranking 14=Barueri/SP PIB_GERAL=47.088.301</div>`)[0];
+                popup_9c25cfd73bc6496e99ffbbdd824947e3.setContent(html_d0a715a1e06541e790d261505cc58a36);
+            
+
+            marker_ce8ea42d78d04911a4939c4daf02dfbc.bindPopup(popup_9c25cfd73bc6496e99ffbbdd824947e3)
+            ;
+
+            
+        
+    
+        var marker_345447ad868541ae89dd3ccfe3e29318 = L.marker(
+            [-16.673309773838948, -49.255814275815766],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_8ef82687f14645bc9b49fea5a8fe0706 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_345447ad868541ae89dd3ccfe3e29318.setIcon(icon_8ef82687f14645bc9b49fea5a8fe0706);
+            
+    
+            var popup_4dff488eb5f3429382c7183a4ac8e89e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d6c570de76d140698d7b62944fb72d4b = $(`<div id="html_d6c570de76d140698d7b62944fb72d4b" style="width: 100.0%; height: 100.0%;">Ranking 15=Goiânia/GO PIB_GERAL=46.659.222</div>`)[0];
+                popup_4dff488eb5f3429382c7183a4ac8e89e.setContent(html_d6c570de76d140698d7b62944fb72d4b);
+            
+
+            marker_345447ad868541ae89dd3ccfe3e29318.bindPopup(popup_4dff488eb5f3429382c7183a4ac8e89e)
+            ;
+
+            
+        
+    
+        var marker_fb6a7660782f420ba679cb5f48a7ee37 = L.marker(
+            [-23.710304500000007, -46.55025724767833],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_051eba84a8004b64a37463102e084ba3 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fb6a7660782f420ba679cb5f48a7ee37.setIcon(icon_051eba84a8004b64a37463102e084ba3);
+            
+    
+            var popup_4fc5ef7fba644eb8b17de9161101cdf2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_edd5578fd3384b008651b836076c65dc = $(`<div id="html_edd5578fd3384b008651b836076c65dc" style="width: 100.0%; height: 100.0%;">Ranking 16=São Bernardo do Campo/SP PIB_GERAL=42.131.380</div>`)[0];
+                popup_4fc5ef7fba644eb8b17de9161101cdf2.setContent(html_edd5578fd3384b008651b836076c65dc);
+            
+
+            marker_fb6a7660782f420ba679cb5f48a7ee37.bindPopup(popup_4fc5ef7fba644eb8b17de9161101cdf2)
+            ;
+
+            
+        
+    
+        var marker_caa531fd34f4449e9d669615b58827ae = L.marker(
+            [-22.785253249654154, -43.309888071722604],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_e46a29571674445792a4ad9392d3a816 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_caa531fd34f4449e9d669615b58827ae.setIcon(icon_e46a29571674445792a4ad9392d3a816);
+            
+    
+            var popup_947cad11bba646d09d9c92e3320f529b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_63b9618549004a4b92e3705cc52cce4b = $(`<div id="html_63b9618549004a4b92e3705cc52cce4b" style="width: 100.0%; height: 100.0%;">Ranking 17=Duque de Caxias/RJ PIB_GERAL=39.857.742</div>`)[0];
+                popup_947cad11bba646d09d9c92e3320f529b.setContent(html_63b9618549004a4b92e3705cc52cce4b);
+            
+
+            marker_caa531fd34f4449e9d669615b58827ae.bindPopup(popup_947cad11bba646d09d9c92e3320f529b)
+            ;
+
+            
+        
+    
+        var marker_8255320041a6411f9a67717ece2f2b9a = L.marker(
+            [-23.187668000000006, -46.88527396799674],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_99b4bbfa7d974b839b223b8517b754c7 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8255320041a6411f9a67717ece2f2b9a.setIcon(icon_99b4bbfa7d974b839b223b8517b754c7);
+            
+    
+            var popup_92d0c5cb0cc74207a3e6ad361f45525e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1ac30c470e234b759c4c67098d6f7f6d = $(`<div id="html_1ac30c470e234b759c4c67098d6f7f6d" style="width: 100.0%; height: 100.0%;">Ranking 18=Jundiaí/SP PIB_GERAL=39.782.735</div>`)[0];
+                popup_92d0c5cb0cc74207a3e6ad361f45525e.setContent(html_1ac30c470e234b759c4c67098d6f7f6d);
+            
+
+            marker_8255320041a6411f9a67717ece2f2b9a.bindPopup(popup_92d0c5cb0cc74207a3e6ad361f45525e)
+            ;
+
+            
+        
+    
+        var marker_f4338c3b0dd349c68d9b235c5132960b = L.marker(
+            [-23.184061500000002, -45.884175401459665],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_a676666e34fa4d6380d030fea105fc35 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f4338c3b0dd349c68d9b235c5132960b.setIcon(icon_a676666e34fa4d6380d030fea105fc35);
+            
+    
+            var popup_a4077025b70c4bb0972225bd44d4a09d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ced1e8f56e0a489488153f6c686be93e = $(`<div id="html_ced1e8f56e0a489488153f6c686be93e" style="width: 100.0%; height: 100.0%;">Ranking 19=São José dos Campos/SP PIB_GERAL=37.315.782</div>`)[0];
+                popup_a4077025b70c4bb0972225bd44d4a09d.setContent(html_ced1e8f56e0a489488153f6c686be93e);
+            
+
+            marker_f4338c3b0dd349c68d9b235c5132960b.bindPopup(popup_a4077025b70c4bb0972225bd44d4a09d)
+            ;
+
+            
+        
+    
+        var marker_f80ed0a99ef44a36aff31d2725f00e02 = L.marker(
+            [-18.918998609305604, -48.27795018473447],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_16e06618007c40b8b0d538c1e4245d6a = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f80ed0a99ef44a36aff31d2725f00e02.setIcon(icon_16e06618007c40b8b0d538c1e4245d6a);
+            
+    
+            var popup_f627735ca3204c62ae40dac5fff2243f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ab3d6c16be664c78868456ca262b0faa = $(`<div id="html_ab3d6c16be664c78868456ca262b0faa" style="width: 100.0%; height: 100.0%;">Ranking 20=Uberlândia/MG PIB_GERAL=32.536.256</div>`)[0];
+                popup_f627735ca3204c62ae40dac5fff2243f.setContent(html_ab3d6c16be664c78868456ca262b0faa);
+            
+
+            marker_f80ed0a99ef44a36aff31d2725f00e02.bindPopup(popup_f627735ca3204c62ae40dac5fff2243f)
+            ;
+
+            
+        
+    
+        var marker_786cb3863a084772a3dc69db1ba1d3fe = L.marker(
+            [-22.759921699999953, -47.15438580096949],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_3f2c00d4c2274751b61e4ddf4d8064b3 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_786cb3863a084772a3dc69db1ba1d3fe.setIcon(icon_3f2c00d4c2274751b61e4ddf4d8064b3);
+            
+    
+            var popup_63ad3d97846d438c8b66a844f4ab15b4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e07d49302e4e4f359395fb42485d972d = $(`<div id="html_e07d49302e4e4f359395fb42485d972d" style="width: 100.0%; height: 100.0%;">Ranking 21=Paulínia/SP PIB_GERAL=31.504.043</div>`)[0];
+                popup_63ad3d97846d438c8b66a844f4ab15b4.setContent(html_e07d49302e4e4f359395fb42485d972d);
+            
+
+            marker_786cb3863a084772a3dc69db1ba1d3fe.bindPopup(popup_63ad3d97846d438c8b66a844f4ab15b4)
+            ;
+
+            
+        
+    
+        var marker_1fb4f6ccb1be4253ac421e6383af377b = L.marker(
+            [-23.499323, -47.45785325320404],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_e2c44a8be90b442894549c31726bff8b = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1fb4f6ccb1be4253ac421e6383af377b.setIcon(icon_e2c44a8be90b442894549c31726bff8b);
+            
+    
+            var popup_aa42815079fd40048d23b65e0208f557 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_27afc621d34245dc886e363686f150a9 = $(`<div id="html_27afc621d34245dc886e363686f150a9" style="width: 100.0%; height: 100.0%;">Ranking 22=Sorocaba/SP PIB_GERAL=30.593.860</div>`)[0];
+                popup_aa42815079fd40048d23b65e0208f557.setContent(html_27afc621d34245dc886e363686f150a9);
+            
+
+            marker_1fb4f6ccb1be4253ac421e6383af377b.bindPopup(popup_aa42815079fd40048d23b65e0208f557)
+            ;
+
+            
+        
+    
+        var marker_f11e14cf0e574f25bae40cad4dd2d375 = L.marker(
+            [-21.184834500000004, -47.80547591554153],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_c905da26122342b4b41e245ba427a63b = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f11e14cf0e574f25bae40cad4dd2d375.setIcon(icon_c905da26122342b4b41e245ba427a63b);
+            
+    
+            var popup_0f6270349ce9416f814233b54a6cdebf = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5799c14c1a264b2197571f6b70b8124e = $(`<div id="html_5799c14c1a264b2197571f6b70b8124e" style="width: 100.0%; height: 100.0%;">Ranking 23=Ribeirão Preto/SP PIB_GERAL=29.986.609</div>`)[0];
+                popup_0f6270349ce9416f814233b54a6cdebf.setContent(html_5799c14c1a264b2197571f6b70b8124e);
+            
+
+            marker_f11e14cf0e574f25bae40cad4dd2d375.bindPopup(popup_0f6270349ce9416f814233b54a6cdebf)
+            ;
+
+            
+        
+    
+        var marker_7188feaa90c346db80a7e2613b568021 = L.marker(
+            [-1.4598450000000003, -48.48782568748756],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_3da194aa687b482ba196142622a0ea6a = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7188feaa90c346db80a7e2613b568021.setIcon(icon_3da194aa687b482ba196142622a0ea6a);
+            
+    
+            var popup_e2698c8374bc47d28504a82bbc150d26 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7b4beeb9967d4e42a9659135ef7f67b9 = $(`<div id="html_7b4beeb9967d4e42a9659135ef7f67b9" style="width: 100.0%; height: 100.0%;">Ranking 24=Belém/PA PIB_GERAL=29.426.953</div>`)[0];
+                popup_e2698c8374bc47d28504a82bbc150d26.setContent(html_7b4beeb9967d4e42a9659135ef7f67b9);
+            
+
+            marker_7188feaa90c346db80a7e2613b568021.bindPopup(popup_e2698c8374bc47d28504a82bbc150d26)
+            ;
+
+            
+        
+    
+        var marker_46eaafb11c264244ab72728cb609a36d = L.marker(
+            [-2.5318859850833904, -44.29791856424438],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_bedfb96a260441ad93198345833feca8 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_46eaafb11c264244ab72728cb609a36d.setIcon(icon_bedfb96a260441ad93198345833feca8);
+            
+    
+            var popup_c7b0fa09fd97461ea5c1ed99b9a65773 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1677b56a8806437bb866c750eac48575 = $(`<div id="html_1677b56a8806437bb866c750eac48575" style="width: 100.0%; height: 100.0%;">Ranking 25=São Luís/MA PIB_GERAL=28.323.357</div>`)[0];
+                popup_c7b0fa09fd97461ea5c1ed99b9a65773.setContent(html_1677b56a8806437bb866c750eac48575);
+            
+
+            marker_46eaafb11c264244ab72728cb609a36d.bindPopup(popup_c7b0fa09fd97461ea5c1ed99b9a65773)
+            ;
+
+            
+        
+    
+        var marker_4844719cd93b4533be60ca9d89bf8a8d = L.marker(
+            [-19.943445905663303, -44.06634464872388],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_70d13740333440c3981b22c5d3a805a3 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4844719cd93b4533be60ca9d89bf8a8d.setIcon(icon_70d13740333440c3981b22c5d3a805a3);
+            
+    
+            var popup_23dc59caec8045db8c55ea74c5baa16c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c5bd7678e51f47bcb10c1a2cda8d12c1 = $(`<div id="html_c5bd7678e51f47bcb10c1a2cda8d12c1" style="width: 100.0%; height: 100.0%;">Ranking 26=Contagem/MG PIB_GERAL=26.487.357</div>`)[0];
+                popup_23dc59caec8045db8c55ea74c5baa16c.setContent(html_c5bd7678e51f47bcb10c1a2cda8d12c1);
+            
+
+            marker_4844719cd93b4533be60ca9d89bf8a8d.bindPopup(popup_23dc59caec8045db8c55ea74c5baa16c)
+            ;
+
+            
+        
+    
+        var marker_861df342f8f44feebd99622fe25aa124 = L.marker(
+            [-23.657510000000002, -46.53087425762954],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_0da48843f65b4f35880ae2990e5008d9 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_861df342f8f44feebd99622fe25aa124.setIcon(icon_0da48843f65b4f35880ae2990e5008d9);
+            
+    
+            var popup_9ce5954182d94c36b78342fcda18843d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_03d98377a0104049a0b9823607f6ee52 = $(`<div id="html_03d98377a0104049a0b9823607f6ee52" style="width: 100.0%; height: 100.0%;">Ranking 27=Santo André/SP PIB_GERAL=25.837.046</div>`)[0];
+                popup_9ce5954182d94c36b78342fcda18843d.setContent(html_03d98377a0104049a0b9823607f6ee52);
+            
+
+            marker_861df342f8f44feebd99622fe25aa124.bindPopup(popup_9ce5954182d94c36b78342fcda18843d)
+            ;
+
+            
+        
+    
+        var marker_10655b14308342f99ca044d584a95ed0 = L.marker(
+            [-20.458029987863902, -54.61574356645884],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_f70cc42d9a67420eaba37d7aa9efb4f5 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_10655b14308342f99ca044d584a95ed0.setIcon(icon_f70cc42d9a67420eaba37d7aa9efb4f5);
+            
+    
+            var popup_26ce75ef476f41bbb8189c07bf73e6f3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d2aa8bd018074ff199824a9dac054165 = $(`<div id="html_d2aa8bd018074ff199824a9dac054165" style="width: 100.0%; height: 100.0%;">Ranking 28=Campo Grande/MS PIB_GERAL=25.437.928</div>`)[0];
+                popup_26ce75ef476f41bbb8189c07bf73e6f3.setContent(html_d2aa8bd018074ff199824a9dac054165);
+            
+
+            marker_10655b14308342f99ca044d584a95ed0.bindPopup(popup_26ce75ef476f41bbb8189c07bf73e6f3)
+            ;
+
+            
+        
+    
+        var marker_eb30701ba3db496cb7efd87c68aef71c = L.marker(
+            [-26.304517648654056, -48.84940914323797],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_a7d1657caf3845c88f77c870e19bb475 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_eb30701ba3db496cb7efd87c68aef71c.setIcon(icon_a7d1657caf3845c88f77c870e19bb475);
+            
+    
+            var popup_9f519a700e664248b1d468150cc939c9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_673fd866c8fc4e55a23d7f75d675b8c1 = $(`<div id="html_673fd866c8fc4e55a23d7f75d675b8c1" style="width: 100.0%; height: 100.0%;">Ranking 29=Joinville/SC PIB_GERAL=25.217.353</div>`)[0];
+                popup_9f519a700e664248b1d468150cc939c9.setContent(html_673fd866c8fc4e55a23d7f75d675b8c1);
+            
+
+            marker_eb30701ba3db496cb7efd87c68aef71c.bindPopup(popup_9f519a700e664248b1d468150cc939c9)
+            ;
+
+            
+        
+    
+        var marker_b7c1418c92274fb3aacc2bb1f9df3ace = L.marker(
+            [-19.965379240085102, -44.19755110326658],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_c710d2d8da0742c4b8cc944090e15484 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b7c1418c92274fb3aacc2bb1f9df3ace.setIcon(icon_c710d2d8da0742c4b8cc944090e15484);
+            
+    
+            var popup_34558c536abc41e092688ba599e8e144 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_da351fc353844464ab08c5e8ca99ab8d = $(`<div id="html_da351fc353844464ab08c5e8ca99ab8d" style="width: 100.0%; height: 100.0%;">Ranking 30=Betim/MG PIB_GERAL=25.144.473</div>`)[0];
+                popup_34558c536abc41e092688ba599e8e144.setContent(html_da351fc353844464ab08c5e8ca99ab8d);
+            
+
+            marker_b7c1418c92274fb3aacc2bb1f9df3ace.bindPopup(popup_34558c536abc41e092688ba599e8e144)
+            ;
+
+            
+        
+    
+        var marker_67de98f10f5b4e6bbbb84f42998633b6 = L.marker(
+            [-22.89645238512725, -43.07582316727347],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_f03408e508624bc797f78ac9719293ef = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_67de98f10f5b4e6bbbb84f42998633b6.setIcon(icon_f03408e508624bc797f78ac9719293ef);
+            
+    
+            var popup_3df162fa5a7b485b9fc1a7ae3f173b98 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b0b0d790ecc44d1b82663a531f05d8b3 = $(`<div id="html_b0b0d790ecc44d1b82663a531f05d8b3" style="width: 100.0%; height: 100.0%;">Ranking 31=Niterói/RJ PIB_GERAL=23.003.343</div>`)[0];
+                popup_3df162fa5a7b485b9fc1a7ae3f173b98.setContent(html_b0b0d790ecc44d1b82663a531f05d8b3);
+            
+
+            marker_67de98f10f5b4e6bbbb84f42998633b6.bindPopup(popup_3df162fa5a7b485b9fc1a7ae3f173b98)
+            ;
+
+            
+        
+    
+        var marker_4662688b3b394c1880765aedc46da74b = L.marker(
+            [-15.569989013120601, -56.07325203819114],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_f353458acd7841aba813f461be7e9401 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4662688b3b394c1880765aedc46da74b.setIcon(icon_f353458acd7841aba813f461be7e9401);
+            
+    
+            var popup_8233bac697aa44a08f33dddf9836e28e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4ee005883d26446aa1ec3e095eff56ac = $(`<div id="html_4ee005883d26446aa1ec3e095eff56ac" style="width: 100.0%; height: 100.0%;">Ranking 32=Cuiabá/MT PIB_GERAL=22.203.168</div>`)[0];
+                popup_8233bac697aa44a08f33dddf9836e28e.setContent(html_4ee005883d26446aa1ec3e095eff56ac);
+            
+
+            marker_4662688b3b394c1880765aedc46da74b.bindPopup(popup_8233bac697aa44a08f33dddf9836e28e)
+            ;
+
+            
+        
+    
+        var marker_eb32eea15b784b94ac3f458358878721 = L.marker(
+            [-23.933737500000003, -46.331370849190684],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_676d35841abb4d3db31af0c294ba1ea4 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_eb32eea15b784b94ac3f458358878721.setIcon(icon_676d35841abb4d3db31af0c294ba1ea4);
+            
+    
+            var popup_1536cb7934974d929bac2bba76b92847 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3a7dec19674e4e319a8e80fcf70fe9d0 = $(`<div id="html_3a7dec19674e4e319a8e80fcf70fe9d0" style="width: 100.0%; height: 100.0%;">Ranking 33=Santos/SP PIB_GERAL=21.954.556</div>`)[0];
+                popup_1536cb7934974d929bac2bba76b92847.setContent(html_3a7dec19674e4e319a8e80fcf70fe9d0);
+            
+
+            marker_eb32eea15b784b94ac3f458358878721.bindPopup(popup_1536cb7934974d929bac2bba76b92847)
+            ;
+
+            
+        
+    
+        var marker_88f91d168f0d4399a7967573d10561d3 = L.marker(
+            [-12.698816760000003, -38.32574006206519],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_8a7f90ee20e04119870abf02cd10b3ce = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_88f91d168f0d4399a7967573d10561d3.setIcon(icon_8a7f90ee20e04119870abf02cd10b3ce);
+            
+    
+            var popup_d9f2e6532cdf41168c3ec183ea4e9d9d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_394c164aa3c5498badc859a52ae28fea = $(`<div id="html_394c164aa3c5498badc859a52ae28fea" style="width: 100.0%; height: 100.0%;">Ranking 34=Camaçari/BA PIB_GERAL=21.935.897</div>`)[0];
+                popup_d9f2e6532cdf41168c3ec183ea4e9d9d.setContent(html_394c164aa3c5498badc859a52ae28fea);
+            
+
+            marker_88f91d168f0d4399a7967573d10561d3.bindPopup(popup_d9f2e6532cdf41168c3ec183ea4e9d9d)
+            ;
+
+            
+        
+    
+        var marker_6f779df989ba456dbd2678bb487a1279 = L.marker(
+            [-5.750898537612061, -35.252254728054304],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_e03434fbae09493497fa5c541a251ae7 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6f779df989ba456dbd2678bb487a1279.setIcon(icon_e03434fbae09493497fa5c541a251ae7);
+            
+    
+            var popup_0693edd6c10145bfa1711ccf9e6ec5c5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3fcde7b930c9400caaaa029f302f593c = $(`<div id="html_3fcde7b930c9400caaaa029f302f593c" style="width: 100.0%; height: 100.0%;">Ranking 35=Natal/RN PIB_GERAL=21.845.480</div>`)[0];
+                popup_0693edd6c10145bfa1711ccf9e6ec5c5.setContent(html_3fcde7b930c9400caaaa029f302f593c);
+            
+
+            marker_6f779df989ba456dbd2678bb487a1279.bindPopup(popup_0693edd6c10145bfa1711ccf9e6ec5c5)
+            ;
+
+            
+        
+    
+        var marker_f1275093f97c4c39b7424c3e246da7b7 = L.marker(
+            [-20.320153792853304, -40.32220872672663],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_ce3d3cb5754a49a2b6850d4d8cb3c5d9 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f1275093f97c4c39b7424c3e246da7b7.setIcon(icon_ce3d3cb5754a49a2b6850d4d8cb3c5d9);
+            
+    
+            var popup_b0bc23f154d0438ca216827f49eb70ae = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f81e92b4f66c4655ae44733949b10441 = $(`<div id="html_f81e92b4f66c4655ae44733949b10441" style="width: 100.0%; height: 100.0%;">Ranking 36=Vitória/ES PIB_GERAL=21.727.094</div>`)[0];
+                popup_b0bc23f154d0438ca216827f49eb70ae.setContent(html_f81e92b4f66c4655ae44733949b10441);
+            
+
+            marker_f1275093f97c4c39b7424c3e246da7b7.bindPopup(popup_b0bc23f154d0438ca216827f49eb70ae)
+            ;
+
+            
+        
+    
+        var marker_79669c154bce4e18854ace8950b6d6f4 = L.marker(
+            [-22.723722000000002, -47.6468462361582],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_482b1946ce134cb1b8cb51f9e747f21f = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_79669c154bce4e18854ace8950b6d6f4.setIcon(icon_482b1946ce134cb1b8cb51f9e747f21f);
+            
+    
+            var popup_5f2562e8c91549698553591ea7496159 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3666f13d8af74ffaacd52ca0ac3880ba = $(`<div id="html_3666f13d8af74ffaacd52ca0ac3880ba" style="width: 100.0%; height: 100.0%;">Ranking 37=Piracicaba/SP PIB_GERAL=21.557.591</div>`)[0];
+                popup_5f2562e8c91549698553591ea7496159.setContent(html_3666f13d8af74ffaacd52ca0ac3880ba);
+            
+
+            marker_79669c154bce4e18854ace8950b6d6f4.bindPopup(popup_5f2562e8c91549698553591ea7496159)
+            ;
+
+            
+        
+    
+        var marker_c351c9a6c05f4e099c7d766493f7ffd3 = L.marker(
+            [-9.660822151631141, -35.70162991348949],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_80a35c94a44e4f1cad7935bc844fa6b6 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c351c9a6c05f4e099c7d766493f7ffd3.setIcon(icon_80a35c94a44e4f1cad7935bc844fa6b6);
+            
+    
+            var popup_9efdf6021c1345048ab51a4607e1382b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f065b15b4a4a42cf85eb570fae3ce37e = $(`<div id="html_f065b15b4a4a42cf85eb570fae3ce37e" style="width: 100.0%; height: 100.0%;">Ranking 38=Maceió/AL PIB_GERAL=21.306.115</div>`)[0];
+                popup_9efdf6021c1345048ab51a4607e1382b.setContent(html_f065b15b4a4a42cf85eb570fae3ce37e);
+            
+
+            marker_c351c9a6c05f4e099c7d766493f7ffd3.bindPopup(popup_9efdf6021c1345048ab51a4607e1382b)
+            ;
+
+            
+        
+    
+        var marker_c08951e3304e4fc791cacbfb50ed3ad4 = L.marker(
+            [-29.166899011062103, -51.17886020588302],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_d6e3cfa12580400896a96972692e1afe = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c08951e3304e4fc791cacbfb50ed3ad4.setIcon(icon_d6e3cfa12580400896a96972692e1afe);
+            
+    
+            var popup_a3e71835c2f04ec6ad272389f74751d2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ea7bfb22b73e4b02ab822e94e5da36db = $(`<div id="html_ea7bfb22b73e4b02ab822e94e5da36db" style="width: 100.0%; height: 100.0%;">Ranking 39=Caxias do Sul/RS PIB_GERAL=21.089.905</div>`)[0];
+                popup_a3e71835c2f04ec6ad272389f74751d2.setContent(html_ea7bfb22b73e4b02ab822e94e5da36db);
+            
+
+            marker_c08951e3304e4fc791cacbfb50ed3ad4.bindPopup(popup_a3e71835c2f04ec6ad272389f74751d2)
+            ;
+
+            
+        
+    
+        var marker_6f9fa955d2f54778bf4a80a71573c437 = L.marker(
+            [-25.537702000000007, -49.20008246566732],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_7fc695b55c3e4f5198464d4c5641bc6e = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6f9fa955d2f54778bf4a80a71573c437.setIcon(icon_7fc695b55c3e4f5198464d4c5641bc6e);
+            
+    
+            var popup_43d8402bca5840fd913c6b2b12d4891d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d0285e0943914460b84b97e42de49013 = $(`<div id="html_d0285e0943914460b84b97e42de49013" style="width: 100.0%; height: 100.0%;">Ranking 40=São José dos Pinhais/PR PIB_GERAL=20.142.953</div>`)[0];
+                popup_43d8402bca5840fd913c6b2b12d4891d.setContent(html_d0285e0943914460b84b97e42de49013);
+            
+
+            marker_6f9fa955d2f54778bf4a80a71573c437.bindPopup(popup_43d8402bca5840fd913c6b2b12d4891d)
+            ;
+
+            
+        
+    
+        var marker_6648830eaeea46b29c42982a5a5bdafe = L.marker(
+            [-29.918696706490604, -51.181029780687645],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_f9fb9146210240bd8dcb0e82e1722eb7 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6648830eaeea46b29c42982a5a5bdafe.setIcon(icon_f9fb9146210240bd8dcb0e82e1722eb7);
+            
+    
+            var popup_767fb2b56cfc4919b456ad5287dbdf3f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3a2162271fd1419683fb17cc8b237c54 = $(`<div id="html_3a2162271fd1419683fb17cc8b237c54" style="width: 100.0%; height: 100.0%;">Ranking 41=Canoas/RS PIB_GERAL=19.528.538</div>`)[0];
+                popup_767fb2b56cfc4919b456ad5287dbdf3f.setContent(html_3a2162271fd1419683fb17cc8b237c54);
+            
+
+            marker_6648830eaeea46b29c42982a5a5bdafe.bindPopup(popup_767fb2b56cfc4919b456ad5287dbdf3f)
+            ;
+
+            
+        
+    
+        var marker_9b012b67482f47389d1b5de15a8fa25a = L.marker(
+            [-26.907426239799456, -48.65702320834883],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_31b02020701d4ff1b8bdbf60d3f4dad3 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9b012b67482f47389d1b5de15a8fa25a.setIcon(icon_31b02020701d4ff1b8bdbf60d3f4dad3);
+            
+    
+            var popup_855568d019994eccaf2390df10cf890c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_11b07d230c1147e9b69b6e318a2cbf5b = $(`<div id="html_11b07d230c1147e9b69b6e318a2cbf5b" style="width: 100.0%; height: 100.0%;">Ranking 42=Itajaí/SC PIB_GERAL=19.279.898</div>`)[0];
+                popup_855568d019994eccaf2390df10cf890c.setContent(html_11b07d230c1147e9b69b6e318a2cbf5b);
+            
+
+            marker_9b012b67482f47389d1b5de15a8fa25a.bindPopup(popup_855568d019994eccaf2390df10cf890c)
+            ;
+
+            
+        
+    
+        var marker_fc204c8197504929941ec5e35f80fef0 = L.marker(
+            [-5.086341952321701, -42.80527045822335],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_c6790313feff4debbec3ecb388d7e002 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fc204c8197504929941ec5e35f80fef0.setIcon(icon_c6790313feff4debbec3ecb388d7e002);
+            
+    
+            var popup_cc0b6e31143243bd86cd01ea035b7d11 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c1357797a284436b904a42906786987d = $(`<div id="html_c1357797a284436b904a42906786987d" style="width: 100.0%; height: 100.0%;">Ranking 43=Teresina/PI PIB_GERAL=19.149.955</div>`)[0];
+                popup_cc0b6e31143243bd86cd01ea035b7d11.setContent(html_c1357797a284436b904a42906786987d);
+            
+
+            marker_fc204c8197504929941ec5e35f80fef0.bindPopup(popup_cc0b6e31143243bd86cd01ea035b7d11)
+            ;
+
+            
+        
+    
+        var marker_8d984db6632c469fa61c58768295d88f = L.marker(
+            [-7.149382020000002, -34.87338481353856],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_57904f9487254cee9dbd5cf132d051f4 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8d984db6632c469fa61c58768295d88f.setIcon(icon_57904f9487254cee9dbd5cf132d051f4);
+            
+    
+            var popup_50496c96cc334d66823a1f1bd40c5fb7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1c3f8c4ced3343a2ac26cf6eb0cc1d4f = $(`<div id="html_1c3f8c4ced3343a2ac26cf6eb0cc1d4f" style="width: 100.0%; height: 100.0%;">Ranking 44=João Pessoa/PB PIB_GERAL=18.716.855</div>`)[0];
+                popup_50496c96cc334d66823a1f1bd40c5fb7.setContent(html_1c3f8c4ced3343a2ac26cf6eb0cc1d4f);
+            
+
+            marker_8d984db6632c469fa61c58768295d88f.bindPopup(popup_50496c96cc334d66823a1f1bd40c5fb7)
+            ;
+
+            
+        
+    
+        var marker_7074ac077f08457987d1d45f097b8b64 = L.marker(
+            [-27.587795548549956, -48.547637378193336],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_2c082313899a4875886ca180f02da649 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7074ac077f08457987d1d45f097b8b64.setIcon(icon_2c082313899a4875886ca180f02da649);
+            
+    
+            var popup_ed4ccee5925d4effb1fc2b014c5275e8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a6466846fc0e450394af143168aaae49 = $(`<div id="html_a6466846fc0e450394af143168aaae49" style="width: 100.0%; height: 100.0%;">Ranking 45=Florianópolis/SC PIB_GERAL=18.657.157</div>`)[0];
+                popup_ed4ccee5925d4effb1fc2b014c5275e8.setContent(html_a6466846fc0e450394af143168aaae49);
+            
+
+            marker_7074ac077f08457987d1d45f097b8b64.bindPopup(popup_ed4ccee5925d4effb1fc2b014c5275e8)
+            ;
+
+            
+        
+    
+        var marker_18f7c6b5ec01428e8ecafb3402ba6f82 = L.marker(
+            [-23.312156000000005, -51.16277342387809],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_130e8838c10240619d9bb3907189f11d = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_18f7c6b5ec01428e8ecafb3402ba6f82.setIcon(icon_130e8838c10240619d9bb3907189f11d);
+            
+    
+            var popup_e1db1fb3cad54e5f8b7b2c43144c7405 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f141b95093b141c3a3a72200403e844e = $(`<div id="html_f141b95093b141c3a3a72200403e844e" style="width: 100.0%; height: 100.0%;">Ranking 46=Londrina/PR PIB_GERAL=18.469.475</div>`)[0];
+                popup_e1db1fb3cad54e5f8b7b2c43144c7405.setContent(html_f141b95093b141c3a3a72200403e844e);
+            
+
+            marker_18f7c6b5ec01428e8ecafb3402ba6f82.bindPopup(popup_e1db1fb3cad54e5f8b7b2c43144c7405)
+            ;
+
+            
+        
+    
+        var marker_a7cfc9d33e914591b45da89ca61b1723 = L.marker(
+            [-20.156769842431704, -40.27521703670849],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_9da6bfb8786043a3b49735efb66125c5 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a7cfc9d33e914591b45da89ca61b1723.setIcon(icon_9da6bfb8786043a3b49735efb66125c5);
+            
+    
+            var popup_bcdc8749895545d998bc76d13fac2115 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_31a3a192e9ec4878a0eb6efc525ddcc5 = $(`<div id="html_31a3a192e9ec4878a0eb6efc525ddcc5" style="width: 100.0%; height: 100.0%;">Ranking 47=Serra/ES PIB_GERAL=18.325.917</div>`)[0];
+                popup_bcdc8749895545d998bc76d13fac2115.setContent(html_31a3a192e9ec4878a0eb6efc525ddcc5);
+            
+
+            marker_a7cfc9d33e914591b45da89ca61b1723.bindPopup(popup_bcdc8749895545d998bc76d13fac2115)
+            ;
+
+            
+        
+    
+        var marker_75f8bd2606e94909b64ee8d19dda1d9a = L.marker(
+            [-23.883839000000005, -46.42003176827448],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_18c9090436ee4853b4d914dd2500ab19 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_75f8bd2606e94909b64ee8d19dda1d9a.setIcon(icon_18c9090436ee4853b4d914dd2500ab19);
+            
+    
+            var popup_ba7d91a56b3f485688db382566be424e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_89a47a355aa445afab481327ea0d929d = $(`<div id="html_89a47a355aa445afab481327ea0d929d" style="width: 100.0%; height: 100.0%;">Ranking 48=Cubatão/SP PIB_GERAL=17.668.001</div>`)[0];
+                popup_ba7d91a56b3f485688db382566be424e.setContent(html_89a47a355aa445afab481327ea0d929d);
+            
+
+            marker_75f8bd2606e94909b64ee8d19dda1d9a.bindPopup(popup_ba7d91a56b3f485688db382566be424e)
+            ;
+
+            
+        
+    
+        var marker_03827d8ebea54ce59035088104af1c42 = L.marker(
+            [-22.368704974385, -41.775064285476],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_76ef20c53c66466f8f2104edfa8a580e = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_03827d8ebea54ce59035088104af1c42.setIcon(icon_76ef20c53c66466f8f2104edfa8a580e);
+            
+    
+            var popup_3d9c5b7af4f24dddad810a81f2e5ebc1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c86a7308f86a4e508c7a6357699da74d = $(`<div id="html_c86a7308f86a4e508c7a6357699da74d" style="width: 100.0%; height: 100.0%;">Ranking 49=Macaé/RJ PIB_GERAL=17.580.176</div>`)[0];
+                popup_3d9c5b7af4f24dddad810a81f2e5ebc1.setContent(html_c86a7308f86a4e508c7a6357699da74d);
+            
+
+            marker_03827d8ebea54ce59035088104af1c42.bindPopup(popup_3d9c5b7af4f24dddad810a81f2e5ebc1)
+            ;
+
+            
+        
+    
+        var marker_fd0566f85543417b885c837586b8c9c5 = L.marker(
+            [-21.75189863206405, -41.33047649186264],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_0b4b495ad2a948888e71a728f678e4bb = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-up',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fd0566f85543417b885c837586b8c9c5.setIcon(icon_0b4b495ad2a948888e71a728f678e4bb);
+            
+    
+            var popup_db882d94e376434b8bef1a75e4b9b31c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_cfe09d8022f745f29b699519da9f6c53 = $(`<div id="html_cfe09d8022f745f29b699519da9f6c53" style="width: 100.0%; height: 100.0%;">Ranking 50=Campos dos Goytacazes/RJ PIB_GERAL=17.283.381</div>`)[0];
+                popup_db882d94e376434b8bef1a75e4b9b31c.setContent(html_cfe09d8022f745f29b699519da9f6c53);
+            
+
+            marker_fd0566f85543417b885c837586b8c9c5.bindPopup(popup_db882d94e376434b8bef1a75e4b9b31c)
+            ;
+
+            
+        
+    
+        var marker_d2d1a8829ee5471794f32c6939e7b7e4 = L.marker(
+            [-25.591645000000003, -49.40193969670869],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_96e896bf6021404998964bfad71a0f16 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d2d1a8829ee5471794f32c6939e7b7e4.setIcon(icon_96e896bf6021404998964bfad71a0f16);
+            
+    
+            var popup_3897587f31f04324a3d7b89754732f07 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4f195dfad9a94468bc5c7a9ae2c59cab = $(`<div id="html_4f195dfad9a94468bc5c7a9ae2c59cab" style="width: 100.0%; height: 100.0%;">Ranking 51=Araucária/PR PIB_GERAL=16.978.800</div>`)[0];
+                popup_3897587f31f04324a3d7b89754732f07.setContent(html_4f195dfad9a94468bc5c7a9ae2c59cab);
+            
+
+            marker_d2d1a8829ee5471794f32c6939e7b7e4.bindPopup(popup_3897587f31f04324a3d7b89754732f07)
+            ;
+
+            
+        
+    
+        var marker_e84f78ad08f74ce1a4768a058301ef12 = L.marker(
+            [-22.8295473130261, -43.03233506196482],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_86e7a1a1dfca470f8a6cc0a7ed1f4864 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e84f78ad08f74ce1a4768a058301ef12.setIcon(icon_86e7a1a1dfca470f8a6cc0a7ed1f4864);
+            
+    
+            var popup_eda61d185fe042188bfd3a37ace2559c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7a33d764151d4c6993b662a8f2758d28 = $(`<div id="html_7a33d764151d4c6993b662a8f2758d28" style="width: 100.0%; height: 100.0%;">Ranking 52=São Gonçalo/RJ PIB_GERAL=16.930.918</div>`)[0];
+                popup_eda61d185fe042188bfd3a37ace2559c.setContent(html_7a33d764151d4c6993b662a8f2758d28);
+            
+
+            marker_e84f78ad08f74ce1a4768a058301ef12.bindPopup(popup_eda61d185fe042188bfd3a37ace2559c)
+            ;
+
+            
+        
+    
+        var marker_40c552b34fea44c9b7b508e43aa04fef = L.marker(
+            [-10.9072157978835, -37.04821263951225],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_f9579d0fa8554bb082b3758656239b6f = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_40c552b34fea44c9b7b508e43aa04fef.setIcon(icon_f9579d0fa8554bb082b3758656239b6f);
+            
+    
+            var popup_c934497c86664cb58d62bbf2b59af680 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a88c07e0a48447fabd1b2764b4769eef = $(`<div id="html_a88c07e0a48447fabd1b2764b4769eef" style="width: 100.0%; height: 100.0%;">Ranking 53=Aracaju/SE PIB_GERAL=16.498.482</div>`)[0];
+                popup_c934497c86664cb58d62bbf2b59af680.setContent(html_a88c07e0a48447fabd1b2764b4769eef);
+            
+
+            marker_40c552b34fea44c9b7b508e43aa04fef.bindPopup(popup_c934497c86664cb58d62bbf2b59af680)
+            ;
+
+            
+        
+    
+        var marker_529e2d494d63445abfc0175446189adb = L.marker(
+            [-22.75983482626475, -43.450345329919124],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_271d56d271e44d5b88ff80695248a1c5 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_529e2d494d63445abfc0175446189adb.setIcon(icon_271d56d271e44d5b88ff80695248a1c5);
+            
+    
+            var popup_94d3907b2fc34ccea43aa7f349e9d84b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_64bcdfa9e00c407197a5d4479e854869 = $(`<div id="html_64bcdfa9e00c407197a5d4479e854869" style="width: 100.0%; height: 100.0%;">Ranking 54=Nova Iguaçu/RJ PIB_GERAL=16.447.838</div>`)[0];
+                popup_94d3907b2fc34ccea43aa7f349e9d84b.setContent(html_64bcdfa9e00c407197a5d4479e854869);
+            
+
+            marker_529e2d494d63445abfc0175446189adb.bindPopup(popup_94d3907b2fc34ccea43aa7f349e9d84b)
+            ;
+
+            
+        
+    
+        var marker_6c271a76a1594de388771fea9e04f29a = L.marker(
+            [-23.422280000000004, -51.939881870252066],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_60356af5d21345cbb5d6996a4c42929e = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6c271a76a1594de388771fea9e04f29a.setIcon(icon_60356af5d21345cbb5d6996a4c42929e);
+            
+    
+            var popup_3e62e5771190487dac66988c373b9ed0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8090e17a67e64e7db12be9f857781d5e = $(`<div id="html_8090e17a67e64e7db12be9f857781d5e" style="width: 100.0%; height: 100.0%;">Ranking 55=Maringá/PR PIB_GERAL=16.121.079</div>`)[0];
+                popup_3e62e5771190487dac66988c373b9ed0.setContent(html_8090e17a67e64e7db12be9f857781d5e);
+            
+
+            marker_6c271a76a1594de388771fea9e04f29a.bindPopup(popup_3e62e5771190487dac66988c373b9ed0)
+            ;
+
+            
+        
+    
+        var marker_f50f93cb819b4c65871ae586776f1ec5 = L.marker(
+            [-20.812636500000004, -49.381347685025794],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_7ee77ce4dab44a67ad496cf7936c1a4f = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f50f93cb819b4c65871ae586776f1ec5.setIcon(icon_7ee77ce4dab44a67ad496cf7936c1a4f);
+            
+    
+            var popup_3b84fed85e3e46068ced18f493624106 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_96bd1f18589e4b4f8ec7b788abc17459 = $(`<div id="html_96bd1f18589e4b4f8ec7b788abc17459" style="width: 100.0%; height: 100.0%;">Ranking 56=São José do Rio Preto/SP PIB_GERAL=15.735.652</div>`)[0];
+                popup_3b84fed85e3e46068ced18f493624106.setContent(html_96bd1f18589e4b4f8ec7b788abc17459);
+            
+
+            marker_f50f93cb819b4c65871ae586776f1ec5.bindPopup(popup_3b84fed85e3e46068ced18f493624106)
+            ;
+
+            
+        
+    
+        var marker_d0499725319a4e899e01ad5d3cf76c46 = L.marker(
+            [-26.916107705306658, -49.05763088436116],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_8b3eeb35d80e4661a5cba429d6a27f49 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d0499725319a4e899e01ad5d3cf76c46.setIcon(icon_8b3eeb35d80e4661a5cba429d6a27f49);
+            
+    
+            var popup_6a940d609894427dbe9a26377c615a3b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3518cd3afae5419eb89ba0ffc04f66c2 = $(`<div id="html_3518cd3afae5419eb89ba0ffc04f66c2" style="width: 100.0%; height: 100.0%;">Ranking 57=Blumenau/SC PIB_GERAL=15.395.367</div>`)[0];
+                popup_6a940d609894427dbe9a26377c615a3b.setContent(html_3518cd3afae5419eb89ba0ffc04f66c2);
+            
+
+            marker_d0499725319a4e899e01ad5d3cf76c46.bindPopup(popup_6a940d609894427dbe9a26377c615a3b)
+            ;
+
+            
+        
+    
+        var marker_458b85f8ebfb458db6ebc71720b71e45 = L.marker(
+            [-8.768891790000003, -63.83144565436113],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_fda43e207b074c9dbc83e214401a5787 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_458b85f8ebfb458db6ebc71720b71e45.setIcon(icon_fda43e207b074c9dbc83e214401a5787);
+            
+    
+            var popup_d52c7907c392462a82d230db7eaa6d21 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1448500567444f2ea2ed5d35015f212c = $(`<div id="html_1448500567444f2ea2ed5d35015f212c" style="width: 100.0%; height: 100.0%;">Ranking 58=Porto Velho/RO PIB_GERAL=14.741.744</div>`)[0];
+                popup_d52c7907c392462a82d230db7eaa6d21.setContent(html_1448500567444f2ea2ed5d35015f212c);
+            
+
+            marker_458b85f8ebfb458db6ebc71720b71e45.bindPopup(popup_d52c7907c392462a82d230db7eaa6d21)
+            ;
+
+            
+        
+    
+        var marker_bba4b5832ec44466b498e2ad478771de = L.marker(
+            [-21.7609243086743, -43.34881727247467],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_5b86af1765b648f08ea0ffb7bf34f261 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bba4b5832ec44466b498e2ad478771de.setIcon(icon_5b86af1765b648f08ea0ffb7bf34f261);
+            
+    
+            var popup_dfe8dd955f0642f09ddfaf3346aa71b0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bd4038e9f80d498a9521eb8c5065280f = $(`<div id="html_bd4038e9f80d498a9521eb8c5065280f" style="width: 100.0%; height: 100.0%;">Ranking 59=Juiz de Fora/MG PIB_GERAL=14.532.952</div>`)[0];
+                popup_dfe8dd955f0642f09ddfaf3346aa71b0.setContent(html_bd4038e9f80d498a9521eb8c5065280f);
+            
+
+            marker_bba4b5832ec44466b498e2ad478771de.bindPopup(popup_dfe8dd955f0642f09ddfaf3346aa71b0)
+            ;
+
+            
+        
+    
+        var marker_1d3b7c293dda473f8df617c95c7efead = L.marker(
+            [-23.5227065, -46.19676008432656],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_06311fce6f7a4022a2dfd2be4d069749 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1d3b7c293dda473f8df617c95c7efead.setIcon(icon_06311fce6f7a4022a2dfd2be4d069749);
+            
+    
+            var popup_bd296da0662c4120bba50da7340f40a4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_59626470129c47a78c46a50723051e37 = $(`<div id="html_59626470129c47a78c46a50723051e37" style="width: 100.0%; height: 100.0%;">Ranking 60=Mogi das Cruzes/SP PIB_GERAL=14.426.294</div>`)[0];
+                popup_bd296da0662c4120bba50da7340f40a4.setContent(html_59626470129c47a78c46a50723051e37);
+            
+
+            marker_1d3b7c293dda473f8df617c95c7efead.bindPopup(popup_bd296da0662c4120bba50da7340f40a4)
+            ;
+
+            
+        
+    
+        var marker_90310fd1392b47a0a0eb50c3dedc752d = L.marker(
+            [-23.026555500000004, -45.55660869668744],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_c8ac1803c2b5450187ac921b6f8313c0 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_90310fd1392b47a0a0eb50c3dedc752d.setIcon(icon_c8ac1803c2b5450187ac921b6f8313c0);
+            
+    
+            var popup_653bd1bee973432dacc60642f3fe6381 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_853ec2037eef48a3b0e6bd088e8e040e = $(`<div id="html_853ec2037eef48a3b0e6bd088e8e040e" style="width: 100.0%; height: 100.0%;">Ranking 61=Taubaté/SP PIB_GERAL=14.135.704</div>`)[0];
+                popup_653bd1bee973432dacc60642f3fe6381.setContent(html_853ec2037eef48a3b0e6bd088e8e040e);
+            
+
+            marker_90310fd1392b47a0a0eb50c3dedc752d.bindPopup(popup_653bd1bee973432dacc60642f3fe6381)
+            ;
+
+            
+        
+    
+        var marker_850454b1e67142a1862e336c7434e622 = L.marker(
+            [-23.6693345, -46.45826201216465],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_45c6c812ff3b49ffb8afe2d50105d665 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_850454b1e67142a1862e336c7434e622.setIcon(icon_45c6c812ff3b49ffb8afe2d50105d665);
+            
+    
+            var popup_737d412e24a04c44bfa3c647409e34ef = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_69d0208c8c1b408fb87f35eef7d515a8 = $(`<div id="html_69d0208c8c1b408fb87f35eef7d515a8" style="width: 100.0%; height: 100.0%;">Ranking 62=Mauá/SP PIB_GERAL=13.963.846</div>`)[0];
+                popup_737d412e24a04c44bfa3c647409e34ef.setContent(html_69d0208c8c1b408fb87f35eef7d515a8);
+            
+
+            marker_850454b1e67142a1862e336c7434e622.bindPopup(popup_737d412e24a04c44bfa3c647409e34ef)
+            ;
+
+            
+        
+    
+        var marker_70571ec11be7477d9a11df11d05c7f82 = L.marker(
+            [-8.16539146735745, -34.92117346726028],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_9e3fe23b4e384dc8ae11425e46908038 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_70571ec11be7477d9a11df11d05c7f82.setIcon(icon_9e3fe23b4e384dc8ae11425e46908038);
+            
+    
+            var popup_3ee959adf04b4a37bb3f578ff8e1c157 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0a63dba61d004d158bee907fa3e47c8e = $(`<div id="html_0a63dba61d004d158bee907fa3e47c8e" style="width: 100.0%; height: 100.0%;">Ranking 63=Jaboatão dos Guararapes/PE PIB_GERAL=13.470.923</div>`)[0];
+                popup_3ee959adf04b4a37bb3f578ff8e1c157.setContent(html_0a63dba61d004d158bee907fa3e47c8e);
+            
+
+            marker_70571ec11be7477d9a11df11d05c7f82.bindPopup(popup_3ee959adf04b4a37bb3f578ff8e1c157)
+            ;
+
+            
+        
+    
+        var marker_edfc7a2d911b4a81bea2d39eca0115c5 = L.marker(
+            [-19.71353460710205, -47.983624895574245],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_b5badbc1fef645f8abb6ff26f7266df5 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_edfc7a2d911b4a81bea2d39eca0115c5.setIcon(icon_b5badbc1fef645f8abb6ff26f7266df5);
+            
+    
+            var popup_d633d802482145e78a8e61c643036e40 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_dc0bd0a3a2984267bb969043e6c11fc6 = $(`<div id="html_dc0bd0a3a2984267bb969043e6c11fc6" style="width: 100.0%; height: 100.0%;">Ranking 64=Uberaba/MG PIB_GERAL=13.453.594</div>`)[0];
+                popup_d633d802482145e78a8e61c643036e40.setContent(html_dc0bd0a3a2984267bb969043e6c11fc6);
+            
+
+            marker_edfc7a2d911b4a81bea2d39eca0115c5.bindPopup(popup_d633d802482145e78a8e61c643036e40)
+            ;
+
+            
+        
+    
+        var marker_bed2cc82a29c42488ae723545d448b4b = L.marker(
+            [-25.542493279529253, -54.58710248860465],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_1b5c239c1903463d81ab3c0cc78a02f9 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bed2cc82a29c42488ae723545d448b4b.setIcon(icon_1b5c239c1903463d81ab3c0cc78a02f9);
+            
+    
+            var popup_b882f3f85793452998a765d49efb17bd = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b05a023f6f824559b12e1046de955565 = $(`<div id="html_b05a023f6f824559b12e1046de955565" style="width: 100.0%; height: 100.0%;">Ranking 65=Foz do Iguaçu/PR PIB_GERAL=13.387.807</div>`)[0];
+                popup_b882f3f85793452998a765d49efb17bd.setContent(html_b05a023f6f824559b12e1046de955565);
+            
+
+            marker_bed2cc82a29c42488ae723545d448b4b.bindPopup(popup_b882f3f85793452998a765d49efb17bd)
+            ;
+
+            
+        
+    
+        var marker_997e221eb3ac4231b79622e5864a6e6f = L.marker(
+            [-23.614705000000004, -46.571514608630615],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_09a9df3dd109400daac71c3959a777f2 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_997e221eb3ac4231b79622e5864a6e6f.setIcon(icon_09a9df3dd109400daac71c3959a777f2);
+            
+    
+            var popup_d75e7b3cbeb541dd8b5e8578cd33bb50 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_70a4e272f7894223b7e4b14c6f5b0b6b = $(`<div id="html_70a4e272f7894223b7e4b14c6f5b0b6b" style="width: 100.0%; height: 100.0%;">Ranking 66=São Caetano do Sul/SP PIB_GERAL=13.286.711</div>`)[0];
+                popup_d75e7b3cbeb541dd8b5e8578cd33bb50.setContent(html_70a4e272f7894223b7e4b14c6f5b0b6b);
+            
+
+            marker_997e221eb3ac4231b79622e5864a6e6f.bindPopup(popup_d75e7b3cbeb541dd8b5e8578cd33bb50)
+            ;
+
+            
+        
+    
+        var marker_55a2aaa1558c46c983309433a44058ae = L.marker(
+            [-23.68929500000001, -46.62338139320302],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_5b40c7c15a3c428f8fb44095e85cc89e = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_55a2aaa1558c46c983309433a44058ae.setIcon(icon_5b40c7c15a3c428f8fb44095e85cc89e);
+            
+    
+            var popup_66339247501c42c0993ea22b4fdb0fe7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_80d58855ec8a4724be91a86d5e6fcde4 = $(`<div id="html_80d58855ec8a4724be91a86d5e6fcde4" style="width: 100.0%; height: 100.0%;">Ranking 67=Diadema/SP PIB_GERAL=13.229.744</div>`)[0];
+                popup_66339247501c42c0993ea22b4fdb0fe7.setContent(html_80d58855ec8a4724be91a86d5e6fcde4);
+            
+
+            marker_55a2aaa1558c46c983309433a44058ae.bindPopup(popup_66339247501c42c0993ea22b4fdb0fe7)
+            ;
+
+            
+        
+    
+        var marker_859e9dc0afc042a5be7924240d231540 = L.marker(
+            [-22.325122500000006, -49.08300086709036],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_f914769c083c45108abd51aaeede8cc1 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_859e9dc0afc042a5be7924240d231540.setIcon(icon_f914769c083c45108abd51aaeede8cc1);
+            
+    
+            var popup_1508e17a90a94dfcb0905d12f983f1e6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f5dc1edce6fc4e07b651726e7952f58a = $(`<div id="html_f5dc1edce6fc4e07b651726e7952f58a" style="width: 100.0%; height: 100.0%;">Ranking 68=Bauru/SP PIB_GERAL=13.141.085</div>`)[0];
+                popup_1508e17a90a94dfcb0905d12f983f1e6.setContent(html_f5dc1edce6fc4e07b651726e7952f58a);
+            
+
+            marker_859e9dc0afc042a5be7924240d231540.bindPopup(popup_1508e17a90a94dfcb0905d12f983f1e6)
+            ;
+
+            
+        
+    
+        var marker_54b13a49d4934bcd9ae221e21952bdec = L.marker(
+            [-16.328825744649155, -48.95721790263133],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_b5d6c9eed4ab4dc785336592a569c7d0 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_54b13a49d4934bcd9ae221e21952bdec.setIcon(icon_b5d6c9eed4ab4dc785336592a569c7d0);
+            
+    
+            var popup_d202b437cc6e4aa3bb12afe58d9d0520 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_43dbdfb35c7045af9932fe3105868d83 = $(`<div id="html_43dbdfb35c7045af9932fe3105868d83" style="width: 100.0%; height: 100.0%;">Ranking 69=Anápolis/GO PIB_GERAL=13.118.758</div>`)[0];
+                popup_d202b437cc6e4aa3bb12afe58d9d0520.setContent(html_43dbdfb35c7045af9932fe3105868d83);
+            
+
+            marker_54b13a49d4934bcd9ae221e21952bdec.bindPopup(popup_d202b437cc6e4aa3bb12afe58d9d0520)
+            ;
+
+            
+        
+    
+        var marker_c449869f4ad34f21bd84a0d6fbccdb14 = L.marker(
+            [-12.229284252480051, -38.96003309632136],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_554f7f3c72c24371a72e62f52b90fb0e = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c449869f4ad34f21bd84a0d6fbccdb14.setIcon(icon_554f7f3c72c24371a72e62f52b90fb0e);
+            
+    
+            var popup_33bc4fa1481d4716bec79fa2e91b6e0e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_15446a78dac4492590441afaa53d4f34 = $(`<div id="html_15446a78dac4492590441afaa53d4f34" style="width: 100.0%; height: 100.0%;">Ranking 70=Feira de Santana/BA PIB_GERAL=13.107.354</div>`)[0];
+                popup_33bc4fa1481d4716bec79fa2e91b6e0e.setContent(html_15446a78dac4492590441afaa53d4f34);
+            
+
+            marker_c449869f4ad34f21bd84a0d6fbccdb14.bindPopup(popup_33bc4fa1481d4716bec79fa2e91b6e0e)
+            ;
+
+            
+        
+    
+        var marker_8960958759074669b83b6d5681dfb23c = L.marker(
+            [-23.36097138472798, -46.882920146569546],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_3c4fd954f51e4d6594d67612cbdc8b6a = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8960958759074669b83b6d5681dfb23c.setIcon(icon_3c4fd954f51e4d6594d67612cbdc8b6a);
+            
+    
+            var popup_92ee80ac64e74295bee7ce440a44ec30 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bdc7ee63a3c24ba2b3124a93a08e9aa6 = $(`<div id="html_bdc7ee63a3c24ba2b3124a93a08e9aa6" style="width: 100.0%; height: 100.0%;">Ranking 71=Cajamar/SP PIB_GERAL=13.020.610</div>`)[0];
+                popup_92ee80ac64e74295bee7ce440a44ec30.setContent(html_bdc7ee63a3c24ba2b3124a93a08e9aa6);
+            
+
+            marker_8960958759074669b83b6d5681dfb23c.bindPopup(popup_92ee80ac64e74295bee7ce440a44ec30)
+            ;
+
+            
+        
+    
+        var marker_e5d43fc983894f09bc0d74b10fcb890f = L.marker(
+            [-25.092547000000003, -50.16144205929418],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_7cc1ffb026d8487d802e42dabea124cc = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e5d43fc983894f09bc0d74b10fcb890f.setIcon(icon_7cc1ffb026d8487d802e42dabea124cc);
+            
+    
+            var popup_21756b8226b64f2a882c923a6391c3a9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1512de95feaf4568a84aa63aeacb95fa = $(`<div id="html_1512de95feaf4568a84aa63aeacb95fa" style="width: 100.0%; height: 100.0%;">Ranking 72=Ponta Grossa/PR PIB_GERAL=12.974.926</div>`)[0];
+                popup_21756b8226b64f2a882c923a6391c3a9.setContent(html_1512de95feaf4568a84aa63aeacb95fa);
+            
+
+            marker_e5d43fc983894f09bc0d74b10fcb890f.bindPopup(popup_21756b8226b64f2a882c923a6391c3a9)
+            ;
+
+            
+        
+    
+        var marker_108743b0c3954597b71fd6c015d617de = L.marker(
+            [-22.510598611961804, -43.177336576674996],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_e451455a32b542268203f7a83eb37c62 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_108743b0c3954597b71fd6c015d617de.setIcon(icon_e451455a32b542268203f7a83eb37c62);
+            
+    
+            var popup_7952444bf3114727ba9f03d31b16f21d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f44c6b2799b349a08e076f3701551bff = $(`<div id="html_f44c6b2799b349a08e076f3701551bff" style="width: 100.0%; height: 100.0%;">Ranking 73=Petrópolis/RJ PIB_GERAL=12.690.966</div>`)[0];
+                popup_7952444bf3114727ba9f03d31b16f21d.setContent(html_f44c6b2799b349a08e076f3701551bff);
+            
+
+            marker_108743b0c3954597b71fd6c015d617de.bindPopup(popup_7952444bf3114727ba9f03d31b16f21d)
+            ;
+
+            
+        
+    
+        var marker_5a19d368fdce4e988087304f51348177 = L.marker(
+            [-6.072729887631836, -49.90078063429695],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_f712fb9d28d54acaa3a469a35bc7ee43 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5a19d368fdce4e988087304f51348177.setIcon(icon_f712fb9d28d54acaa3a469a35bc7ee43);
+            
+    
+            var popup_894b80806abc42e8a8713b194ed1a357 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_66673a3cfefc43a5a476a7a8bc0827b0 = $(`<div id="html_66673a3cfefc43a5a476a7a8bc0827b0" style="width: 100.0%; height: 100.0%;">Ranking 74=Parauapebas/PA PIB_GERAL=12.638.245</div>`)[0];
+                popup_894b80806abc42e8a8713b194ed1a357.setContent(html_66673a3cfefc43a5a476a7a8bc0827b0);
+            
+
+            marker_5a19d368fdce4e988087304f51348177.bindPopup(popup_894b80806abc42e8a8713b194ed1a357)
+            ;
+
+            
+        
+    
+        var marker_c3cab4851cbc479f944ab041a296d349 = L.marker(
+            [-23.546934000000004, -46.93337286348805],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_5604d28360c24f59bced885349f0488f = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c3cab4851cbc479f944ab041a296d349.setIcon(icon_5604d28360c24f59bced885349f0488f);
+            
+    
+            var popup_f5342c99e90647fd835efe26412f3d43 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f8a69090dfe14db5a02a60205b24f5bb = $(`<div id="html_f8a69090dfe14db5a02a60205b24f5bb" style="width: 100.0%; height: 100.0%;">Ranking 75=Itapevi/SP PIB_GERAL=12.147.662</div>`)[0];
+                popup_f5342c99e90647fd835efe26412f3d43.setContent(html_f8a69090dfe14db5a02a60205b24f5bb);
+            
+
+            marker_c3cab4851cbc479f944ab041a296d349.bindPopup(popup_f5342c99e90647fd835efe26412f3d43)
+            ;
+
+            
+        
+    
+        var marker_438b51a8d2204b87969fc5774c931390 = L.marker(
+            [-22.822145000000003, -47.265802732090094],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_b20d1cd59f3d4df28d5bf9398f47850a = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_438b51a8d2204b87969fc5774c931390.setIcon(icon_b20d1cd59f3d4df28d5bf9398f47850a);
+            
+    
+            var popup_6a5bd13946bb4e15a034183e52378e8b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_be0b6c200620484e880654923054e91e = $(`<div id="html_be0b6c200620484e880654923054e91e" style="width: 100.0%; height: 100.0%;">Ranking 76=Sumaré/SP PIB_GERAL=12.061.112</div>`)[0];
+                popup_6a5bd13946bb4e15a034183e52378e8b.setContent(html_be0b6c200620484e880654923054e91e);
+            
+
+            marker_438b51a8d2204b87969fc5774c931390.bindPopup(popup_6a5bd13946bb4e15a034183e52378e8b)
+            ;
+
+            
+        
+    
+        var marker_2c4069dda387429eb463403e1b712efe = L.marker(
+            [-16.822146500000002, -49.24332592770111],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_0cc9f469aab742e591072847c0f0b0b1 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2c4069dda387429eb463403e1b712efe.setIcon(icon_0cc9f469aab742e591072847c0f0b0b1);
+            
+    
+            var popup_e4b0782fecf448b19bfd6a863f7b5606 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_01d02b7300814a0cb3c61968568c6666 = $(`<div id="html_01d02b7300814a0cb3c61968568c6666" style="width: 100.0%; height: 100.0%;">Ranking 77=Aparecida de Goiânia/GO PIB_GERAL=11.980.984</div>`)[0];
+                popup_e4b0782fecf448b19bfd6a863f7b5606.setContent(html_01d02b7300814a0cb3c61968568c6666);
+            
+
+            marker_2c4069dda387429eb463403e1b712efe.bindPopup(popup_e4b0782fecf448b19bfd6a863f7b5606)
+            ;
+
+            
+        
+    
+        var marker_b1d0b8ffdd934785997d5b5575715f48 = L.marker(
+            [-12.62998280440385, -38.67579805329307],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_a2d922a3355b46c09b70a7568fea999d = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b1d0b8ffdd934785997d5b5575715f48.setIcon(icon_a2d922a3355b46c09b70a7568fea999d);
+            
+    
+            var popup_31741ce672724a68a56997af29f78680 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3022eafa20634d5da12b44bf7a7faf78 = $(`<div id="html_3022eafa20634d5da12b44bf7a7faf78" style="width: 100.0%; height: 100.0%;">Ranking 78=São Francisco do Conde/BA PIB_GERAL=11.796.117</div>`)[0];
+                popup_31741ce672724a68a56997af29f78680.setContent(html_3022eafa20634d5da12b44bf7a7faf78);
+            
+
+            marker_b1d0b8ffdd934785997d5b5575715f48.bindPopup(popup_31741ce672724a68a56997af29f78680)
+            ;
+
+            
+        
+    
+        var marker_f83d77fa58fc4fb18826ba5f5fefc3bb = L.marker(
+            [-23.081646000000003, -47.2123089402514],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_c8f33dc3ca604e24b1587a85b84841c1 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f83d77fa58fc4fb18826ba5f5fefc3bb.setIcon(icon_c8f33dc3ca604e24b1587a85b84841c1);
+            
+    
+            var popup_5676c248f6a041bb9a5c276c8a5e89b7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a4607e5dcf31469f8129e1c820076548 = $(`<div id="html_a4607e5dcf31469f8129e1c820076548" style="width: 100.0%; height: 100.0%;">Ranking 79=Indaiatuba/SP PIB_GERAL=11.735.699</div>`)[0];
+                popup_5676c248f6a041bb9a5c276c8a5e89b7.setContent(html_a4607e5dcf31469f8129e1c820076548);
+            
+
+            marker_f83d77fa58fc4fb18826ba5f5fefc3bb.bindPopup(popup_5676c248f6a041bb9a5c276c8a5e89b7)
+            ;
+
+            
+        
+    
+        var marker_c72015e0b8f6458daaa3d9fd0c7581ad = L.marker(
+            [-22.858395000000005, -47.22109660975752],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_952d35740ef2474c8188f6c1fe16e230 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c72015e0b8f6458daaa3d9fd0c7581ad.setIcon(icon_952d35740ef2474c8188f6c1fe16e230);
+            
+    
+            var popup_8a3503faad0847099051dc32bd72f49f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0ab8f782b9a549e68adfae3139ca0a52 = $(`<div id="html_0ab8f782b9a549e68adfae3139ca0a52" style="width: 100.0%; height: 100.0%;">Ranking 80=Hortolândia/SP PIB_GERAL=11.515.071</div>`)[0];
+                popup_8a3503faad0847099051dc32bd72f49f.setContent(html_0ab8f782b9a549e68adfae3139ca0a52);
+            
+
+            marker_c72015e0b8f6458daaa3d9fd0c7581ad.bindPopup(popup_8a3503faad0847099051dc32bd72f49f)
+            ;
+
+            
+        
+    
+        var marker_26c2738f5006407f8fbce8ba9e8f326b = L.marker(
+            [-23.086778500000005, -46.946440218048735],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_1f338287729349a3a9c79d9baf0d89f4 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_26c2738f5006407f8fbce8ba9e8f326b.setIcon(icon_1f338287729349a3a9c79d9baf0d89f4);
+            
+    
+            var popup_bd6d80a92ea7420b84b3bb6cd4c40b27 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a139c72640bf43db91cde246b831f985 = $(`<div id="html_a139c72640bf43db91cde246b831f985" style="width: 100.0%; height: 100.0%;">Ranking 81=Louveira/SP PIB_GERAL=11.263.136</div>`)[0];
+                popup_bd6d80a92ea7420b84b3bb6cd4c40b27.setContent(html_a139c72640bf43db91cde246b831f985);
+            
+
+            marker_26c2738f5006407f8fbce8ba9e8f326b.bindPopup(popup_bd6d80a92ea7420b84b3bb6cd4c40b27)
+            ;
+
+            
+        
+    
+        var marker_f118d36b254d43f7bc01a9f32fe5410d = L.marker(
+            [-22.562194000000005, -47.401939523310205],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_6ae4414ce8c34383bf30447cb2dfc919 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f118d36b254d43f7bc01a9f32fe5410d.setIcon(icon_6ae4414ce8c34383bf30447cb2dfc919);
+            
+    
+            var popup_2079826123114204806ca955845f2fdd = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_58c7b0ba335c45af9a28cfb2a380ef6b = $(`<div id="html_58c7b0ba335c45af9a28cfb2a380ef6b" style="width: 100.0%; height: 100.0%;">Ranking 82=Limeira/SP PIB_GERAL=11.069.068</div>`)[0];
+                popup_2079826123114204806ca955845f2fdd.setContent(html_58c7b0ba335c45af9a28cfb2a380ef6b);
+            
+
+            marker_f118d36b254d43f7bc01a9f32fe5410d.bindPopup(popup_2079826123114204806ca955845f2fdd)
+            ;
+
+            
+        
+    
+        var marker_ff828155aef8412b9099bcac1c8f290d = L.marker(
+            [-20.33837410421385, -40.2939566369471],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_4b762567251e4ad79d9754a4e47ad67d = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ff828155aef8412b9099bcac1c8f290d.setIcon(icon_4b762567251e4ad79d9754a4e47ad67d);
+            
+    
+            var popup_024e237456394b428cc3beed24a862f2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ab613c3e95af4400a4bff8c27d323901 = $(`<div id="html_ab613c3e95af4400a4bff8c27d323901" style="width: 100.0%; height: 100.0%;">Ranking 83=Vila Velha/ES PIB_GERAL=11.037.697</div>`)[0];
+                popup_024e237456394b428cc3beed24a862f2.setContent(html_ab613c3e95af4400a4bff8c27d323901);
+            
+
+            marker_ff828155aef8412b9099bcac1c8f290d.bindPopup(popup_024e237456394b428cc3beed24a862f2)
+            ;
+
+            
+        
+    
+        var marker_bb981abd4082434baa5fb0e7f9386908 = L.marker(
+            [-23.603514000000004, -46.931846327888586],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_839966bb9e5442f68179ec677b36d462 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bb981abd4082434baa5fb0e7f9386908.setIcon(icon_839966bb9e5442f68179ec677b36d462);
+            
+    
+            var popup_e49fc3c7d973451fb9f7d907f2ced0c2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_17b3e58c9e6f4b119d940cef73d9f774 = $(`<div id="html_17b3e58c9e6f4b119d940cef73d9f774" style="width: 100.0%; height: 100.0%;">Ranking 84=Cotia/SP PIB_GERAL=10.991.457</div>`)[0];
+                popup_e49fc3c7d973451fb9f7d907f2ced0c2.setContent(html_17b3e58c9e6f4b119d940cef73d9f774);
+            
+
+            marker_bb981abd4082434baa5fb0e7f9386908.bindPopup(popup_e49fc3c7d973451fb9f7d907f2ced0c2)
+            ;
+
+            
+        
+    
+        var marker_39d47e525bb949bd827d611f528c0e77 = L.marker(
+            [-24.953797500000007, -53.45972218198565],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_05e476a23d90424f956dbea0a53438dd = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_39d47e525bb949bd827d611f528c0e77.setIcon(icon_05e476a23d90424f956dbea0a53438dd);
+            
+    
+            var popup_855040abf8c941bcad502744f6dc815f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3d9691834f6841289b45932b88b7770e = $(`<div id="html_3d9691834f6841289b45932b88b7770e" style="width: 100.0%; height: 100.0%;">Ranking 85=Cascavel/PR PIB_GERAL=10.785.499</div>`)[0];
+                popup_855040abf8c941bcad502744f6dc815f.setContent(html_3d9691834f6841289b45932b88b7770e);
+            
+
+            marker_39d47e525bb949bd827d611f528c0e77.bindPopup(popup_855040abf8c941bcad502744f6dc815f)
+            ;
+
+            
+        
+    
+        var marker_d0dd3d564fd440838f13480a978f306c = L.marker(
+            [-8.396986500000002, -35.063471937937074],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_f265b7e2988f436a8f6d04e1cfa74dc7 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d0dd3d564fd440838f13480a978f306c.setIcon(icon_f265b7e2988f436a8f6d04e1cfa74dc7);
+            
+    
+            var popup_90817e1d491e4d0499793e728eb27ee9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_08f770d49ecb4a45990832a49d1e4749 = $(`<div id="html_08f770d49ecb4a45990832a49d1e4749" style="width: 100.0%; height: 100.0%;">Ranking 86=Ipojuca/PE PIB_GERAL=10.733.637</div>`)[0];
+                popup_90817e1d491e4d0499793e728eb27ee9.setContent(html_08f770d49ecb4a45990832a49d1e4749);
+            
+
+            marker_d0dd3d564fd440838f13480a978f306c.bindPopup(popup_90817e1d491e4d0499793e728eb27ee9)
+            ;
+
+            
+        
+    
+        var marker_a2092f8256794dbd9ad4c518d039820e = L.marker(
+            [-22.50996760079775, -44.09352188468709],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_07e373b381114366849a7ab6344252f8 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a2092f8256794dbd9ad4c518d039820e.setIcon(icon_07e373b381114366849a7ab6344252f8);
+            
+    
+            var popup_36ae30581f21405daa655a736a67b9af = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_cd6b532788164f749c87c829ccf12316 = $(`<div id="html_cd6b532788164f749c87c829ccf12316" style="width: 100.0%; height: 100.0%;">Ranking 87=Volta Redonda/RJ PIB_GERAL=10.461.839</div>`)[0];
+                popup_36ae30581f21405daa655a736a67b9af.setContent(html_cd6b532788164f749c87c829ccf12316);
+            
+
+            marker_a2092f8256794dbd9ad4c518d039820e.bindPopup(popup_36ae30581f21405daa655a736a67b9af)
+            ;
+
+            
+        
+    
+        var marker_46d72dc954704b40bfdd241079c9818d = L.marker(
+            [-22.740883500000006, -47.33036292638141],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_e74c8fd31bdf490d8e0aaf93a9e32536 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_46d72dc954704b40bfdd241079c9818d.setIcon(icon_e74c8fd31bdf490d8e0aaf93a9e32536);
+            
+    
+            var popup_634550e04e88473a99a6e70297993fe3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_015de4c8889d4073b81ec5c7d0bcba1b = $(`<div id="html_015de4c8889d4073b81ec5c7d0bcba1b" style="width: 100.0%; height: 100.0%;">Ranking 88=Americana/SP PIB_GERAL=10.287.915</div>`)[0];
+                popup_634550e04e88473a99a6e70297993fe3.setContent(html_015de4c8889d4073b81ec5c7d0bcba1b);
+            
+
+            marker_46d72dc954704b40bfdd241079c9818d.bindPopup(popup_634550e04e88473a99a6e70297993fe3)
+            ;
+
+            
+        
+    
+        var marker_5968c564c1164bef9e7e247fe775b065 = L.marker(
+            [-22.015998500000002, -47.889237684691636],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_219d1896db6f4ff28d0145c43861130d = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5968c564c1164bef9e7e247fe775b065.setIcon(icon_219d1896db6f4ff28d0145c43861130d);
+            
+    
+            var popup_2d9cd27b99d74b8fa25fd6048215715b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2847326369314dec97cb71182853ac79 = $(`<div id="html_2847326369314dec97cb71182853ac79" style="width: 100.0%; height: 100.0%;">Ranking 89=São Carlos/SP PIB_GERAL=10.063.061</div>`)[0];
+                popup_2d9cd27b99d74b8fa25fd6048215715b.setContent(html_2847326369314dec97cb71182853ac79);
+            
+
+            marker_5968c564c1164bef9e7e247fe775b065.bindPopup(popup_2d9cd27b99d74b8fa25fd6048215715b)
+            ;
+
+            
+        
+    
+        var marker_f7430c992dd0495b8a35f466b9043474 = L.marker(
+            [-29.945518913336258, -50.99079297477406],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_7605d14e1a324b96b37d058f2fbe3491 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f7430c992dd0495b8a35f466b9043474.setIcon(icon_7605d14e1a324b96b37d058f2fbe3491);
+            
+    
+            var popup_72711ccf77914f4b9514365df4977f34 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_cb7de513bea44b468873394f5e28a49b = $(`<div id="html_cb7de513bea44b468873394f5e28a49b" style="width: 100.0%; height: 100.0%;">Ranking 90=Gravataí/RS PIB_GERAL=10.027.099</div>`)[0];
+                popup_72711ccf77914f4b9514365df4977f34.setContent(html_cb7de513bea44b468873394f5e28a49b);
+            
+
+            marker_f7430c992dd0495b8a35f466b9043474.bindPopup(popup_72711ccf77914f4b9514365df4977f34)
+            ;
+
+            
+        
+    
+        var marker_a69bb87c6fc34d0b8b4d27cfca8744bf = L.marker(
+            [-23.647312500000005, -46.85085999367358],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_cdf9b7a44717473ab390d12b4438bcd7 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a69bb87c6fc34d0b8b4d27cfca8744bf.setIcon(icon_cdf9b7a44717473ab390d12b4438bcd7);
+            
+    
+            var popup_73d81bd1d7da454fab13a5a603a2d93e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_197fd133ad1b4880b80a334dbc9b89aa = $(`<div id="html_197fd133ad1b4880b80a334dbc9b89aa" style="width: 100.0%; height: 100.0%;">Ranking 91=Embu das Artes/SP PIB_GERAL=10.004.646</div>`)[0];
+                popup_73d81bd1d7da454fab13a5a603a2d93e.setContent(html_197fd133ad1b4880b80a334dbc9b89aa);
+            
+
+            marker_a69bb87c6fc34d0b8b4d27cfca8744bf.bindPopup(popup_73d81bd1d7da454fab13a5a603a2d93e)
+            ;
+
+            
+        
+    
+        var marker_b51ca39899a340e091418d0055dc3254 = L.marker(
+            [-23.304880499313754, -45.96959320440936],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_5ec6d5fd7834420a8ab1c01c94f77964 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b51ca39899a340e091418d0055dc3254.setIcon(icon_5ec6d5fd7834420a8ab1c01c94f77964);
+            
+    
+            var popup_8cec3ea3a5c347fc94272f3810ff05e9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_77b9d1b6781f41d6b75fca2ea45fd6aa = $(`<div id="html_77b9d1b6781f41d6b75fca2ea45fd6aa" style="width: 100.0%; height: 100.0%;">Ranking 92=Jacareí/SP PIB_GERAL=9.980.970</div>`)[0];
+                popup_8cec3ea3a5c347fc94272f3810ff05e9.setContent(html_77b9d1b6781f41d6b75fca2ea45fd6aa);
+            
+
+            marker_b51ca39899a340e091418d0055dc3254.bindPopup(popup_8cec3ea3a5c347fc94272f3810ff05e9)
+            ;
+
+            
+        
+    
+        var marker_a29b241751c447fba52c71eccc271e3c = L.marker(
+            [-27.5903120772487, -48.616022715866414],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_6c609a7fd2c049f788c30105ecc972f5 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a29b241751c447fba52c71eccc271e3c.setIcon(icon_6c609a7fd2c049f788c30105ecc972f5);
+            
+    
+            var popup_9fabc650242a4b10b98ead32eb51d95c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ed2a58012abd438783ff795302204573 = $(`<div id="html_ed2a58012abd438783ff795302204573" style="width: 100.0%; height: 100.0%;">Ranking 93=São José/SC PIB_GERAL=9.903.953</div>`)[0];
+                popup_9fabc650242a4b10b98ead32eb51d95c.setContent(html_ed2a58012abd438783ff795302204573);
+            
+
+            marker_a29b241751c447fba52c71eccc271e3c.bindPopup(popup_9fabc650242a4b10b98ead32eb51d95c)
+            ;
+
+            
+        
+    
+        var marker_1aa2df1db5334fbb9db262ed59e6247a = L.marker(
+            [-20.536097, -47.40233162567754],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_4e5da7fff7f546e4b6772cdc02b1e562 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1aa2df1db5334fbb9db262ed59e6247a.setIcon(icon_4e5da7fff7f546e4b6772cdc02b1e562);
+            
+    
+            var popup_e7069a3c2bca4bbea9acf1f5f03dbff4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d5cfe48370fa485c9178cf84fbdc15f9 = $(`<div id="html_d5cfe48370fa485c9178cf84fbdc15f9" style="width: 100.0%; height: 100.0%;">Ranking 94=Franca/SP PIB_GERAL=9.689.018</div>`)[0];
+                popup_e7069a3c2bca4bbea9acf1f5f03dbff4.setContent(html_d5cfe48370fa485c9178cf84fbdc15f9);
+            
+
+            marker_1aa2df1db5334fbb9db262ed59e6247a.bindPopup(popup_e7069a3c2bca4bbea9acf1f5f03dbff4)
+            ;
+
+            
+        
+    
+        var marker_e9ec5470442a4d8a9d62ba8c408eb11a = L.marker(
+            [-23.536827500000005, -46.3078104672882],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_3c101399e540467ea2c95f71f40ca1a9 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e9ec5470442a4d8a9d62ba8c408eb11a.setIcon(icon_3c101399e540467ea2c95f71f40ca1a9);
+            
+    
+            var popup_35744588538a44dca3fbf78260d8324d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6db675561851492d9f6f553627237eb7 = $(`<div id="html_6db675561851492d9f6f553627237eb7" style="width: 100.0%; height: 100.0%;">Ranking 95=Suzano/SP PIB_GERAL=9.468.888</div>`)[0];
+                popup_35744588538a44dca3fbf78260d8324d.setContent(html_6db675561851492d9f6f553627237eb7);
+            
+
+            marker_e9ec5470442a4d8a9d62ba8c408eb11a.bindPopup(popup_35744588538a44dca3fbf78260d8324d)
+            ;
+
+            
+        
+    
+        var marker_3ed8473a13ce493aa0f98f2c0c506a41 = L.marker(
+            [-16.47016287349985, -54.63358704017838],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_91e5bc55dac3415cbbcc44f63facc720 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3ed8473a13ce493aa0f98f2c0c506a41.setIcon(icon_91e5bc55dac3415cbbcc44f63facc720);
+            
+    
+            var popup_348228f073ab4bd8995758417c42cecc = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b4ffe7e513cf4cb8a4f075b245846d6e = $(`<div id="html_b4ffe7e513cf4cb8a4f075b245846d6e" style="width: 100.0%; height: 100.0%;">Ranking 96=Rondonópolis/MT PIB_GERAL=9.418.111</div>`)[0];
+                popup_348228f073ab4bd8995758417c42cecc.setContent(html_b4ffe7e513cf4cb8a4f075b245846d6e);
+            
+
+            marker_3ed8473a13ce493aa0f98f2c0c506a41.bindPopup(popup_348228f073ab4bd8995758417c42cecc)
+            ;
+
+            
+        
+    
+        var marker_36e020353d8449e69e7ef1234419098d = L.marker(
+            [-22.80233080863395, -43.371884603039526],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_34d14c361cd94e968f1b940055481dec = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_36e020353d8449e69e7ef1234419098d.setIcon(icon_34d14c361cd94e968f1b940055481dec);
+            
+    
+            var popup_41fa1d5ada8a4ec5b54c02b5f5926154 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_71addf7b40854edea50c83a538435796 = $(`<div id="html_71addf7b40854edea50c83a538435796" style="width: 100.0%; height: 100.0%;">Ranking 97=São João de Meriti/RJ PIB_GERAL=9.410.814</div>`)[0];
+                popup_41fa1d5ada8a4ec5b54c02b5f5926154.setContent(html_71addf7b40854edea50c83a538435796);
+            
+
+            marker_36e020353d8449e69e7ef1234419098d.bindPopup(popup_41fa1d5ada8a4ec5b54c02b5f5926154)
+            ;
+
+            
+        
+    
+        var marker_aa384f0931024d3a970475f737e2b907 = L.marker(
+            [0.03895101000000001, -51.057405457035955],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_fcde40c7ffe540aaade7779c45efd420 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_aa384f0931024d3a970475f737e2b907.setIcon(icon_fcde40c7ffe540aaade7779c45efd420);
+            
+    
+            var popup_f756d7f47f064c80b9677b12dd88eff7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7df2527c36694bacbe7d9fd545c2457f = $(`<div id="html_7df2527c36694bacbe7d9fd545c2457f" style="width: 100.0%; height: 100.0%;">Ranking 98=Macapá/AP PIB_GERAL=9.279.789</div>`)[0];
+                popup_f756d7f47f064c80b9677b12dd88eff7.setContent(html_7df2527c36694bacbe7d9fd545c2457f);
+            
+
+            marker_aa384f0931024d3a970475f737e2b907.bindPopup(popup_f756d7f47f064c80b9677b12dd88eff7)
+            ;
+
+            
+        
+    
+        var marker_a7f002b2c74147d8a993583b6b98e93e = L.marker(
+            [-20.788679161391403, -51.71000062879423],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b353f0a9871d4fd98c5d5070cd5c5e6d);
+        
+    
+
+                var icon_c0ef7a1f5e334e98861b596be6386953 = L.AwesomeMarkers.icon({
+                    icon: 'arrow-circle-down',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a7f002b2c74147d8a993583b6b98e93e.setIcon(icon_c0ef7a1f5e334e98861b596be6386953);
+            
+    
+            var popup_0c6abaaaea1d4b92b957e72b679a032f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_202432f052bc4b67802057fd2cfde525 = $(`<div id="html_202432f052bc4b67802057fd2cfde525" style="width: 100.0%; height: 100.0%;">Ranking 99=Três Lagoas/MS PIB_GERAL=9.234.692</div>`)[0];
+                popup_0c6abaaaea1d4b92b957e72b679a032f.setContent(html_202432f052bc4b67802057fd2cfde525);
+            
+
+            marker_a7f002b2c74147d8a993583b6b98e93e.bindPopup(popup_0c6abaaaea1d4b92b957e72b679a032f)
+            ;
+
+            
+        
+</script>
